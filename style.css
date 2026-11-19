@@ -34,4 +34,16 @@ footer a{color:var(--grau);margin-left:18px}
 .text{max-width:760px;padding:56px 24px}
 .text h1{font-size:34px;margin-top:0}
 .text h2{font-size:21px;margin-top:32px}
+.hero{padding-bottom:150px}
+.schau{margin-top:-110px}
+.fenster{margin:0;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 30px 60px -20px #0f3d2255,0 0 0 1px #0000000f}
+.fenster .leiste{height:30px;background:#ecebe6;display:flex;align-items:center;gap:7px;padding:0 14px}
+.fenster .leiste i{width:11px;height:11px;border-radius:50%;background:#d4d2ca;display:block}
+img{max-width:100%;height:auto;display:block}
+.galerie{display:grid;grid-template-columns:5fr 7fr;gap:22px;align-items:start}
+.galerie-rechts{display:grid;gap:22px}
+.galerie figure{margin:0;background:var(--hell);border:1px solid var(--linie);border-radius:14px;overflow:hidden}
+.galerie figcaption{padding:14px 18px;font-size:15px;color:var(--grau)}
+.galerie figcaption b{color:var(--text)}
+@media (max-width:860px){.galerie{grid-template-columns:1fr}}
 @media (max-width:700px){nav a.opt{display:none}.liste{columns:1}.knopf.zwei{margin:12px 0 0}}

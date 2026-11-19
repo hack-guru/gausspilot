@@ -1,19 +1,30 @@
 <!doctype html>
 <html lang="de">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Impressum · GaussPilot</title><link rel="stylesheet" href="style.css"><meta name="robots" content="noindex"></head>
+<title>Impressum · GaussPilot</title><link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231d3461'/%3E%3Cg transform='translate%2814.0 14.0%29 scale%280.72%29'%3E%3Cpath d='M80 28 A34 34 0 1 0 84 56 L60 56' fill='none' stroke='%23e9edf6' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 42 H46 M8 58 H40' stroke='%23d4a24c' stroke-width='6' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E"><meta name="robots" content="noindex"></head>
 <body class="seite">
-<header class="top"><div class="wrap"><a class="marke" href="./"><span class="zeichen">€</span>GaussPilot</a><nav><a href="./">Startseite</a></nav></div></header>
+<header class="top"><div class="wrap"><a class="marke" href="./"><span class="zeichen"><svg viewBox="0 0 100 100" width="34" height="34" aria-hidden="true"><rect width="100" height="100" rx="24" fill="#1d3461"/><g transform="translate(14.0 14.0) scale(0.72)"><path d="M80 28 A34 34 0 1 0 84 56 L60 56" fill="none" stroke="#e9edf6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 H46 M8 58 H40" stroke="#d4a24c" stroke-width="6" stroke-linecap="round"/></g></svg></span><span>Gauss<span class="pilot">Pilot</span></span></a><nav><a href="./">Startseite</a></nav></div></header>
 <main><div class="karte-gross" style="padding:0"><div class="wrap text">
 <h1>Impressum</h1>
 <h2>Angaben gemäß § 5 DDG</h2>
 <p>Pierre Zwanziger<br>GaussPilot<br>Otto-Grotewohl-Ring 29<br>15344 Strausberg</p>
 <h2>Kontakt</h2>
-<p>E-Mail: <a href="mailto:DesignArtLab.shop@gmx.de">DesignArtLab.shop@gmx.de</a></p>
+<p>E-Mail: <button type="button" class="mail-inline mail-zeigen" data-m="ed.xmg@pohs.baLtrAngiseD">E-Mail-Adresse anzeigen</button><noscript>DesignArtLab.shop [at] gmx [Punkt] de</noscript></p>
 <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
 <p>Pierre Zwanziger, Anschrift wie oben</p>
 <h2>Haftung für Inhalte und Links</h2>
 <p>Die Inhalte dieser Seite wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität wird keine Gewähr übernommen. Für Inhalte verlinkter fremder Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
 </div></div></main>
 <footer><div class="wrap"><span>© 2026 GaussPilot</span><span><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></span></div></footer>
+<script>
+/* E-Mail-Adresse steht nicht im Klartext im Quelltext: erst ein Klick setzt sie zusammen (Schutz vor Adress-Sammlern) */
+document.querySelectorAll('.mail-zeigen').forEach(function(b){
+  b.addEventListener('click', function(){
+    var m = b.dataset.m.split('').reverse().join('');
+    var a = document.createElement('a'); a.href = 'mai' + 'lto:' + m + (b.classList.contains('knopf') ? '?subject=GaussPilot%20Testversion' : '');
+    a.textContent = m; a.className = b.className.replace('mail-zeigen','').trim(); b.replaceWith(a);
+  });
+});
+</script>
 </body></html>

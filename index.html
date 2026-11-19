@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GaussPilot – Angebote, Rechnungen und E-Rechnung für kleine Betriebe</title>
 <meta name="description" content="GaussPilot: Rechnungsprogramm für kleine Betriebe und Handwerk. E-Rechnung nach EN 16931 (ZUGFeRD, XRechnung), Versand per E-Mail, Umsatzsteuer-Voranmeldung, Handy-App. Alle Daten bleiben lokal.">
-<meta name="theme-color" content="#14532d">
+<meta name="theme-color" content="#1d3461">
 <link rel="stylesheet" href="style.css">
 <script>document.documentElement.classList.add("js")</script>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2314532d'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='white' font-family='Arial'%3E€%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231d3461'/%3E%3Cg transform='translate%2814.0 14.0%29 scale%280.72%29'%3E%3Cpath d='M80 28 A34 34 0 1 0 84 56 L60 56' fill='none' stroke='%23e9edf6' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 42 H46 M8 58 H40' stroke='%23d4a24c' stroke-width='6' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E">
 </head>
 <body>
 
@@ -51,7 +51,7 @@
 </div>
 
 <header class="top"><div class="wrap">
-  <a class="marke" href="./"><span class="zeichen">€</span>GaussPilot</a>
+  <a class="marke" href="./"><span class="zeichen"><svg viewBox="0 0 100 100" width="34" height="34" aria-hidden="true"><rect width="100" height="100" rx="24" fill="#1d3461"/><g transform="translate(14.0 14.0) scale(0.72)"><path d="M80 28 A34 34 0 1 0 84 56 L60 56" fill="none" stroke="#e9edf6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 H46 M8 58 H40" stroke="#d4a24c" stroke-width="6" stroke-linecap="round"/></g></svg></span><span>Gauss<span class="pilot">Pilot</span></span></a>
   <nav><a class="opt" href="#funktionen">Funktionen</a><a class="opt" href="#versand">Versand</a><a class="opt" href="#besonderes">Besonderheiten</a><a class="opt" href="#steuer">ELSTER</a><a href="#kontakt">Kontakt</a></nav>
 </div></header>
 
@@ -147,7 +147,7 @@
   <div class="wrap">
     <h2>Neugierig geworden?</h2>
     <p class="lead">Sie möchten GaussPilot ausprobieren oder haben Fragen? Schreiben Sie uns – Sie bekommen eine Testversion mit Beispieldaten.</p>
-    <a class="knopf" href="mailto:DesignArtLab.shop@gmx.de?subject=GaussPilot%20Testversion">DesignArtLab.shop@gmx.de</a>
+    <button type="button" class="knopf mail-zeigen" data-m="ed.xmg@pohs.baLtrAngiseD">E-Mail-Adresse anzeigen</button><noscript><p class="lead" style="margin-top:12px">DesignArtLab.shop [at] gmx [Punkt] de</p></noscript>
   </div>
   <footer><div class="wrap">
     <span>© 2026 GaussPilot</span>
@@ -159,28 +159,53 @@
 
 <script>
 (function(){
-  var bilder = document.querySelectorAll('.blick img');
+  var bilder = [].slice.call(document.querySelectorAll('.blick img'));
   var buehne = document.querySelector('.buehne');
-  function zeige(name){
-    bilder.forEach(function(b){ b.classList.toggle('an', b.dataset.bild === name); });
+  var fenster = [].slice.call(document.querySelectorAll('.fenster'));
+  var aktuell = null;
+  function setze(name){
+    if (name === aktuell) return;
+    bilder.forEach(function(b){
+      if (b.dataset.bild === name) {
+        // zurück auf Startposition (ohne Übergang), dann Animation starten
+        b.style.transition = 'none'; b.classList.remove('weg', 'an'); void b.offsetWidth; b.style.transition = '';
+        requestAnimationFrame(function(){ requestAnimationFrame(function(){ b.classList.add('an'); }); });
+      } else if (b.classList.contains('an')) {
+        b.classList.remove('an'); b.classList.add('weg');   // verblasst an Ort und Stelle
+      }
+    });
     buehne.classList.toggle('bild-an', !!name);
+    aktuell = name;
   }
-  if (!('IntersectionObserver' in window)) { zeige('uebersicht'); return; }
-  var sichtbar = new Map();
-  var io = new IntersectionObserver(function(eintraege){
-    eintraege.forEach(function(e){ sichtbar.set(e.target, e.intersectionRatio); });
-    var bestes = null, max = 0.15;
-    sichtbar.forEach(function(r, el){ if (r > max) { max = r; bestes = el; } });
-    zeige(bestes ? bestes.dataset.zeige : null);
-  }, { threshold: [0, .15, .3, .5, .7, .9, 1] });
-  document.querySelectorAll('.fenster').forEach(function(f){ io.observe(f); });
+  var wartet = false;
+  function pruefen(){
+    wartet = false;
+    var vh = window.innerHeight, name = null;
+    // Ein Bild startet erst, wenn sein „Fenster“ die Bildschirmmitte erreicht hat
+    fenster.forEach(function(f){ var r = f.getBoundingClientRect(); if (r.top < vh * 0.5 && r.bottom > vh * 0.45) name = f.dataset.zeige; });
+    setze(name);
+  }
+  window.addEventListener('scroll', function(){ if (!wartet) { wartet = true; requestAnimationFrame(pruefen); } }, { passive: true });
+  window.addEventListener('resize', pruefen);
+  pruefen();
 
   // Karten gleiten beim Erscheinen sanft herein
+  if (!('IntersectionObserver' in window)) { document.querySelectorAll('.karte-gross').forEach(function(k){ k.classList.add('da'); }); return; }
   var rein = new IntersectionObserver(function(eintraege){
     eintraege.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('da'); rein.unobserve(e.target); } });
   }, { threshold: .08 });
   document.querySelectorAll('.karte-gross').forEach(function(k){ rein.observe(k); });
 })();
+</script>
+<script>
+/* E-Mail-Adresse steht nicht im Klartext im Quelltext: erst ein Klick setzt sie zusammen (Schutz vor Adress-Sammlern) */
+document.querySelectorAll('.mail-zeigen').forEach(function(b){
+  b.addEventListener('click', function(){
+    var m = b.dataset.m.split('').reverse().join('');
+    var a = document.createElement('a'); a.href = 'mai' + 'lto:' + m + (b.classList.contains('knopf') ? '?subject=GaussPilot%20Testversion' : '');
+    a.textContent = m; a.className = b.className.replace('mail-zeigen','').trim(); b.replaceWith(a);
+  });
+});
 </script>
 </body>
 </html>

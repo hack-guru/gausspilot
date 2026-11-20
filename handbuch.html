@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="de">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Handbuch · GaussPilot</title>
+<meta name="description" content="GaussPilot Handbuch & FAQ: Installation unter Windows und Linux, Rechnungen, E-Rechnung, Handy-App, Finanzen, Datensicherung und häufige Fragen.">
+<meta name="author" content="Pierre Zwanziger">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="handbuch.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231d3461'/%3E%3Cg transform='translate%2814.0 14.0%29 scale%280.72%29'%3E%3Cpath d='M80 28 A34 34 0 1 0 84 56 L60 56' fill='none' stroke='%23e9edf6' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 42 H46 M8 58 H40' stroke='%23d4a24c' stroke-width='6' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E"></head>
+<body class="seite hb">
+<header class="top"><div class="wrap"><a class="marke" href="./"><span class="zeichen"><svg viewBox="0 0 100 100" width="34" height="34" aria-hidden="true"><rect width="100" height="100" rx="24" fill="#1d3461"/><g transform="translate(14.0 14.0) scale(0.72)"><path d="M80 28 A34 34 0 1 0 84 56 L60 56" fill="none" stroke="#e9edf6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 H46 M8 58 H40" stroke="#d4a24c" stroke-width="6" stroke-linecap="round"/></g></svg></span><span>Gauss<span class="pilot">Pilot</span></span></a><nav><a href="./">Startseite</a><a href="#inhalt">Inhalt</a><a href="linux.html">Linux</a></nav></div></header>
+
+<div class="deckblatt">
+  <div class="db-logo"><svg viewBox="0 0 100 100" width="120" height="120" aria-hidden="true"><rect width="100" height="100" rx="24" fill="#1d3461"/><g transform="translate(14.0 14.0) scale(0.72)"><path d="M80 28 A34 34 0 1 0 84 56 L60 56" fill="none" stroke="#e9edf6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 H46 M8 58 H40" stroke="#d4a24c" stroke-width="6" stroke-linecap="round"/></g></svg></div>
+  <p class="db-marke">Gauss<span>Pilot</span></p>
+  <h1>Handbuch &amp; FAQ</h1>
+  <p class="db-unter">Angebote, Rechnungen und E-Rechnung für kleine und mittlere Betriebe</p>
+  <p class="db-stand">Version 0.13.5 · Stand 20.11.2026</p>
+  <p class="db-copy">© 2026 Pierre Zwanziger · hack-guru.github.io/gausspilot</p>
+</div>
+
+<main>
+<section class="karte-gross held hb-kopf"><div class="wrap">
+  <span class="status">Version 0.13.5 · Stand 20.11.2026</span>
+  <h1>Handbuch &amp; FAQ</h1>
+  <p class="gross">Alles zu GaussPilot an einem Ort: Installation unter Windows und Linux, Rechnungen und E-Rechnung, Handy-App, Finanzen, Datensicherung und Antworten auf häufige Fragen.</p>
+  <a class="knopf" href="#inhalt">Zum Inhalt</a><a class="knopf zwei" href="Handbuch_GaussPilot.pdf" download>PDF herunterladen</a>
+</div></section>
+
+<div class="hb-raster">
+<aside class="hb-leiste" aria-label="Kapitel"><p>Kapitel</p><a href="#kurzueberblick" data-ziel="kurzueberblick"><span class="nr">1</span>Kurzüberblick</a><a href="#erste-schritte" data-ziel="erste-schritte"><span class="nr">2</span>Erste Schritte</a><a href="#lizenz-start-pro-und-team" data-ziel="lizenz-start-pro-und-team"><span class="nr">3</span>Lizenz: Start, Pro und Team</a><a href="#lebenszyklus-einer-rechnung" data-ziel="lebenszyklus-einer-rechnung"><span class="nr">4</span>Lebenszyklus einer Rechnung</a><a href="#bedienung-schritt-fuer-schritt" data-ziel="bedienung-schritt-fuer-schritt"><span class="nr">5</span>Bedienung Schritt für Schritt</a><a href="#gestaltung-der-belege" data-ziel="gestaltung-der-belege"><span class="nr">6</span>Gestaltung der Belege</a><a href="#handy-app-fuer-mitarbeiter" data-ziel="handy-app-fuer-mitarbeiter"><span class="nr">7</span>Handy-App für Mitarbeiter</a><a href="#finanzen" data-ziel="finanzen"><span class="nr">8</span>Finanzen</a><a href="#testumgebung" data-ziel="testumgebung"><span class="nr">9</span>Testumgebung</a><a href="#datensicherung-und-sicherungsziele" data-ziel="datensicherung-und-sicherungsziele"><span class="nr">10</span>Datensicherung und Sicherungsziele</a><a href="#ki-assistent" data-ziel="ki-assistent"><span class="nr">11</span>KI-Assistent</a><a href="#sicherheit" data-ziel="sicherheit"><span class="nr">12</span>Sicherheit</a><a href="#sicherheit-datensicherung" data-ziel="sicherheit-datensicherung"><span class="nr">13</span>Sicherheit &amp; Datensicherung</a><a href="#faq" data-ziel="faq"><span class="nr">14</span>FAQ</a><a href="#fehlermeldungen-der-pruefung" data-ziel="fehlermeldungen-der-pruefung"><span class="nr">15</span>Fehlermeldungen der Prüfung</a><a href="#glossar" data-ziel="glossar"><span class="nr">16</span>Glossar</a><a href="#versionsverlauf" data-ziel="versionsverlauf"><span class="nr">17</span>Versionsverlauf</a></aside>
+<article class="karte-gross hb-text">
+<section class="kap inhalt" id="inhalt"><h2>Inhalt</h2>
+<input type="search" id="suche" placeholder="Kapitel suchen, z. B. Mahnung, Linux, Lizenz …" aria-label="Kapitel suchen">
+<ol class="toc"><li><a class="h" href="#kurzueberblick"><span class="nr">1</span>Kurzüberblick</a></li>
+<li><a class="h" href="#erste-schritte"><span class="nr">2</span>Erste Schritte</a><ol><li><a href="#installation-unter-windows"><span class="nr">2.1</span>Installation unter Windows</a></li><li><a href="#installation-unter-linux"><span class="nr">2.2</span>Installation unter Linux</a></li><li><a href="#taeglicher-start"><span class="nr">2.3</span>Täglicher Start</a></li><li><a href="#einrichtung-beim-ersten-mal"><span class="nr">2.4</span>Einrichtung beim ersten Mal</a></li><li><a href="#updates"><span class="nr">2.5</span>Updates</a></li><li><a href="#deinstallieren"><span class="nr">2.6</span>Deinstallieren</a></li></ol></li>
+<li><a class="h" href="#lizenz-start-pro-und-team"><span class="nr">3</span>Lizenz: Start, Pro und Team</a></li>
+<li><a class="h" href="#lebenszyklus-einer-rechnung"><span class="nr">4</span>Lebenszyklus einer Rechnung</a></li>
+<li><a class="h" href="#bedienung-schritt-fuer-schritt"><span class="nr">5</span>Bedienung Schritt für Schritt</a><ol><li><a href="#kunden-anlegen"><span class="nr">5.1</span>Kunden anlegen</a></li><li><a href="#artikel-leistungen"><span class="nr">5.2</span>Artikel &amp; Leistungen</a></li><li><a href="#angebot-schreiben"><span class="nr">5.3</span>Angebot schreiben</a></li><li><a href="#rechnung-schreiben-und-festschreiben"><span class="nr">5.4</span>Rechnung schreiben und festschreiben</a></li><li><a href="#versenden-und-zahlung-erfassen"><span class="nr">5.5</span>Versenden und Zahlung erfassen</a></li><li><a href="#korrigieren-und-stornieren"><span class="nr">5.6</span>Korrigieren und stornieren</a></li><li><a href="#eingehende-e-rechnungen-pruefen"><span class="nr">5.7</span>Eingehende E-Rechnungen prüfen</a></li><li><a href="#auswertung-und-export"><span class="nr">5.8</span>Auswertung und Export</a></li><li><a href="#rabatte-und-zuschlaege"><span class="nr">5.9</span>Rabatte und Zuschläge</a></li><li><a href="#abschlags-und-schlussrechnungen-groessere-auftraege"><span class="nr">5.10</span>Abschlags- und Schlussrechnungen (größere Aufträge)</a></li></ol></li>
+<li><a class="h" href="#gestaltung-der-belege"><span class="nr">6</span>Gestaltung der Belege</a></li>
+<li><a class="h" href="#handy-app-fuer-mitarbeiter"><span class="nr">7</span>Handy-App für Mitarbeiter</a><ol><li><a href="#einrichten-einmalig-im-buero"><span class="nr">7.1</span>Einrichten (einmalig, im Büro)</a></li><li><a href="#erfassen-unterwegs"><span class="nr">7.2</span>Erfassen (unterwegs)</a></li><li><a href="#uebernehmen-am-pc"><span class="nr">7.3</span>Übernehmen (am PC)</a></li><li><a href="#steuerordner"><span class="nr">7.4</span>Steuerordner</a></li><li><a href="#feste-ip-adresse-fuer-den-buero-pc"><span class="nr">7.5</span>Feste IP-Adresse für den Büro-PC</a></li><li><a href="#wenn-die-app-offline-nicht-reagiert"><span class="nr">7.6</span>Wenn die App offline nicht reagiert</a></li><li><a href="#stundenzettel"><span class="nr">7.7</span>Stundenzettel</a></li><li><a href="#angebote-unterwegs"><span class="nr">7.8</span>Angebote unterwegs</a></li><li><a href="#unterwegs-abgleichen-vpn"><span class="nr">7.9</span>Unterwegs abgleichen (VPN)</a></li><li><a href="#aussehen-der-app-und-nachtmodus"><span class="nr">7.10</span>Aussehen der App und Nachtmodus</a></li></ol></li>
+<li><a class="h" href="#finanzen"><span class="nr">8</span>Finanzen</a><ol><li><a href="#ausgaben"><span class="nr">8.1</span>Ausgaben</a></li><li><a href="#auswertung"><span class="nr">8.2</span>Auswertung</a></li><li><a href="#steuer-abschluss-umsatzsteuer-voranmeldung"><span class="nr">8.3</span>Steuer-Abschluss (Umsatzsteuer-Voranmeldung)</a></li><li><a href="#zahlungen-und-skonto"><span class="nr">8.4</span>Zahlungen und Skonto</a></li><li><a href="#bank-zahlungen-kontoauszug-einlesen"><span class="nr">8.5</span>Bank &amp; Zahlungen (Kontoauszug einlesen)</a></li><li><a href="#mahnwesen"><span class="nr">8.6</span>Mahnwesen</a></li><li><a href="#datev-export"><span class="nr">8.7</span>DATEV-Export</a></li></ol></li>
+<li><a class="h" href="#testumgebung"><span class="nr">9</span>Testumgebung</a></li>
+<li><a class="h" href="#datensicherung-und-sicherungsziele"><span class="nr">10</span>Datensicherung und Sicherungsziele</a><ol><li><a href="#welche-ziele-gehen"><span class="nr">10.1</span>Welche Ziele gehen?</a></li><li><a href="#so-richten-sie-ein-ziel-ein"><span class="nr">10.2</span>So richten Sie ein Ziel ein</a></li><li><a href="#kopien-verschluesseln"><span class="nr">10.3</span>Kopien verschlüsseln</a></li></ol></li>
+<li><a class="h" href="#ki-assistent"><span class="nr">11</span>KI-Assistent</a><ol><li><a href="#einrichtung"><span class="nr">11.1</span>Einrichtung</a></li><li><a href="#was-sieht-die-ki"><span class="nr">11.2</span>Was sieht die KI?</a></li><li><a href="#grenzen"><span class="nr">11.3</span>Grenzen</a></li></ol></li>
+<li><a class="h" href="#sicherheit"><span class="nr">12</span>Sicherheit</a></li>
+<li><a class="h" href="#sicherheit-datensicherung"><span class="nr">13</span>Sicherheit &amp; Datensicherung</a></li>
+<li><a class="h" href="#faq"><span class="nr">14</span>FAQ</a></li>
+<li><a class="h" href="#fehlermeldungen-der-pruefung"><span class="nr">15</span>Fehlermeldungen der Prüfung</a></li>
+<li><a class="h" href="#glossar"><span class="nr">16</span>Glossar</a></li>
+<li><a class="h" href="#versionsverlauf"><span class="nr">17</span>Versionsverlauf</a></li></ol>
+<p class="tipp">Tipp: Mit <kbd>Strg</kbd> + <kbd>F</kbd> durchsuchen Sie den ganzen Text.</p>
+</section>
+<section class="kap" id="kurzueberblick"><h2><span class="nr">1</span>Kurzüberblick</h2>
+<p>GaussPilot erstellt Angebote und Rechnungen im eigenen Design und prüft jede Rechnung vor dem Festschreiben nach der Norm EN 16931. Es läuft auf Ihrem PC unter Windows oder Linux, alle Daten bleiben im Ordner <code>Dokumente\GaussPilot</code>.</p>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Bereich</th>
+<th>Was Sie damit machen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Angebote</td>
+<td>Angebot schreiben, als PDF senden, mit einem Klick in eine Rechnung umwandeln</td>
+</tr>
+<tr>
+<td>Rechnungen</td>
+<td>Schreiben, prüfen, festschreiben, per E-Mail senden, als bezahlt markieren, stornieren</td>
+</tr>
+<tr>
+<td>E-Rechnung</td>
+<td>Jede festgeschriebene Rechnung ist eine ZUGFeRD-PDF (PDF mit eingebetteten Daten); für Behörden zusätzlich XRechnung</td>
+</tr>
+<tr>
+<td>EN-16931-Prüfung</td>
+<td>Vier Prüfstufen: XML-Schema, EN-16931-Regeln (CEN), XRechnung-Regeln (KoSIT), Pflichtangaben § 14 UStG</td>
+</tr>
+<tr>
+<td>Eingangsrechnungen</td>
+<td>Empfangene E-Rechnung hochladen, prüfen, lesbar anzeigen, bei Fehlern Rückweisung vorbereiten</td>
+</tr>
+<tr>
+<td>Sicherheit</td>
+<td>Anmeldung mit Passwort, optional Zwei-Faktor-Code (2FA), Protokoll aller Aktionen</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section class="kap" id="erste-schritte"><h2><span class="nr">2</span>Erste Schritte</h2>
+<p>GaussPilot gibt es für Windows und Linux, mit gleichem Funktionsumfang. Nach der Installation startet es immer leer mit der Ersteinrichtung.</p>
+<div class="tab"><table>
+<thead>
+<tr>
+<th></th>
+<th>Windows</th>
+<th>Linux</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Datei</td>
+<td><code>GaussPilot_Setup_0.13.5.exe</code></td>
+<td><code>GaussPilot_Linux_0.13.5.tar.gz</code></td>
+</tr>
+<tr>
+<td>Voraussetzung</td>
+<td>Windows 10 oder 11, 64 Bit</td>
+<td>64-Bit-PC, Python 3.10 oder neuer</td>
+</tr>
+<tr>
+<td>Programm liegt in</td>
+<td><code>%LOCALAPPDATA%\Programs\GaussPilot</code></td>
+<td><code>~/.local/share/gausspilot</code></td>
+</tr>
+<tr>
+<td>Ihre Daten liegen in</td>
+<td><code>Dokumente\GaussPilot</code></td>
+<td><code>Dokumente/GaussPilot</code></td>
+</tr>
+<tr>
+<td>Admin-Rechte nötig</td>
+<td>nein</td>
+<td>nein (kein sudo)</td>
+</tr>
+<tr>
+<td>Internet bei der Installation</td>
+<td>ja, 1–3 Minuten</td>
+<td>ja, 1–3 Minuten</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="installation-unter-windows"><span class="nr">2.1</span>Installation unter Windows</h3>
+<ol class="hb-schritte">
+<li><code>GaussPilot_Setup_0.13.5.exe</code> doppelt anklicken.</li>
+<li>Meldet Windows „Der Computer wurde durch Windows geschützt“: auf <strong>Weitere Informationen → Trotzdem ausführen</strong> klicken. Die Meldung erscheint, solange das Programm noch kein Signatur-Zertifikat hat.</li>
+<li>Dem Assistenten folgen. Er installiert nur für Ihren Benutzer und lädt dabei die Python-Laufzeit von python.org. Deren Echtheit wird vor dem Einbau geprüft.</li>
+<li>Die Frage „Soll GaussPilot automatisch mit Windows starten?“ mit Ja oder Nein beantworten. Am Ende entstehen eine Desktop-Verknüpfung und ein Startmenü-Eintrag <strong>GaussPilot</strong>, der Browser öffnet die Ersteinrichtung.</li>
+</ol>
+<h3 id="installation-unter-linux"><span class="nr">2.2</span>Installation unter Linux</h3>
+<ol class="hb-schritte">
+<li><code>GaussPilot_Linux_0.13.5.tar.gz</code> entpacken.</li>
+<li>Im entpackten Ordner ein Terminal öffnen und <code>./installieren.sh</code> eingeben. Alternativ: Rechtsklick auf <code>installieren.sh</code> → „Als Programm ausführen“.</li>
+<li>Fehlt Python, nennt das Skript den passenden Befehl, z. B. für Ubuntu, Debian und Mint <code>sudo apt install python3 python3-venv</code>, für Fedora <code>sudo dnf install python3</code>, für openSUSE <code>sudo zypper install python3</code>, für Arch <code>sudo pacman -S python</code>.</li>
+<li>Die Frage, ob GaussPilot beim Anmelden automatisch starten soll, mit <strong>j</strong> oder <strong>n</strong> beantworten.</li>
+<li>GaussPilot steht danach im <strong>Anwendungsmenü unter „Büro“</strong>, der Browser öffnet die Ersteinrichtung.</li>
+</ol>
+<p>Das Symbol in der Leiste erscheint unter KDE und Ubuntu von selbst. Ein reines GNOME braucht die Erweiterung „AppIndicator and KStatusNotifierItem Support“; ohne Symbol läuft GaussPilot trotzdem. Ist eine Firewall wie <code>ufw</code> aktiv, für die Handy-App die Ports 8766 und 8767 freigeben: <code>sudo ufw allow from 192.168.0.0/16 to any port 8766,8767 proto tcp</code>.</p>
+<h3 id="taeglicher-start"><span class="nr">2.3</span>Täglicher Start</h3>
+<ol class="hb-schritte">
+<li>Doppelklick auf <strong>GaussPilot</strong> auf dem Desktop bzw. im Anwendungsmenü, oder automatisch beim Anmelden. Der Browser öffnet <code>http://127.0.0.1:8765</code>.</li>
+<li>Das Programm läuft unsichtbar im Hintergrund. Das Euro-G-Symbol in der Leiste zeigt, dass es läuft (unter Windows unten rechts neben der Uhr, eventuell unter dem kleinen Pfeil).</li>
+<li>Das Browserfenster dürfen Sie schließen. Wieder öffnen: Doppelklick auf das Symbol oder die Verknüpfung.</li>
+<li>Rechtsklick auf das Symbol: <strong>GaussPilot öffnen</strong>, <strong>Daten-Ordner öffnen</strong>, <strong>Sicherungen öffnen</strong>, <strong>Jetzt sichern</strong>, <strong>Protokolldatei öffnen</strong>, <strong>Mit Windows starten</strong> (ein/aus, nur Windows), <strong>Beenden</strong>.</li>
+</ol>
+<h3 id="einrichtung-beim-ersten-mal"><span class="nr">2.4</span>Einrichtung beim ersten Mal</h3>
+<ol class="hb-schritte">
+<li>Zugang anlegen (Benutzername, Passwort mit mindestens 8 Zeichen).</li>
+<li><strong>Einstellungen → Firma</strong>: Name, Anschrift, E-Mail, Telefon, Steuernummer oder USt-IdNr., IBAN. Alle mit * markierten Felder sind für eine gültige E-Rechnung nötig.</li>
+<li><strong>Einstellungen → Design</strong>: Logo, Farben, Rahmen wählen und mit Muster-PDF kontrollieren.</li>
+<li><strong>Einstellungen → E-Mail</strong>: Zugangsdaten Ihres Postfachs eintragen (z. B. GMX: <code>mail.gmx.net</code>, Port 587, STARTTLS) und Test-E-Mail senden.</li>
+<li>Optional: <strong>Konto &amp; 2FA</strong> → Zwei-Faktor-Anmeldung einschalten.</li>
+<li>Haben Sie eine Lizenz gekauft: <strong>Lizenz</strong> in der Seitenleiste → Schlüssel einfügen → <strong>Lizenz eintragen</strong>.</li>
+</ol>
+<h3 id="updates"><span class="nr">2.5</span>Updates</h3>
+<p>GaussPilot prüft einmal täglich, ob es eine neue Version gibt, und zeigt dann oben einen Hinweis. Ihre Daten bleiben bei jedem Update erhalten.</p>
+<ul>
+<li><strong>Windows:</strong> Das neue Setup einfach ausführen. Ein laufendes GaussPilot wird vorher beendet.</li>
+<li><strong>Linux:</strong> Das neue Archiv entpacken und <code>./installieren.sh</code> erneut ausführen.</li>
+<li><strong>Handy-App:</strong> aktualisiert sich beim nächsten Abgleich von selbst; von Hand unter <strong>Mehr → App aktualisieren</strong>.</li>
+</ul>
+<h3 id="deinstallieren"><span class="nr">2.6</span>Deinstallieren</h3>
+<ul>
+<li><strong>Windows:</strong> Einstellungen → Apps → GaussPilot → Deinstallieren.</li>
+<li><strong>Linux:</strong> <code>~/.local/share/gausspilot/deinstallieren.sh</code> ausführen.</li>
+</ul>
+<p>In beiden Fällen bleibt der Ordner <code>Dokumente/GaussPilot</code> mit allen Daten und Sicherungen erhalten. Wer ihn nicht mehr braucht, löscht ihn von Hand – Rechnungen aber 8 Jahre aufbewahren (§ 147 AO).</p>
+</section>
+<section class="kap" id="lizenz-start-pro-und-team"><h2><span class="nr">3</span>Lizenz: Start, Pro und Team</h2>
+<p>GaussPilot Start ist kostenlos. Pro und das Modul Team schalten Sie mit einem Lizenzschlüssel frei; Funktionen mit <strong>PRO</strong> im Menü brauchen ihn.</p>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Edition</th>
+<th>Was enthalten ist</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start (kostenlos)</td>
+<td>Angebote, Rechnungen, E-Rechnung mit Prüfung, E-Mail-Versand, Kunden, Artikel, Ausgaben, tägliche Sicherung auf dem PC</td>
+</tr>
+<tr>
+<td>Pro</td>
+<td>zusätzlich Bank &amp; Zahlungen, Mahnwesen, Steuer-Abschluss, Auswertung, DATEV-Export, Abschlags- und Schlussrechnungen, zusätzliche Sicherungsziele</td>
+</tr>
+<tr>
+<td>Modul Team (zu Pro)</td>
+<td>Handy-App für Mitarbeiter, je Gerät; die Zahl der Geräte steht in der Lizenz</td>
+</tr>
+</tbody>
+</table></div>
+<ol class="hb-schritte">
+<li><strong>Lizenz</strong> in der Seitenleiste öffnen.</li>
+<li>Den Schlüssel (beginnt mit <code>GP1.</code>) einfügen und <strong>Lizenz eintragen</strong> klicken. Der Schlüssel wird nur auf diesem PC geprüft, es werden keine Daten übertragen.</li>
+<li>Die Seite zeigt danach Lizenznehmer, Lizenz-Nr., Geräte für die Handy-App und das Ende des Update-Service.</li>
+</ol>
+<p>Pro gilt für jede Version, die bis zum Ende des Update-Service erscheint. Danach läuft diese Version unbegrenzt weiter; für neuere Versionen den Update-Service verlängern. Sind mehr Handys angemeldet als die Lizenz erlaubt, zeigt <strong>Mitarbeiter &amp; Geräte</strong> eine Warnung und die App meldet „Vom Büro gesperrt“. In der Testumgebung sind alle Funktionen frei.</p>
+</section>
+<section class="kap" id="lebenszyklus-einer-rechnung"><h2><span class="nr">4</span>Lebenszyklus einer Rechnung</h2>
+<p>Eine Rechnung durchläuft immer dieselben Stationen. Nur eine geprüfte Rechnung kann festgeschrieben werden.</p>
+<figure class="ablauf" aria-label="Lebenszyklus einer Rechnung">
+<svg viewBox="0 0 860 250" role="img">
+<defs><marker id="pf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1d3461"/></marker>
+<marker id="pr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#b5483b"/></marker></defs>
+<g font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="15" text-anchor="middle">
+<g fill="#fff" stroke="#1d3461" stroke-width="1.6">
+<rect x="10" y="40" width="130" height="52" rx="12"/>
+<rect x="190" y="40" width="130" height="52" rx="12" fill="#fbf3e2" stroke="#d4a24c"/>
+<rect x="370" y="40" width="140" height="52" rx="12" fill="#1d3461"/>
+<rect x="560" y="40" width="130" height="52" rx="12"/>
+<rect x="740" y="40" width="110" height="52" rx="12" fill="#e5f4e4" stroke="#3f7d3a"/>
+<rect x="370" y="170" width="140" height="52" rx="12" fill="#fbebeb" stroke="#b5483b"/>
+<rect x="590" y="170" width="120" height="52" rx="12" fill="#f0efec" stroke="#8a8780"/>
+</g>
+<text x="75" y="71">Entwurf</text>
+<text x="255" y="64">Prüfung</text><text x="255" y="82" font-size="12" fill="#5b5b55">EN 16931</text>
+<text x="440" y="71" fill="#fff" font-weight="600">Festgeschrieben</text>
+<text x="625" y="71">Versendet</text>
+<text x="795" y="71">Bezahlt</text>
+<text x="440" y="194">Storno-</text><text x="440" y="212">Gutschrift</text>
+<text x="650" y="201">Storniert</text>
+<g stroke="#1d3461" stroke-width="1.8" fill="none" marker-end="url(#pf)">
+<path d="M140 66H186"/><path d="M320 66H366"/><path d="M510 66H556"/><path d="M690 66H736"/><path d="M510 196H586"/>
+</g>
+<path d="M255 40 C255 6 75 6 75 36" stroke="#b5483b" stroke-width="1.8" fill="none" stroke-dasharray="5 4" marker-end="url(#pr)"/>
+<text x="165" y="16" font-size="12" fill="#b5483b">Fehler → korrigieren</text>
+<path d="M440 92V166" stroke="#b5483b" stroke-width="1.8" fill="none" marker-end="url(#pr)"/>
+<text x="452" y="134" font-size="12" fill="#b5483b" text-anchor="start">Korrektur nur per Storno</text>
+<text x="350" y="118" font-size="12" fill="#5b5b55">ab hier gesperrt (GoBD)</text>
+</g></svg>
+<figcaption>Lebenszyklus einer Rechnung · 5 Stationen, 1 Prüfung, Storno-Weg</figcaption></figure>
+<p>Ab „Festgeschrieben“ ist eine Rechnung gesperrt; eine Korrektur läuft immer über eine Storno-Gutschrift, auch wenn die Rechnung noch nicht versendet wurde.</p>
+</section>
+<section class="kap" id="bedienung-schritt-fuer-schritt"><h2><span class="nr">5</span>Bedienung Schritt für Schritt</h2>
+<h3 id="kunden-anlegen"><span class="nr">5.1</span>Kunden anlegen</h3>
+<ol class="hb-schritte">
+<li><strong>Kunden → + Neuer Kunde</strong>.</li>
+<li>Firma oder Name, vollständige Anschrift und E-Mail eintragen. Die Kundennummer vergibt das Tool.</li>
+<li><strong>Format</strong> wählen: <em>ZUGFeRD</em> für Firmenkunden (Standard), <em>XRechnung</em> für Behörden.</li>
+<li>Bei Behörden die <strong>Leitweg-ID</strong> eintragen (steht im Auftrag oder kommt von der Behörde).</li>
+<li>Für Reverse Charge oder EU-Kunden die <strong>USt-IdNr. des Kunden</strong> eintragen.</li>
+<li>Privatkunden ankreuzen: Für sie gilt keine E-Rechnungspflicht, die PDF funktioniert trotzdem normal.</li>
+</ol>
+<h3 id="artikel-leistungen"><span class="nr">5.2</span>Artikel &amp; Leistungen</h3>
+<p>Wiederkehrende Positionen (z. B. Stundensatz, Pauschalen) unter <strong>Artikel &amp; Leistungen</strong> anlegen. Im Beleg tippen Sie den Namen an, Preis, Einheit und Steuersatz füllen sich selbst.</p>
+<h3 id="angebot-schreiben"><span class="nr">5.3</span>Angebot schreiben</h3>
+<ol class="hb-schritte">
+<li><strong>Angebote → + Angebot</strong>, Kunden wählen, Betreff eintragen.</li>
+<li>Positionen erfassen (Menge, Einheit, Einzelpreis, USt). Die Summen rechnen live mit.</li>
+<li><strong>Speichern &amp; Vorschau</strong> zeigt das PDF.</li>
+<li><strong>Per E-Mail senden</strong> verschickt das Angebot als PDF.</li>
+<li>Sagt der Kunde zu: <strong>In Rechnung umwandeln</strong>. Es entsteht ein Rechnungsentwurf mit allen Positionen, das Angebot wird „Angenommen“.</li>
+</ol>
+<p>Angebote bleiben änderbar und löschbar. Sie sind keine E-Rechnungen und werden nicht nach EN 16931 geprüft.</p>
+<h3 id="rechnung-schreiben-und-festschreiben"><span class="nr">5.4</span>Rechnung schreiben und festschreiben</h3>
+<ol class="hb-schritte">
+<li><strong>Rechnungen → + Rechnung</strong> (oder aus einem Angebot umwandeln).</li>
+<li>Kunde, Rechnungsdatum, <strong>Leistungsdatum</strong> und Fälligkeit prüfen. Das Leistungsdatum ist Pflicht.</li>
+<li><strong>Steuerfall</strong> wählen: Regelbesteuerung, Kleinunternehmer (§ 19), Reverse Charge (§ 13b) oder innergemeinschaftliche Lieferung.</li>
+<li>Positionen erfassen, dann <strong>Speichern &amp; EN 16931 prüfen</strong>.</li>
+<li>Grünes Ergebnis: <strong>Festschreiben &amp; archivieren</strong>. Erst jetzt bekommt die Rechnung ihre fortlaufende Nummer (z. B. RE-2026-0001).</li>
+<li>Rotes Ergebnis: Die Fehlerliste zeigt, was fehlt. Beleg oder Firmendaten korrigieren und erneut prüfen (siehe Tabelle „Fehlermeldungen“).</li>
+</ol>
+<h3 id="versenden-und-zahlung-erfassen"><span class="nr">5.5</span>Versenden und Zahlung erfassen</h3>
+<ol class="hb-schritte">
+<li>In der festgeschriebenen Rechnung <strong>Per E-Mail senden</strong>. Standardanhang ist die ZUGFeRD-PDF, bei Behörden zusätzlich die XRechnung.</li>
+<li>Ohne E-Mail-Einrichtung: <strong>⬇ ZUGFeRD-PDF</strong> herunterladen und selbst versenden, dann <strong>Als versendet markieren</strong>.</li>
+<li>Ist das Geld da: <strong>Als bezahlt markieren</strong>. Die Übersicht zeigt offene und überfällige Rechnungen.</li>
+</ol>
+<h3 id="korrigieren-und-stornieren"><span class="nr">5.6</span>Korrigieren und stornieren</h3>
+<p>Festgeschriebene Rechnungen sind gesperrt (Pflicht nach GoBD). So korrigieren Sie:</p>
+<ol class="hb-schritte">
+<li>In der Rechnung <strong>Stornieren</strong> klicken. Es entsteht ein Gutschrift-Entwurf mit Bezug zur Rechnung.</li>
+<li>Gutschrift prüfen und festschreiben. Die Rechnung gilt dann als storniert.</li>
+<li>Bei Bedarf <strong>Als Vorlage kopieren</strong> und eine neue, korrekte Rechnung erstellen.</li>
+</ol>
+<h3 id="eingehende-e-rechnungen-pruefen"><span class="nr">5.7</span>Eingehende E-Rechnungen prüfen</h3>
+<ol class="hb-schritte">
+<li><strong>E-Rechnung prüfen &amp; lesen</strong> öffnen.</li>
+<li>XML-Datei (XRechnung) oder PDF (ZUGFeRD) auswählen, <strong>Prüfen &amp; anzeigen</strong>.</li>
+<li>Rechts erscheint die Rechnung lesbar, links das Prüfergebnis.</li>
+<li>Bei Fehlern den Vorschlag <strong>Rückweisung</strong> kopieren und an den Absender schicken.</li>
+<li>Meldung „keine E-Rechnung“: Die PDF enthält keine Daten. Ab 2027/2028 berechtigt so eine Rechnung im B2B-Bereich grundsätzlich nicht zum Vorsteuerabzug.</li>
+</ol>
+<h3 id="auswertung-und-export"><span class="nr">5.8</span>Auswertung und Export</h3>
+<p><strong>Rechnungen → Export CSV</strong> erstellt das Rechnungsausgangsbuch des Jahres für Excel oder den Steuerberater. Gutschriften erscheinen mit Minusbeträgen.</p>
+<h3 id="rabatte-und-zuschlaege"><span class="nr">5.9</span>Rabatte und Zuschläge</h3>
+<ul>
+<li><strong>Rabatt auf eine Position:</strong> In der Positionstabelle in der Spalte <strong>Rabatt %</strong> einen Wert eintragen, z. B. 10. Auf der Rechnung steht dann „abzgl. 10 % Rabatt“, der Gesamtpreis der Position ist bereits reduziert.</li>
+<li><strong>Rabatt oder Zuschlag auf den ganzen Beleg:</strong> Unter den Positionen <strong>„+ Rabatt / Zuschlag auf den Beleg“</strong> klicken, Art, Bezeichnung und Wert wählen, in % vom Beleg oder als fester Betrag netto. Beispiele: 5 % Treuerabatt, 50 € Anfahrtspauschale, 10 % Eilzuschlag.</li>
+</ul>
+<p>Enthält der Beleg 19 % und 7 %, verteilt das Tool Beleg-Rabatte und Zuschläge anteilig auf beide Steuersätze; so verlangt es die E-Rechnungs-Norm. Auf dem PDF stehen „Summe Positionen“, jeder Rabatt und Zuschlag und darunter die Summe netto. In der E-Rechnung werden sie als Nachlässe und Zuschläge nach EN 16931 übertragen. Abschlags- und Schlussrechnungen übernehmen die Rabatte des Angebots.</p>
+<p>Angebote mit Rabatten aus dem Büro lassen sich auf dem Handy ansehen und versenden, aber nicht ändern.</p>
+<h3 id="abschlags-und-schlussrechnungen-groessere-auftraege"><span class="nr">5.10</span>Abschlags- und Schlussrechnungen (größere Aufträge)</h3>
+<p>Bei längeren Aufträgen wird in Teilen abgerechnet. Alles läuft über das Angebot:</p>
+<ol class="hb-schritte">
+<li>Angebot öffnen, unten im Kasten <strong>„Auftrag abrechnen“</strong> einen Abschlag eintragen: Prozent des Auftrags (z. B. 30) oder einen Betrag netto, optional den Leistungsstand. <strong>Erstellen</strong> legt die Abschlagsrechnung als Entwurf an, aufgeteilt nach Steuersätzen wie im Angebot.</li>
+<li>Abschlagsrechnung prüfen, festschreiben und versenden wie jede Rechnung. Sie ist eine eigene E-Rechnung (Rechnungsart „Teilrechnung“) und bekommt eine normale Rechnungsnummer.</li>
+<li>Weitere Abschläge genauso. Das Tool zeigt, wie viel schon berechnet ist, und warnt, wenn mehr als der Auftragswert berechnet würde.</li>
+<li>Am Ende <strong>Schlussrechnung erstellen</strong>: Sie übernimmt alle Positionen des Angebots (bei Mehr- oder Minderleistungen anpassen) und zieht alle festgeschriebenen Abschläge mit Netto, Umsatzsteuer und Brutto ab. Übrig bleibt der <strong>verbleibende Zahlbetrag</strong>. So verlangt es § 14 Abs. 5 UStG.</li>
+</ol>
+<p>In der E-Rechnung steht der Abzug als bereits gezahlter Betrag mit Verweis auf jede Abschlagsrechnung. Skonto, QR-Code und Mahnwesen rechnen mit dem verbleibenden Zahlbetrag.</p>
+<p><strong>Steuer:</strong> Die Umsatzsteuer aus Abschlägen entsteht, sobald das Geld eingeht. Der Steuer-Abschluss zählt sie deshalb im Monat der Zahlung, die Schlussrechnung nur noch mit dem Rest. Im DATEV-Export laufen Abschlagszahlungen über „Erhaltene Anzahlungen“ und werden mit der Schlussrechnung verrechnet.</p>
+</section>
+<section class="kap" id="gestaltung-der-belege"><h2><span class="nr">6</span>Gestaltung der Belege</h2>
+<p>Unter <strong>Einstellungen → Design</strong> passen Sie die sichtbare PDF an Ihr Erscheinungsbild an. Die E-Rechnungsdaten bleiben davon unberührt und immer normgerecht.</p>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Einstellung</th>
+<th>Möglichkeiten</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kopfstil</td>
+<td>Linie, farbiges Band, Band mit Farbverlauf (zwei Farben), eigenes Banner-Bild, minimal</td>
+</tr>
+<tr>
+<td>Banner</td>
+<td>200 mm breit (5 mm Rand) oder 210 mm randlos, Höhe 10–32 mm; ideal 2362 × 313 Pixel; wird mittig zugeschnitten</td>
+</tr>
+<tr>
+<td>Schrift</td>
+<td>12 mitgelieferte Schriften, getrennt für Text und Überschriften, oder eigene Hausschrift als TTF-Datei</td>
+</tr>
+<tr>
+<td>Farben</td>
+<td>Akzent-, Schrift-, Rahmenfarbe; Hintergrund einfarbig oder als Verlauf von oben nach unten</td>
+</tr>
+<tr>
+<td>Sonstiges</td>
+<td>Logo (links/rechts/Mitte), Briefpapier-Hintergrund, Rahmen, Zusatzzeile in der Fußzeile, Zahlungs-QR-Code</td>
+</tr>
+</tbody>
+</table></div>
+<p>Das Tool hält automatisch ein: Anschriftfeld frei für Fensterumschläge (DIN 5008), alle Pflichtangaben sichtbar, Schriften eingebettet (PDF/A-3). Bei zu wenig Kontrast zwischen Schrift und Hintergrund erscheint eine Warnung.</p>
+</section>
+<section class="kap" id="handy-app-fuer-mitarbeiter"><h2><span class="nr">7</span>Handy-App für Mitarbeiter</h2>
+<p>Mitarbeiter erfassen unterwegs Stunden, Material, Spesen mit Belegfoto, Angebotsaufnahmen und Aufmaße – auch ohne Netz. Im Firmen-WLAN wird automatisch und verschlüsselt zum Büro-PC übertragen.</p>
+<h3 id="einrichten-einmalig-im-buero"><span class="nr">7.1</span>Einrichten (einmalig, im Büro)</h3>
+<ol class="hb-schritte">
+<li><strong>Mitarbeiter &amp; Geräte → Neuer Zugang</strong>: Benutzername und Startpasswort je Mitarbeiter anlegen, Rolle „Mitarbeiter“.</li>
+<li><strong>Einstellungen → Handy-App</strong>: „Handys im WLAN dürfen sich verbinden“ anhaken. Fragt Windows nach Netzwerkzugriff: <strong>Zugriff zulassen</strong> für private Netzwerke.</li>
+<li>Im Router dem PC immer dieselbe IP-Adresse geben (FRITZ!Box: Heimnetz → Netzwerk → Gerät bearbeiten).</li>
+<li>Der Mitarbeiter scannt im Firmen-WLAN den QR-Code aus Schritt 2. Die Einrichtungsseite führt durch drei Schritte: Sicherheitszertifikat installieren, App öffnen und anmelden, auf den Startbildschirm legen.</li>
+</ol>
+<h3 id="erfassen-unterwegs"><span class="nr">7.2</span>Erfassen (unterwegs)</h3>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Art</th>
+<th>Was erfasst wird</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stunden</td>
+<td>Kunde, Datum, von–bis mit Pause (Stunden rechnen sich selbst), Tätigkeit, Beschreibung</td>
+</tr>
+<tr>
+<td>Material</td>
+<td>Kunde, Artikel aus der Liste oder frei, Menge, Einheit, optional Preis und Foto</td>
+</tr>
+<tr>
+<td>Spesen / Beleg</td>
+<td>Betrag brutto, Art (Tanken, Bewirtung …), USt-Satz, bezahlt mit, Belegfoto</td>
+</tr>
+<tr>
+<td>Angebotsaufnahme</td>
+<td>Kunde (auch neuer Kunde), Positionen mit Menge, Notiz, Fotos</td>
+</tr>
+<tr>
+<td>Aufmaß / Notiz</td>
+<td>Kunde, Titel, Maße und Hinweise, Fotos</td>
+</tr>
+</tbody>
+</table></div>
+<p>Oben zeigt die App den Stand: <strong>Abgeglichen</strong> (grün), <strong>X warten</strong> (gelb) oder <strong>Offline</strong> (rot). Einträge mit Status „Im Büro“ dürfen noch geändert werden, „Erledigt“ ist abgerechnet und gesperrt.</p>
+<h3 id="uebernehmen-am-pc"><span class="nr">7.3</span>Übernehmen (am PC)</h3>
+<ol class="hb-schritte">
+<li><strong>Handy-Erfassungen</strong> öffnen (die Zahl im Menü zeigt neue Einträge).</li>
+<li>Unbekannte Kunden zuordnen („zuordnen“) oder vorher unter Kunden anlegen.</li>
+<li>Einträge eines Kunden anhaken und <strong>In Rechnung übernehmen</strong> oder <strong>In Angebot übernehmen</strong>. Wahlweise an einen bestehenden Entwurf anhängen.</li>
+<li>Preise im Entwurf prüfen. Stunden ohne Artikel nutzen den Standard-Stundensatz aus Einstellungen → Firma.</li>
+<li>Spesen prüfen und <strong>Erledigt / Spesen geprüft</strong> klicken. Sie landen mit Belegfoto im Steuerordner.</li>
+</ol>
+<h3 id="steuerordner"><span class="nr">7.4</span>Steuerordner</h3>
+<p>Im Ordner <code>Dokumente\GaussPilot\Steuer\&lt;Jahr&gt;</code> liegen automatisch: alle festgeschriebenen Rechnungen und Gutschriften (PDF + XML), die geprüften Spesenbelege, das Rechnungsausgangsbuch und die Spesenliste als CSV. Manuell aktualisieren: <strong>Rechnungen → Steuerordner aktualisieren</strong>.</p>
+<h3 id="feste-ip-adresse-fuer-den-buero-pc"><span class="nr">7.5</span>Feste IP-Adresse für den Büro-PC</h3>
+<p>Das Handy findet den Büro-PC über seine Adresse im WLAN (z. B. <code>192.168.178.25</code>). Vergibt der Router nach einem Neustart eine andere Adresse, findet die App den PC nicht mehr und das Zertifikat passt nicht mehr. Deshalb einmalig im Router eine <strong>feste IP</strong> für den Büro-PC einstellen:</p>
+<ol class="hb-schritte">
+<li>Im Browser die Router-Oberfläche öffnen (FRITZ!Box: <code>http://fritz.box</code>, sonst meist <code>http://192.168.0.1</code> oder <code>http://192.168.1.1</code>).</li>
+<li>FRITZ!Box: <strong>Heimnetz → Netzwerk → Netzwerkverbindungen</strong> → beim Büro-PC auf den Stift → <strong>„Diesem Netzwerkgerät immer die gleiche IPv4-Adresse zuweisen“</strong> anhaken → OK. Andere Router: Menüpunkt „DHCP-Reservierung“ oder „Statische IP“.</li>
+<li>Die aktuelle Adresse des PCs steht in GaussPilot unter <strong>Einstellungen → Handy-App</strong>. Genau diese Adresse festhalten.</li>
+<li>GaussPilot einmal neu starten (Symbol in der Leiste → Beenden, dann Desktop-Verknüpfung).</li>
+</ol>
+<p>Wurde die Adresse bereits geändert: Programm neu starten und auf jedem Handy die Einrichtung (QR-Code unter Einstellungen → Handy-App) wiederholen.</p>
+<h3 id="wenn-die-app-offline-nicht-reagiert"><span class="nr">7.6</span>Wenn die App offline nicht reagiert</h3>
+<p>Die Offline-Funktion setzt voraus, dass das Handy dem Sicherheitszertifikat des Büro-PCs vertraut. Ist das Zertifikat nicht (oder als falscher Typ) installiert, lädt die App online noch, darf sich aber nicht aufs Handy speichern – offline ist dann nichts mehr anklickbar.</p>
+<ol class="hb-schritte">
+<li>Am Handy die Einrichtungsseite öffnen (QR-Code unter Einstellungen → Handy-App).</li>
+<li>Zertifikat herunterladen und als <strong>„CA-Zertifikat“</strong> installieren (nicht „VPN- und App-Nutzer“, nicht „WLAN“). Die Seite zeigt die passende Anleitung für Android, Samsung und iPhone.</li>
+<li><strong>„Zertifikat jetzt prüfen“</strong>: Die Ampel muss <strong>grün</strong> sein.</li>
+<li>Altes App-Symbol löschen und die App neu installieren – auf Android mit <strong>Chrome</strong>, auf dem iPhone mit <strong>Safari</strong> (nicht Samsung Internet oder Firefox).</li>
+</ol>
+<p>Am PC zeigt <strong>Mitarbeiter &amp; Geräte</strong> pro Handy, ob der Offline-Betrieb bereit ist, und warnt, wenn ein Handy das Zertifikat ablehnt.</p>
+<h3 id="stundenzettel"><span class="nr">7.7</span>Stundenzettel</h3>
+<p>In der App gibt es den Reiter <strong>Zeit</strong>: Mit <strong>Kommen / Pause / Gehen</strong> wird gestempelt, vergessene Zeiten lassen sich nachtragen. Am Ende der Woche tippt der Mitarbeiter auf <strong>Woche einreichen</strong>. Die App weist auf Grenzen des Arbeitszeitgesetzes hin (über 10 Stunden, Pausen ab 6 bzw. 9 Stunden, Sonntagsarbeit) – das ersetzt keine rechtliche Prüfung.</p>
+<p>Am PC unter <strong>Stundenzettel</strong> sehen Sie die Zeiten je Mitarbeiter und Woche. Einträge oder ganze Wochen <strong>freigeben</strong> oder mit Grund <strong>ablehnen</strong> (der Mitarbeiter sieht den Grund in der App). Mit <strong>Korrigieren</strong> ändern Sie Tag, Beginn, Ende, Pause oder Tätigkeit – oder löschen den Eintrag; jede Änderung wird protokolliert und kommt beim nächsten Abgleich aufs Handy. In der App startet „Zeit nachtragen“ mit dem heutigen Datum, das ＋ neben jedem Tag trägt für genau diesen Tag nach. Freigegebene Zeiten kann das Handy nicht mehr ändern. <strong>Export</strong>: CSV für alle, PDF-Arbeitszeitnachweis mit Unterschriftszeilen je Mitarbeiter (Kopie in <code>Steuer\&lt;Jahr&gt;\Stundenzettel</code>). Unter <strong>Mitarbeiter &amp; Geräte</strong> lässt sich der Stundenzettel pro Zugang ein- und ausschalten.</p>
+<h3 id="angebote-unterwegs"><span class="nr">7.8</span>Angebote unterwegs</h3>
+<p>Mitarbeiter mit dem Recht <strong>„Angebote erstellen &amp; senden“</strong> (Mitarbeiter &amp; Geräte) und der Chef haben in der App den Reiter <strong>Angebote</strong>:</p>
+<ol class="hb-schritte">
+<li><strong>＋ Neues Angebot</strong>: Kunde wählen (oder „Neuer Kunde“ mit Name, Ort), Betreff, Positionen aus der Artikelliste oder frei. Die Summen rechnen live mit.</li>
+<li>Die Angebotsnummer kommt aus einem Vorrat von 5 Nummern, den der Büro-PC dem Handy reserviert – so bleiben die Nummern auch offline eindeutig.</li>
+<li><strong>PDF ansehen &amp; senden</strong>: Im WLAN holt die App das offizielle PDF vom Büro-PC. Offline erzeugt das Handy selbst ein PDF im Firmen-Layout (vereinfacht).</li>
+<li><strong>Teilen</strong> öffnet E-Mail-App, WhatsApp usw. mit dem PDF im Anhang. <strong>Über die Firmen-E-Mail senden</strong> (nur im WLAN) verschickt der Büro-PC von der Firmenadresse.</li>
+<li>Angenommen/abgelehnt lässt sich in der App markieren. Wurde dasselbe Angebot inzwischen im Büro geändert, bleibt die Büro-Version und die Handy-Änderung wird als Kopie „(Handy-Version)“ gespeichert.</li>
+</ol>
+<h3 id="unterwegs-abgleichen-vpn"><span class="nr">7.9</span>Unterwegs abgleichen (VPN)</h3>
+<p>Ohne Firmen-WLAN, zum Beispiel über mobile Daten auf der Baustelle, „wählt“ sich das Handy per <strong>VPN</strong> ins Büronetz ein. Danach erreicht es den Büro-PC unter derselben Adresse wie im WLAN: gleiche App, gleiches Zertifikat, gleiche Daten. GaussPilot bleibt vom Internet aus unsichtbar. Bitte <strong>keine Portfreigabe</strong> im Router einrichten.</p>
+<p><strong>Einrichten mit FRITZ!Box</strong> (FRITZ!OS 7.50 oder neuer; das Tool zeigt unter Einstellungen → Handy-App, ob die Box es kann):</p>
+<ol class="hb-schritte">
+<li>Einmalig in der FRITZ!Box: <strong>Internet → MyFRITZ!-Konto</strong> mit E-Mail-Adresse registrieren.</li>
+<li><strong>Internet → Freigaben → VPN (WireGuard) → Verbindung hinzufügen → Einzelgerät verbinden</strong>, Name z. B. „Handy Max“.</li>
+<li>Auf dem Handy die App <strong>WireGuard</strong> installieren, <strong>+ → QR-Code scannen</strong> und den Code von der FRITZ!Box scannen.</li>
+<li>Test: am Handy WLAN aus, WireGuard-Tunnel ein, in der GaussPilot-App <strong>Mehr → Jetzt abgleichen</strong>.</li>
+<li>In GaussPilot unter Einstellungen → Handy-App „VPN ist eingerichtet“ anhaken. Dann zeigt die App unterwegs den passenden Hinweis, auf Android mit Knopf „WireGuard öffnen“.</li>
+</ol>
+<p>Pro Handy eine eigene VPN-Verbindung anlegen. Bei Verlust in der FRITZ!Box löschen und unter Mitarbeiter &amp; Geräte abmelden.</p>
+<p><strong>Wichtig:</strong> Der Büro-PC muss laufen. Unter Einstellungen → Handy-App lässt sich einstellen, dass er an bestimmten Tagen und Uhrzeiten nicht in den Energiesparmodus geht. Ist das Handy im WLAN eines Kunden, der denselben Adressbereich nutzt (häufig bei FRITZ!Boxen: 192.168.178.x), klappt der Abgleich dort nicht. Dann einfach WLAN aus und mobile Daten an.</p>
+<p>Andere Router: Viele haben ebenfalls einen VPN-Server (WireGuard/OpenVPN). Wichtig ist nur, dass das Handy damit Geräte im Büronetz erreicht.</p>
+<h3 id="aussehen-der-app-und-nachtmodus"><span class="nr">7.10</span>Aussehen der App und Nachtmodus</h3>
+<p>Unter <strong>Einstellungen → Handy-App → Aussehen der Handy-App</strong> legen Sie Hauptfarbe, Schriftart, Logo in der Kopfzeile und hell/dunkel fest. Die Handys übernehmen das beim nächsten Abgleich. Jeder Mitarbeiter kann den Nachtmodus in der App unter <strong>Mehr → Darstellung</strong> für sich umstellen. Am PC schaltet der Knopf unten in der Seitenleiste zwischen Tag- und Nachtmodus; ohne Auswahl folgt das Tool der Windows-Einstellung.</p>
+</section>
+<section class="kap" id="finanzen"><h2><span class="nr">8</span>Finanzen</h2>
+<h3 id="ausgaben"><span class="nr">8.1</span>Ausgaben</h3>
+<p>Das Ausgabenbuch sammelt alle Kosten an einer Stelle:</p>
+<ul>
+<li><strong>Handy-Spesen</strong> erscheinen automatisch, sobald sie unter Handy-Erfassungen übernommen sind.</li>
+<li><strong>E-Rechnungen von Lieferanten</strong>: unter „E-Rechnung prüfen &amp; lesen“ hochladen, Kategorie wählen, <strong>Als Ausgabe buchen</strong>. Datum, Beträge und Vorsteuer werden aus der E-Rechnung gelesen, die Datei wird als Beleg aufbewahrt.</li>
+<li><strong>Papierbelege</strong>: unter Ausgaben → <strong>+ Ausgabe erfassen</strong> Betrag brutto, Steuersatz und Foto/PDF eintragen.</li>
+</ul>
+<p>Falsch erfasste Ausgaben werden nicht gelöscht, sondern <strong>storniert</strong> (bleiben nachvollziehbar).</p>
+<h3 id="auswertung"><span class="nr">8.2</span>Auswertung</h3>
+<p>Zeigt für Monat, Quartal, Jahr oder einen freien Zeitraum: Einnahmen, Ausgaben, Ergebnis, Umsatzsteuer und Vorsteuer, ein Diagramm der letzten 12 Monate, Ausgaben nach Kategorie, Umsatz nach Kunden und offene Forderungen. Gutschriften/Stornos werden abgezogen.</p>
+<h3 id="steuer-abschluss-umsatzsteuer-voranmeldung"><span class="nr">8.3</span>Steuer-Abschluss (Umsatzsteuer-Voranmeldung)</h3>
+<ol class="hb-schritte">
+<li>Einmalig rechts einstellen: <strong>monatlich oder vierteljährlich</strong>, <strong>Soll- oder Ist-Versteuerung</strong>, ggf. <strong>Dauerfristverlängerung</strong> und Sondervorauszahlung.</li>
+<li>Zeitraum wählen. Das Tool zeigt die Werte so, wie sie in <strong>„Mein ELSTER“</strong> einzutragen sind: Kz. 81 (19 %), 86 (7 %), 41, 60, 66 (Vorsteuer) und 83 (Zahllast bzw. Erstattung), dazu die Fälligkeit.</li>
+<li>Werte prüfen, in Mein ELSTER übertragen und dort absenden.</li>
+<li><strong>Abschluss speichern</strong>: PDF mit Belegliste und CSV landen in <code>Steuer\&lt;Jahr&gt;\Abschluesse</code>. Wird später noch etwas für den Zeitraum gebucht, weist das Tool auf eine mögliche berichtigte Voranmeldung hin.</li>
+</ol>
+<p>Kleinunternehmer (§ 19 UStG) geben keine Voranmeldung ab; Auswertung und Ausgabenbuch funktionieren trotzdem. Rechnerische Zusammenstellung aus den Belegen – kein Steuerrat.</p>
+<h3 id="zahlungen-und-skonto"><span class="nr">8.4</span>Zahlungen und Skonto</h3>
+<p>Jede festgeschriebene Rechnung zeigt unten den Kasten <strong>Zahlungen</strong> mit dem offenen Betrag. Dort lassen sich Zahlungen von Hand buchen, auch Teilzahlungen. „Als bezahlt markieren“ bucht den Restbetrag mit dem heutigen Datum.</p>
+<p><strong>Skonto:</strong> Unter Einstellungen → Firma ein Standard-Skonto eintragen (z. B. 2 % bei Zahlung innerhalb von 10 Tagen) oder es pro Rechnung im Feld „Skonto“ ändern (0 = kein Skonto). Das Skonto steht dann auf der PDF-Rechnung mit Datum und Zahlbetrag und maschinenlesbar in der E-Rechnung (auch XRechnung-konform). Zahlt der Kunde mit Skonto, wird der Rest als Skonto ausgebucht; der Steuer-Abschluss mindert die Umsatzsteuer im Monat der Zahlung entsprechend.</p>
+<h3 id="bank-zahlungen-kontoauszug-einlesen"><span class="nr">8.5</span>Bank &amp; Zahlungen (Kontoauszug einlesen)</h3>
+<ol class="hb-schritte">
+<li>Im Online-Banking die Umsätze als <strong>CAMT.053</strong> herunterladen (oft „Umsätze exportieren → CAMT/XML“). Ein CSV-Export geht auch.</li>
+<li>Unter <strong>Finanzen → Bank &amp; Zahlungen</strong> die Datei einlesen. Bereits eingelesene Umsätze werden erkannt und übersprungen.</li>
+<li>Zahlungseingänge mit Rechnungsnummer im Verwendungszweck und passendem Betrag (auch abzüglich Skonto) werden <strong>automatisch</strong> zugeordnet, die Rechnung steht dann auf „Bezahlt“.</li>
+<li>Für die übrigen Umsätze schlägt das Tool passende Rechnungen bzw. Ausgaben vor. Abbuchungen ohne Beleg lassen sich direkt als Ausgabe buchen (Rechnung für die Vorsteuer nachreichen). Privates, Umbuchungen oder Steuerzahlungen auf <strong>ignorieren</strong> setzen.</li>
+</ol>
+<p>Jede Zuordnung lässt sich mit <strong>aufheben</strong> zurücknehmen.</p>
+<h3 id="mahnwesen"><span class="nr">8.6</span>Mahnwesen</h3>
+<p>Unter <strong>Finanzen → Mahnwesen</strong> stehen alle überfälligen Rechnungen mit der nächsten Stufe:</p>
+<ol class="hb-schritte">
+<li><strong>Zahlungserinnerung</strong> – freundlich, ohne Kosten, standardmäßig 3 Tage nach Fälligkeit.</li>
+<li><strong>1. Mahnung</strong> – mit Verzugszinsen und bei Firmenkunden der Verzugspauschale von 40 € (§ 288 Abs. 5 BGB), bei Privatkunden mit Mahnkosten.</li>
+<li><strong>2. Mahnung</strong> – letzte Frist mit Hinweis auf gerichtliches Mahnverfahren oder Inkasso.</li>
+</ol>
+<p>Jede Stufe als <strong>PDF-Vorschau</strong> ansehen, dann <strong>per E-Mail senden</strong> (die Rechnung hängt nochmals an) oder <strong>nur erstellen</strong> zum Ausdrucken. Die Schreiben enthalten einen Zahlungs-QR-Code über den Gesamtbetrag und werden unter <code>Daten\mahnungen</code> aufbewahrt.</p>
+<p><strong>Verzugszinsen:</strong> Basiszinssatz + 9 Prozentpunkte bei Unternehmen, + 5 bei Verbrauchern, ab dem Tag nach dem Fälligkeitsdatum. Die Bundesbank gibt den Basiszinssatz zum 1.1. und 1.7. neu bekannt (seit 1.7.2026: 1,52 %). Neue Werte unter Mahnwesen → Einstellungen eintragen; das Tool erinnert daran. Kunden ohne Firmennamen gelten als Privatkunden. Kein Rechtsrat.</p>
+<h3 id="datev-export"><span class="nr">8.7</span>DATEV-Export</h3>
+<ol class="hb-schritte">
+<li>Von der Steuerberatung <strong>Beraternummer</strong>, <strong>Mandantennummer</strong> und den <strong>Kontenrahmen</strong> (SKR03 oder SKR04) erfragen und unter <strong>Finanzen → DATEV-Export</strong> eintragen.</li>
+<li>Zeitraum wählen (Monat, Quartal oder Jahr; ein Stapel darf nur ein Kalenderjahr enthalten) und die <strong>Vorschau</strong> prüfen.</li>
+<li><strong>DATEV-Paket herunterladen</strong>: Die ZIP-Datei enthält den Buchungsstapel (Ausgangsrechnungen, Zahlungen, Skonti, Ausgaben), die Kunden als Debitoren und die Belege als PDF. Die Datei geht an die Steuerberatung, die sie in DATEV einliest.</li>
+</ol>
+<p>Jeder Kunde wird zum Debitor (Kunde 1 = 10001, Kunde 2 = 10002 …). Erlöse laufen über die Automatikkonten mit Steuer, Ausgaben mit Vorsteuerschlüssel. Die Kontenzuordnung ist ein Vorschlag und unter „Kontenzuordnung anpassen“ änderbar – am besten einmal mit der Steuerberatung abstimmen.</p>
+</section>
+<section class="kap" id="testumgebung"><h2><span class="nr">9</span>Testumgebung</h2>
+<p>Zum gefahrlosen Ausprobieren gibt es ein zweites GaussPilot mit Beispieldaten: in der Seitenleiste unten auf <strong>🧪 Testumgebung</strong> klicken. Es öffnet sich ein neues Fenster mit orangem Balken; Anmeldung <strong>test</strong> / <strong>test1234</strong>.</p>
+<ul>
+<li>Eigene Daten im Ordner <code>Dokumente\GaussPilot\Testumgebung</code> – die echten Daten, Nummernkreise und Sicherungen werden nicht berührt.</li>
+<li>Fertig eingerichtet: vollständige Firmendaten, drei Kunden (Firma, Privatperson, Behörde mit XRechnung), festgeschriebene Rechnungen (zwei überfällig, eine mit Skonto), ein Angebot, ein Entwurf und Ausgaben.</li>
+<li>Unter <strong>Bank &amp; Zahlungen</strong> liegt ein passender <strong>Beispiel-Kontoauszug</strong> zum Herunterladen und Einlesen.</li>
+<li><strong>Zurücksetzen</strong> im orangen Balken löscht alles und legt die Beispieldaten neu an.</li>
+</ul>
+<p>Die Handy-App und die automatische Datensicherung sind in der Testumgebung abgeschaltet.</p>
+</section>
+<section class="kap" id="datensicherung-und-sicherungsziele"><h2><span class="nr">10</span>Datensicherung und Sicherungsziele</h2>
+<p>Das Programm sichert einmal täglich automatisch alle Daten in den Ordner <strong>Sicherungen</strong> auf dem PC – seit Version 0.11 einschließlich des <strong>Steuerordners</strong> (Jahresordner mit Rechnungen, Belegen und Abschlüssen). Eine Sicherung nur auf demselben PC hilft aber nicht bei Festplattendefekt, Diebstahl oder Brand. Deshalb können Sie unter <strong>Einstellungen → Datensicherung</strong> beliebige zusätzliche <strong>Sicherungsziele</strong> einrichten. Jede Sicherung wird dann automatisch auch dorthin kopiert.</p>
+<h3 id="welche-ziele-gehen"><span class="nr">10.1</span>Welche Ziele gehen?</h3>
+<ul>
+<li><strong>Ordner auf einer zweiten oder externen Festplatte / USB-Stick</strong> – über „Ordner auswählen …“ das Laufwerk anklicken.</li>
+<li><strong>Netzlaufwerk oder NAS / Server im Büro</strong> – entweder das verbundene Laufwerk wählen oder den Pfad eintippen, z. B. <code>\\NAS\Buero\Sicherung</code>.</li>
+<li><strong>Cloud-Ordner</strong> (OneDrive, Dropbox, Google Drive, Nextcloud-Client …) – der Ordner-Dialog zeigt vorhandene Cloud-Ordner ganz oben an. Das Cloud-Programm lädt die Sicherung dann von selbst hoch.</li>
+<li><strong>Online-Speicher direkt per WebDAV</strong> – für Nextcloud, HiDrive, MagentaCLOUD, GMX/WEB.DE-Cloud oder einen eigenen Server, ohne dass ein Cloud-Programm installiert sein muss. Sie brauchen die WebDAV-Adresse des Anbieters, Benutzername und am besten ein eigenes App-Passwort.</li>
+</ul>
+<h3 id="so-richten-sie-ein-ziel-ein"><span class="nr">10.2</span>So richten Sie ein Ziel ein</h3>
+<ol class="hb-schritte">
+<li><strong>Einstellungen → Datensicherung → Neues Ziel hinzufügen</strong>.</li>
+<li>Art wählen, Bezeichnung vergeben (z. B. „Externe Platte Büro“), Ordner auswählen oder WebDAV-Daten eintragen.</li>
+<li>Festlegen, wie viele automatische Sicherungen dort aufbewahrt werden (Standard: 10; manuelle Sicherungen werden nie gelöscht).</li>
+<li><strong>Ziel prüfen &amp; speichern</strong> – das Programm testet sofort, ob es dort schreiben kann, und kopiert die neueste Sicherung hin.</li>
+</ol>
+<p>In der Liste sehen Sie je Ziel, wann zuletzt erfolgreich gesichert wurde. Ist ein Ziel nicht erreichbar (z. B. externe Platte nicht angesteckt), steht dort der Grund. Die lokale Sicherung läuft trotzdem, und das Programm <strong>holt die Kopie automatisch nach</strong>, sobald das Ziel wieder da ist (Prüfung alle 10 Minuten). Hat ein Ziel 7 Tage nichts bekommen, erscheint ein Hinweis auf der Übersicht.</p>
+<p><strong>Steuerordner lesbar ablegen:</strong> Bei Ordner-Zielen können Sie anhaken, dass der Steuerordner zusätzlich als normale Ordner und Dateien abgelegt wird – praktisch, wenn z. B. die Steuerberatung direkt auf einen freigegebenen Ordner schauen soll.</p>
+<h3 id="kopien-verschluesseln"><span class="nr">10.3</span>Kopien verschlüsseln</h3>
+<p>Unter <strong>Optionen für die Kopien</strong> können Sie ein <strong>Sicherungs-Passwort</strong> festlegen. Die Kopien an den Zielen werden dann vor dem Kopieren verschlüsselt (AES-256) und enden auf <code>.rtenc</code>. Das ist für Cloud-Speicher und tragbare Datenträger sehr zu empfehlen: Wer die Datei findet, kann nichts damit anfangen.</p>
+<p><strong>Wichtig:</strong> Ohne das Passwort kommt niemand mehr an die Daten – auch Sie nicht. Bewahren Sie es getrennt auf, z. B. ausgedruckt im Tresor. Die Sicherungen im Ordner „Sicherungen“ auf dem PC bleiben unverschlüsselt.</p>
+<p><strong>Verschlüsselte Sicherung wieder öffnen:</strong> Einstellungen → Datensicherung → „Verschlüsselte Sicherung (.rtenc) wieder öffnen“, Datei wählen, Passwort eingeben – Sie erhalten eine normale ZIP-Datei. Auf einem neuen PC ohne eingerichtetes Programm geht das auch mit dem mitgelieferten Werkzeug <code>tools\sicherung_entschluesseln.py</code>.</p>
+<p><strong>Empfehlung (3-2-1-Regel):</strong> drei Kopien, auf zwei verschiedenen Datenträgern, eine davon außer Haus. Mit dem PC, einer externen Platte und einem Cloud-Ziel ist das erfüllt.</p>
+</section>
+<section class="kap" id="ki-assistent"><h2><span class="nr">11</span>KI-Assistent</h2>
+<p>Unter <strong>System → KI-Assistent</strong> finden Sie einen Chat, der Fragen zur Bedienung beantwortet, Texte formuliert (Angebotstexte, Zahlungserinnerungen, E-Mails) und kaufmännische Begriffe erklärt. Das Besondere: <strong>Sie wählen die KI selbst</strong> und verbinden sie über deren API – das Programm ist an keinen Anbieter gebunden.</p>
+<h3 id="einrichtung"><span class="nr">11.1</span>Einrichtung</h3>
+<ol class="hb-schritte">
+<li>Anbieter wählen: Anthropic (Claude), OpenAI, Mistral, Google Gemini, OpenRouter, eine beliebige „OpenAI-kompatible“ Adresse – oder <strong>Ollama</strong> für ein Modell, das lokal auf Ihrem PC läuft.</li>
+<li>Beim Anbieter ein Konto anlegen und dort einen <strong>API-Schlüssel</strong> erzeugen; im Programm eintragen. (Abgerechnet wird beim Anbieter nach Verbrauch, meist Cent-Beträge je Frage. Tipp: dort ein Monatslimit setzen.) Für Ollama ist kein Schlüssel nötig.</li>
+<li><strong>Modelle abrufen</strong> klicken und ein Modell auswählen.</li>
+<li>Festlegen, was der Assistent sehen darf, dann <strong>Speichern &amp; Verbindung testen</strong>.</li>
+</ol>
+<h3 id="was-sieht-die-ki"><span class="nr">11.2</span>Was sieht die KI?</h3>
+<p>Ohne weitere Freigabe nur Ihre Frage, eine Beschreibung des Programms sowie Firmenname und Ort. Zusätzlich einzeln zuschaltbar:</p>
+<ul>
+<li><strong>Geschäftszahlen</strong> – Umsatz, Ausgaben, USt-Zahllast, offene Rechnungen (Nummer, Betrag, Fälligkeit). Nötig für Fragen wie „Was ist überfällig?“.</li>
+<li><strong>Kundennamen</strong> – zu offenen Rechnungen und zu einem Beleg, den Sie im Chat mitgeben.</li>
+</ul>
+<p>Bei Anbietern im Internet werden diese Daten dorthin übertragen. Wenn Sie Kundendaten freigeben, klären Sie bitte mit dem Anbieter die Auftragsverarbeitung (AVV) – oder nutzen Sie ein lokales Modell, dann verlässt nichts Ihren Rechner. Gespräche werden in GaussPilot nicht gespeichert.</p>
+<h3 id="grenzen"><span class="nr">11.3</span>Grenzen</h3>
+<ul>
+<li>Der Assistent <strong>liest nur</strong>. Er kann nichts buchen, ändern, festschreiben oder versenden.</li>
+<li><strong>Eine KI kann sich irren.</strong> Antworten zu Steuern und Recht sind keine Beratung; verbindlich sind Steuerberater und Finanzamt.</li>
+<li>Zahlen rechnet weiterhin das Programm – der Assistent bekommt sie nur zum Erklären.</li>
+</ul>
+</section>
+<section class="kap" id="sicherheit"><h2><span class="nr">12</span>Sicherheit</h2>
+<p>Das Programm läuft nur auf Ihrem PC und ist aus dem Internet nicht erreichbar. Mit Version 0.11 wurde es zusätzlich komplett durchgeprüft und gehärtet:</p>
+<ul>
+<li><strong>Anmeldung:</strong> Nach 5 falschen Versuchen wird die Anmeldung gesperrt (erst 1 Minute, dann länger, höchstens 15 Minuten) – am PC, beim 2FA-Code und in der Handy-App. Nach 12 Stunden ohne Aktivität werden Sie automatisch abgemeldet. Empfehlung: <strong>2-Faktor-Anmeldung</strong> unter „Konto &amp; 2FA“ einschalten.</li>
+<li><strong>Fremde Dateien:</strong> E-Rechnungen und Kontoauszüge von außen werden vor der Verarbeitung entschärft, sodass eine präparierte Datei keine lokalen Dateien nachladen kann.</li>
+<li><strong>Browser-Schutz:</strong> Schutzregeln verhindern, dass fremde Webseiten das Programm fernsteuern, einbetten oder sich als das lokale Programm ausgeben.</li>
+<li><strong>Zugangsdaten:</strong> E-Mail-Passwort, WebDAV-Passwort und API-Schlüssel liegen verschlüsselt in der Datenbank und sind an Ihr Windows-Benutzerkonto gebunden. Nach dem Einspielen einer Sicherung auf einem <strong>anderen PC</strong> müssen sie dort einmal neu eingegeben werden.</li>
+<li><strong>Exporte:</strong> CSV-Dateien sind dagegen abgesichert, dass Excel Texte aus Kundennamen als Formel ausführt.</li>
+<li><strong>Programmbausteine:</strong> Alle verwendeten Bibliotheken wurden gegen die öffentliche Liste bekannter Sicherheitslücken geprüft.</li>
+</ul>
+<p>Was Sie selbst tun können: Windows und Browser aktuell halten, den PC mit Passwort sperren, die Festplatte verschlüsseln (BitLocker), ein Sicherungsziel außer Haus einrichten und für den Zugriff von unterwegs nur das VPN nutzen – niemals eine Portfreigabe im Router.</p>
+</section>
+<section class="kap" id="sicherheit-datensicherung"><h2><span class="nr">13</span>Sicherheit &amp; Datensicherung</h2>
+<p>Die wichtigste Regel: den Ordner <code>Dokumente\GaussPilot\Daten</code> regelmäßig sichern. Darin liegt alles, was Sie erfasst haben.</p>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Was</th>
+<th>Wo / Wie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Datenbank (Kunden, Artikel, Belege, Einstellungen)</td>
+<td><code>Daten\gausspilot.db</code></td>
+</tr>
+<tr>
+<td>Archiv je Rechnung (ZUGFeRD-PDF, XML, Prüfprotokoll)</td>
+<td><code>Daten\archiv\&lt;Jahr&gt;\&lt;Rechnungsnummer&gt;\</code></td>
+</tr>
+<tr>
+<td>Logo und Briefpapier</td>
+<td><code>Daten\design\</code></td>
+</tr>
+<tr>
+<td>Hochgeladene Eingangsrechnungen</td>
+<td><code>Daten\uploads\</code></td>
+</tr>
+<tr>
+<td>Sicherung</td>
+<td>Automatisch einmal täglich in den Ordner <code>Sicherungen</code> (letzte 30 bleiben), manuell über Einstellungen → Datensicherung oder das €-Symbol. Den Ordner <code>Sicherungen</code> zusätzlich wöchentlich auf USB-Stick oder Cloud kopieren.</td>
+</tr>
+<tr>
+<td>Aufbewahrung</td>
+<td>Rechnungen 8 Jahre aufheben (§ 147 AO), Archiv nicht löschen</td>
+</tr>
+<tr>
+<td>Zwei-Faktor-Anmeldung</td>
+<td><strong>Konto &amp; 2FA → 2FA einrichten</strong>, QR-Code mit Authenticator-App scannen, Code bestätigen</td>
+</tr>
+<tr>
+<td>Passwort ändern</td>
+<td><strong>Konto &amp; 2FA → Passwort ändern</strong></td>
+</tr>
+<tr>
+<td>Nachvollziehbarkeit</td>
+<td><strong>Protokoll</strong> zeigt jede Aktion mit Zeitstempel</td>
+</tr>
+</tbody>
+</table></div>
+<p>Das Programm ist nur auf dem eigenen PC erreichbar (<code>127.0.0.1</code>), nicht aus dem Internet. Jede festgeschriebene Datei erhält eine SHA-256-Prüfsumme, mit der sich spätere Veränderungen nachweisen lassen.</p>
+</section>
+<section class="kap" id="faq"><h2><span class="nr">14</span>FAQ</h2>
+<p><strong>Der Browser zeigt „Seite nicht erreichbar“.</strong> Das Programm wurde beendet. Doppelklick auf <strong>GaussPilot</strong> auf dem Desktop bzw. im Anwendungsmenü. Hilft das nicht: Rechtsklick auf das Symbol → <strong>Protokolldatei öffnen</strong>; unten steht die letzte Fehlermeldung.</p>
+<p><strong>Das Windows-Setup bricht beim Laden von Python ab.</strong> Das Setup lädt die Python-Laufzeit von python.org und prüft ihre Echtheit. Internetverbindung prüfen (Firmennetze sperren Downloads manchmal) und das Setup erneut starten. Meldet es „Datei wird verwendet“, läuft GaussPilot noch: über das Symbol beenden und <strong>Wiederholen</strong> klicken.</p>
+<p><strong>Linux: <code>installieren.sh</code> meldet, dass Python fehlt.</strong> Den angezeigten Befehl ausführen, z. B. <code>sudo apt install python3 python3-venv</code>, dann <code>./installieren.sh</code> erneut starten. Bricht das Laden der Programmbausteine ab: Internetverbindung prüfen und das Skript einfach noch einmal ausführen.</p>
+<p><strong>Kann ich eine festgeschriebene Rechnung noch ändern?</strong> Nein. Das verlangen die GoBD. Korrektur über <strong>Stornieren</strong> (Gutschrift) und eine neue Rechnung.</p>
+<p><strong>Warum hat mein Entwurf noch keine Rechnungsnummer?</strong> Die Nummer wird erst beim Festschreiben vergeben. So entstehen keine Lücken, wenn Sie Entwürfe löschen.</p>
+<p><strong>Was ist der Unterschied zwischen ZUGFeRD und XRechnung?</strong> ZUGFeRD ist eine PDF, die Menschen lesen und Programme auslesen können. XRechnung ist eine reine Datendatei, die Behörden verlangen. Das Tool erzeugt beides aus denselben Daten.</p>
+<p><strong>Muss ich Privatkunden eine E-Rechnung schicken?</strong> Nein. Die Pflicht gilt nur zwischen Unternehmen (B2B). Die ZUGFeRD-PDF sieht für Privatkunden aus wie jede normale Rechnung.</p>
+<p><strong>Ab wann muss ich E-Rechnungen ausstellen?</strong> Ab 1.1.2027 bei mehr als 800.000 € Vorjahresumsatz, ab 1.1.2028 alle Unternehmen. Kleinunternehmer nach § 19 UStG sind vom Versand befreit, müssen aber E-Rechnungen empfangen können.</p>
+<p><strong>Ich bin Kleinunternehmer. Was stelle ich ein?</strong> In <strong>Einstellungen → Firma</strong> „Kleinunternehmer“ ankreuzen und die Steuernummer eintragen. Neue Rechnungen nutzen dann automatisch den Steuerfall § 19 mit dem Pflichthinweis.</p>
+<p><strong>Wann wähle ich Reverse Charge?</strong> Bei Bauleistungen an andere Bauunternehmer oder Leistungen an Firmen im EU-Ausland (§ 13b UStG). Die USt-IdNr. des Kunden muss hinterlegt sein.</p>
+<p><strong>Die E-Mail kommt nicht an oder der Versand schlägt fehl.</strong> Server, Port und Verschlüsselung in <strong>Einstellungen → E-Mail</strong> prüfen und <strong>Test-E-Mail</strong> senden. Bei GMX muss in den GMX-Einstellungen „POP3/IMAP/SMTP-Zugriff“ erlaubt sein.</p>
+<p><strong>Kann der Kunde den QR-Code wirklich scannen?</strong> Ja, wenn seine Banking-App GiroCode/EPC-QR unterstützt (fast alle deutschen Banken). Empfänger, Betrag, IBAN und Rechnungsnummer werden automatisch eingefüllt.</p>
+<p><strong>Mein Logo sieht unscharf aus.</strong> PNG mit mindestens 600 Pixel Breite verwenden, am besten mit transparentem Hintergrund.</p>
+<p><strong>Wie gebe ich Zahlen ein?</strong> Deutsch oder englisch geht beides: <code>1.234,56</code> und <code>1234.56</code> ergeben dasselbe.</p>
+<p><strong>Kann ich die 2FA ausschalten, wenn das Handy weg ist?</strong> Mit dem Passwort ja, solange Sie noch angemeldet sind. Den Schlüssel unter dem QR-Code bei der Einrichtung notieren und sicher aufbewahren.</p>
+<p><strong>Ersetzt die Prüfung meinen Steuerberater?</strong> Nein. Sie stellt sicher, dass die Rechnung formal der Norm entspricht. Ob Steuerfall und Sätze stimmen, klären Sie mit Ihrem Steuerberater.</p>
+<p><strong>Wie aktuell sind die Prüfregeln?</strong> EN 16931 Stand November 2026, XRechnung-Regeln v2.6.0 (XRechnung 3.0). Die KoSIT veröffentlicht etwa zweimal jährlich neue Regeln. Aktualisierung siehe <code>LIESMICH.md</code>.</p>
+<p><strong>Wo ist das Programm, wenn kein Fenster offen ist?</strong> Es läuft im Hintergrund. Das €-Symbol unten rechts neben der Uhr zeigt es an. Beenden per Rechtsklick → <strong>Beenden</strong>.</p>
+<p><strong>Wie stelle ich eine Sicherung wieder her?</strong> GaussPilot beenden, im Ordner <code>Dokumente/GaussPilot</code> den Ordner <code>Daten</code> umbenennen (z. B. in <code>Daten_alt</code>), die ZIP-Datei aus <code>Sicherungen</code> in den Ordner <code>Dokumente/GaussPilot</code> entpacken, GaussPilot starten.</p>
+<p><strong>Wie bekomme ich ein Update?</strong> GaussPilot zeigt einen Hinweis, sobald eine neue Version da ist. Unter Windows das neue Setup ausführen, unter Linux das neue Archiv entpacken und <code>./installieren.sh</code> starten (siehe „Updates“). Ihre Daten bleiben unberührt, die Handy-App zieht von selbst nach.</p>
+<p><strong>Kann ich von Windows auf Linux wechseln (oder umgekehrt)?</strong> Ja. Auf dem alten PC eine Sicherung erstellen, auf dem neuen GaussPilot installieren und die Sicherung wie oben beschrieben einspielen. E-Mail-Passwort, WebDAV-Passwort und KI-Schlüssel danach einmal neu eingeben, sie sind an das Benutzerkonto des alten PCs gebunden.</p>
+<p><strong>Ich sehe meine Pro-Funktionen nicht.</strong> Unter <strong>Lizenz</strong> prüfen, ob der Schlüssel eingetragen ist. Steht dort, dass der Update-Service abgelaufen ist, ist diese Version nach dem Ende erschienen: Update-Service verlängern oder die vorige Version weiter nutzen.</p>
+<p><strong>Das Handy zeigt „Offline“, obwohl es im WLAN ist.</strong> Läuft der Büro-PC und ist das €-Symbol da? Ist der Handy-Zugang eingeschaltet? Hat sich die IP-Adresse des PCs geändert, zeigt Einstellungen → Handy-App den neuen QR-Code – dann im Router eine feste Adresse vergeben.</p>
+<p><strong>Gehen Daten verloren, wenn das Handy lange offline ist?</strong> Nein. Alles bleibt auf dem Handy gespeichert, bis die Übertragung geklappt hat. Erst danach gilt ein Eintrag als „Im Büro“.</p>
+<p><strong>Ein Handy ist verloren gegangen.</strong> <strong>Mitarbeiter &amp; Geräte → Angemeldete Geräte → Abmelden.</strong> Der Zugang auf dem Handy ist sofort ungültig. Mitarbeiter sehen in der App ohnehin nur ihre eigenen Erfassungen, keine Rechnungen.</p>
+<p><strong>Kann ein Mitarbeiter am PC Rechnungen sehen?</strong> Nein. Zugänge mit der Rolle „Mitarbeiter“ landen auch am PC nur in der Handy-App.</p>
+<p><strong>Funktioniert der Abgleich auch von unterwegs über mobiles Internet?</strong> Ja, ab Version 0.9 über ein VPN ins Büronetz (bei der FRITZ!Box kostenlos eingebaut: WireGuard). Siehe Abschnitt „Unterwegs abgleichen (VPN)“.</p>
+<p><strong>Warum ist in der Vorschau kein QR-Code?</strong> Der Zahlungs-QR-Code (GiroCode) enthält Ihre IBAN. Ohne gültige IBAN unter Einstellungen → Firma kann er nicht erzeugt werden; die Vorschau zeigt dann einen gestrichelten Platzhalter. Sobald die IBAN eingetragen ist, erscheint der QR-Code auf jeder Rechnung.</p>
+<p><strong>Die Prüfung meldet viele Fehler auf einmal – was tun?</strong> Meist fehlen nur ein oder zwei Angaben (häufig Steuernummer bzw. USt-IdNr. und IBAN), die viele Regeln gleichzeitig auslösen – z. B. BR-S-02 einmal pro Position. Der Kasten <strong>„So beheben Sie das“</strong> oben im Prüfprotokoll nennt die Ursachen mit Link zur richtigen Einstellung. Danach erneut prüfen.</p>
+<p><strong>Kann ich Handy-Einträge zu einer bestehenden Rechnung hinzufügen?</strong> Ja. In <strong>Handy-Erfassungen</strong> Einträge anhaken und <strong>unten „bestehenden Beleg wählen …“ → Hinzufügen</strong>. Möglich bei Rechnungs-Entwürfen und bei Angeboten (Entwurf oder versendet). Spesen werden als „Auslage“ netto weiterberechnet.</p>
+<p><strong>Ein Handy-Eintrag hat einen neuen Kunden – wie lege ich ihn an?</strong> Bei der Übernahme auf <strong>„+ als neuen Kunden anlegen“</strong> klicken: Das Kundenformular ist mit dem Namen vorausgefüllt. Nach dem Speichern werden alle Handy-Einträge mit diesem Namen dem Kunden zugeordnet.</p>
+<p><strong>Wie storniere ich eine Rechnung?</strong> Rechnung öffnen → <strong>Stornieren (Gutschrift)</strong>. Es entsteht ein Gutschrift-Entwurf mit denselben Positionen und dem Bezug zur Rechnung. Diesen prüfen und <strong>festschreiben</strong> – erst dann gilt die Rechnung als storniert und bekommt den Status „Storniert“. Die Gutschrift (GS-…) ist selbst eine E-Rechnung und kann an den Kunden geschickt werden. Danach bei Bedarf eine neue, korrigierte Rechnung schreiben (oder „Kopie“ der alten nutzen). Nur festgeschriebene Rechnungen werden storniert, Entwürfe einfach ändern oder löschen.</p>
+<p><strong>Kann das Tool direkt an ELSTER senden?</strong> Noch nicht. Dafür braucht es die offizielle ELSTER-Schnittstelle ERiC; dazu muss man sich bei der Steuerverwaltung als Softwarehersteller registrieren. Bis dahin zeigt der Steuer-Abschluss die Werte so an, dass sie in wenigen Minuten in „Mein ELSTER“ übertragen sind, und die CSV-Datei geht an die Steuerberatung.</p>
+<p><strong>Kann ich WISO o. Ä. anbinden?</strong> Kaufprogramme wie WISO bieten keine Schnittstelle, über die ein anderes Programm sie steuern könnte. Daten lassen sich aber über die CSV-Exporte (Rechnungsausgangsbuch, Spesen, Steuer-Abschluss) weitergeben.</p>
+<p><strong>Welche Kontoauszug-Datei brauche ich?</strong> Am besten <strong>CAMT.053</strong> (XML, oft als ZIP). Das ist der europäische Standard und bei allen deutschen Banken im Online-Banking verfügbar. CSV funktioniert bei den gängigen Banken ebenfalls, ist aber je Bank anders aufgebaut. Das alte MT940-Format wird nicht unterstützt.</p>
+<p><strong>Ein Kunde hat zu wenig überwiesen – was nun?</strong> Die Zahlung trotzdem zuordnen. Sie wird als Teilzahlung gebucht und der Rest bleibt offen (sichtbar in Rechnung, Übersicht und Mahnwesen). Hat der Kunde zu Recht Skonto abgezogen, beim Zuordnen „Rest als Skonto“ anhaken.</p>
+<p><strong>Ich will etwas ausprobieren, ohne meine echten Rechnungsnummern zu verbrauchen – wie?</strong> Dafür ist die <strong>Testumgebung</strong> da (Seitenleiste unten). Festgeschriebene Rechnungen lassen sich aus gutem Grund nicht löschen (GoBD); in der Testumgebung ist das egal, sie lässt sich jederzeit zurücksetzen.</p>
+<p><strong>Meine externe Festplatte ist nicht immer angesteckt – geht die Sicherung dann verloren?</strong> Nein. Die Sicherung auf dem PC wird immer erstellt. Sobald die Platte wieder angesteckt ist, kopiert das Programm die neueste Sicherung innerhalb von 10 Minuten von selbst nach.</p>
+<p><strong>Ich habe das Sicherungs-Passwort vergessen.</strong> Dann lassen sich die verschlüsselten Kopien nicht mehr öffnen – das ist der Sinn der Verschlüsselung. Solange das Programm auf Ihrem PC noch läuft, ist nichts verloren: Legen Sie unter Einstellungen → Datensicherung ein neues Passwort fest und erstellen Sie eine neue Sicherung.</p>
+<p><strong>Kostet der KI-Assistent etwas?</strong> GaussPilot selbst nicht. Der KI-Anbieter rechnet nach Verbrauch über Ihren API-Schlüssel ab; ein lokales Modell mit Ollama ist kostenlos, braucht aber einen leistungsfähigen PC.</p>
+<p><strong>Kann die KI versehentlich etwas buchen oder löschen?</strong> Nein. Der Assistent hat nur Lesezugriff auf die freigegebenen Angaben und kann im Programm nichts ausführen.</p>
+</section>
+<section class="kap" id="fehlermeldungen-der-pruefung"><h2><span class="nr">15</span>Fehlermeldungen der Prüfung</h2>
+<p>Jede Meldung hat eine Kennung (z. B. <code>BR-DE-15</code>). Die häufigsten und ihre Lösung:</p>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Kennung</th>
+<th>Bedeutung</th>
+<th>Lösung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UStG-1</td>
+<td>Name oder Anschrift von Ihnen oder dem Kunden fehlt</td>
+<td>Firmendaten bzw. Kunde vervollständigen</td>
+</tr>
+<tr>
+<td>UStG-2</td>
+<td>Steuernummer und USt-IdNr. fehlen</td>
+<td>Einstellungen → Firma: mindestens eins eintragen</td>
+</tr>
+<tr>
+<td>UStG-5</td>
+<td>Keine Positionen oder Position ohne Bezeichnung</td>
+<td>Positionen ergänzen</td>
+</tr>
+<tr>
+<td>UStG-6</td>
+<td>Leistungsdatum fehlt</td>
+<td>Im Beleg Leistungsdatum setzen</td>
+</tr>
+<tr>
+<td>UStG-13b</td>
+<td>Reverse Charge ohne USt-IdNr. des Kunden</td>
+<td>USt-IdNr. beim Kunden eintragen</td>
+</tr>
+<tr>
+<td>ZAHLUNG</td>
+<td>IBAN fehlt oder ist ungültig</td>
+<td>Einstellungen → Firma: IBAN prüfen</td>
+</tr>
+<tr>
+<td>KONTAKT (Warnung)</td>
+<td>E-Mail-Adresse der Firma fehlt</td>
+<td>Einstellungen → Firma: E-Mail eintragen</td>
+</tr>
+<tr>
+<td>BR-DE-1</td>
+<td>XRechnung ohne Zahlungsangaben</td>
+<td>IBAN hinterlegen</td>
+</tr>
+<tr>
+<td>BR-DE-2</td>
+<td>XRechnung ohne Ansprechpartner</td>
+<td>Inhaber, Telefon und E-Mail in Einstellungen → Firma</td>
+</tr>
+<tr>
+<td>BR-DE-15</td>
+<td>Leitweg-ID / Käuferreferenz fehlt</td>
+<td>Beim Behördenkunden Leitweg-ID eintragen</td>
+</tr>
+<tr>
+<td>BR-CO-26</td>
+<td>Kein Kennzeichen des Verkäufers</td>
+<td>Steuernummer oder USt-IdNr. eintragen</td>
+</tr>
+<tr>
+<td>BR-CO-15 / BR-CO-16</td>
+<td>Summen stimmen nicht</td>
+<td>Tritt nur bei fremden Rechnungen auf: Absender muss korrigieren</td>
+</tr>
+<tr>
+<td>BR-AE-… / BR-IC-…</td>
+<td>Angaben für Reverse Charge bzw. EU-Lieferung unvollständig</td>
+<td>USt-IdNr. von Ihnen und Kunde sowie Land des Kunden prüfen</td>
+</tr>
+<tr>
+<td>XSD</td>
+<td>Datei passt nicht zum Datenformat</td>
+<td>Bei eigenen Rechnungen bitte melden; bei fremden zurückweisen</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Warnungen</strong> und <strong>Hinweise</strong> blockieren das Festschreiben nicht. Nur <strong>Fehler</strong> müssen behoben werden.</p>
+</section>
+<section class="kap" id="glossar"><h2><span class="nr">16</span>Glossar</h2>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Begriff</th>
+<th>Erklärung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E-Rechnung</td>
+<td>Rechnung in einem strukturierten Datenformat nach EN 16931, maschinell auslesbar. Eine normale PDF ist keine E-Rechnung.</td>
+</tr>
+<tr>
+<td>EN 16931</td>
+<td>Europäische Norm für den Inhalt elektronischer Rechnungen</td>
+</tr>
+<tr>
+<td>ZUGFeRD / Factur-X</td>
+<td>PDF/A-3 mit eingebetteter XML-Datei; gleiche Technik, deutscher bzw. französischer Name</td>
+</tr>
+<tr>
+<td>XRechnung</td>
+<td>Deutsche Ausprägung der EN 16931 als reine XML-Datei, Pflicht bei Behörden</td>
+</tr>
+<tr>
+<td>Leitweg-ID</td>
+<td>Adresse einer Behörde für den Rechnungseingang, steht im Auftrag</td>
+</tr>
+<tr>
+<td>KoSIT</td>
+<td>Koordinierungsstelle für IT-Standards, pflegt XRechnung und die Prüfregeln</td>
+</tr>
+<tr>
+<td>Schematron</td>
+<td>Regelwerk, mit dem die Prüfung Rechenregeln und Pflichtfelder kontrolliert</td>
+</tr>
+<tr>
+<td>Festschreiben</td>
+<td>Rechnung endgültig machen: Nummer vergeben, archivieren, sperren</td>
+</tr>
+<tr>
+<td>GoBD</td>
+<td>Regeln der Finanzverwaltung für ordnungsgemäße digitale Buchführung (u. a. Unveränderbarkeit)</td>
+</tr>
+<tr>
+<td>GiroCode / EPC-QR</td>
+<td>Zahlungs-QR-Code, den Banking-Apps einlesen</td>
+</tr>
+<tr>
+<td>Reverse Charge</td>
+<td>Steuerschuldnerschaft geht auf den Kunden über (§ 13b UStG), Rechnung ohne USt</td>
+</tr>
+<tr>
+<td>2FA / MFA</td>
+<td>Anmeldung mit Passwort plus Code aus einer Authenticator-App</td>
+</tr>
+</tbody>
+</table></div></section>
+<section class="kap" id="versionsverlauf"><h2><span class="nr">17</span>Versionsverlauf</h2>
+<details class="verlauf"><summary>Was ist in welcher Version neu?</summary><ul><li>Version 0.3: mit Handy-App für Mitarbeiter (offline erfassen, Abgleich im Firmen-WLAN), Steuerordner je Jahr und erweiterter Gestaltung (Schriften, Farbverlauf, Banner). Noch nicht enthalten: ELSTER-Übermittlung, DATEV-Export, Bankabgleich, Mahnwesen.</li><li><strong>Version 0.4</strong> bringt: Stundenzettel mit Freigabe im Büro, Angebote direkt in der Handy-App (auch offline, mit PDF und Versand), Suche und Filter in allen Beleglisten, neue Kunden direkt aus dem Handy-Namen, Handy-Einträge an bestehende Belege anhängen, verständliche deutsche Prüfmeldungen und einen QR-Platzhalter in der Vorschau.</li><li><strong>Version 0.5</strong> bringt: Finanzen mit Ausgabenbuch, Auswertung und Steuer-Abschluss (Werte für die Umsatzsteuer-Voranmeldung), eine neue Übersicht mit Diagramm und „Neu vom Handy“, eine Seitenleiste mit Gruppen zum Zuklappen, Nachtmodus am PC und in der App, das Aussehen der App am PC einstellbar, und im Stundenzettel lässt sich jetzt auch der Tag korrigieren.</li><li><strong>Version 0.6</strong> bringt: Zahlungen mit Teilzahlung und Skonto, Bankabgleich per Kontoauszug-Datei (CAMT.053 oder CSV) und das Mahnwesen mit Zahlungserinnerung, Mahnungen und Verzugszinsen.</li><li><strong>Version 0.7</strong> bringt: den DATEV-Export für die Steuerberatung und eine Testumgebung mit Beispieldaten zum gefahrlosen Ausprobieren.</li><li><strong>Version 0.8</strong> bringt: Abschlags- und Schlussrechnungen für größere Aufträge.</li><li><strong>Version 0.9</strong> bringt: Handy-Abgleich von unterwegs über VPN (FRITZ!Box-WireGuard) und auf Wunsch einen Büro-PC, der während der Arbeitszeit wach bleibt.</li><li><strong>Version 0.10</strong> bringt: Rabatte je Position sowie Rabatte und Zuschläge auf den ganzen Beleg.</li><li><strong>Version 0.11</strong> bringt frei wählbare Sicherungsziele (externe Platte, Netzlaufwerk, Cloud – auf Wunsch verschlüsselt), einen KI-Assistenten mit selbst gewählter KI und einen umfassenden Sicherheits-Check mit Härtung des Programms.</li><li><strong>Version 0.12 und 0.13</strong> bringen: den neuen Namen GaussPilot mit eigenem Logo, ein Installationsprogramm für Windows, eine Linux-Version, Lizenzen (Start, Pro, Team), eine tägliche Update-Prüfung, Farbverläufe in beliebigem Winkel und eine Handy-App, die sich selbst aktualisiert und einen Netzwechsel des Büro-PCs von allein erkennt.</li></ul></details></section>
+<p class="hinweis-ende">GaussPilot ist eine rechnerische Hilfe und ersetzt keine Steuer- oder Rechtsberatung.</p>
+</article>
+</div>
+</main>
+<a class="nach-oben" href="#inhalt" aria-label="Zum Inhaltsverzeichnis">↑</a>
+<footer><div class="wrap"><span>© 2026 Pierre Zwanziger · GaussPilot</span><span><a href="handbuch.html">Handbuch</a><a href="linux.html">Linux</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></span></div></footer>
+<script>
+(function(){
+  var s=document.getElementById('suche');
+  s.addEventListener('input',function(){
+    var q=s.value.trim().toLowerCase();
+    document.querySelectorAll('.toc > li').forEach(function(li){
+      var treffer=false;
+      li.querySelectorAll('li').forEach(function(u){var t=!q||u.textContent.toLowerCase().indexOf(q)>-1;u.hidden=!t;treffer=treffer||t;});
+      var h=li.querySelector('.h').textContent.toLowerCase().indexOf(q)>-1;
+      if(h) li.querySelectorAll('li').forEach(function(u){u.hidden=false;});
+      li.hidden=!(h||treffer||!q);
+    });
+  });
+  var links=[].slice.call(document.querySelectorAll('.hb-leiste a'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('akt',a.dataset.ziel===e.target.id);});}});},{rootMargin:'-20% 0px -70% 0px'});
+    document.querySelectorAll('section.kap[id]').forEach(function(k){io.observe(k);});
+  }
+  window.addEventListener('beforeprint',function(){document.querySelectorAll('details').forEach(function(d){d.open=true;});});
+  var oben=document.querySelector('.nach-oben');
+  window.addEventListener('scroll',function(){oben.classList.toggle('da',window.scrollY>900);},{passive:true});
+})();
+</script>
+</body></html>

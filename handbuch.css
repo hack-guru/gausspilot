@@ -1,0 +1,113 @@
+/* GaussPilot – Handbuch (ergänzt style.css) */
+.hb main{padding:24px 16px 0}
+.hb .hb-kopf{padding:64px 0 52px}
+.hb .hb-kopf h1{font-size:clamp(34px,5vw,52px)}
+.hb .knopf.zwei{font:inherit;font-weight:600;cursor:pointer}
+.deckblatt{display:none}
+
+.hb-raster{max-width:1180px;margin:24px auto 0;display:grid;grid-template-columns:240px minmax(0,1fr);gap:24px;align-items:start}
+.hb-leiste{position:sticky;top:88px;max-height:calc(100vh - 110px);overflow:auto;background:#ffffffd9;border:1px solid var(--linie);border-radius:18px;padding:14px 10px;font-size:14px}
+.hb-leiste p{margin:0 10px 8px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--grau)}
+.hb-leiste a{display:flex;gap:8px;padding:5px 10px;border-radius:8px;color:var(--text);text-decoration:none;line-height:1.35}
+.hb-leiste a:hover{background:#1d34610d}
+.hb-leiste a.akt{background:var(--gruen);color:#fff}
+.hb-leiste a.akt .nr{color:var(--gold2)}
+.hb-leiste .nr{color:#b07f2e;min-width:18px;font-variant-numeric:tabular-nums}
+
+.hb-text{padding:56px 64px 48px;min-width:0;margin:0;width:100%}
+.hb-text .kap{scroll-margin-top:84px}
+.hb-text .kap + .kap{margin-top:56px;padding-top:40px;border-top:1px solid var(--linie)}
+.hb-text h2{display:flex;gap:14px;align-items:baseline;font-size:clamp(25px,3vw,31px)}
+.hb-text h2 .nr{color:var(--gold);font-size:.8em;min-width:1.2em}
+.hb-text h3{font-size:20px;margin:34px 0 10px;scroll-margin-top:84px;display:flex;gap:10px;align-items:baseline}
+.hb-text h3 .nr{color:#b07f2e;font-size:.8em;font-weight:600}
+.hb-text p,.hb-text li{max-width:760px}
+.hb-text code{font-family:ui-monospace,Consolas,monospace;font-size:.88em;background:#1d346110;padding:1px 6px;border-radius:5px;word-break:break-word}
+.hb-text strong{color:#14284c}
+.hb-text ul li{margin:6px 0}
+.hb-text ul li::marker{color:var(--gold)}
+
+/* nummerierte Schritte mit Messing-Kreisen */
+ol.hb-schritte{list-style:none;counter-reset:s;padding-left:0;margin:14px 0}
+ol.hb-schritte > li{counter-increment:s;position:relative;padding-left:44px;margin:12px 0}
+ol.hb-schritte > li::before{content:counter(s);position:absolute;left:0;top:-1px;width:28px;height:28px;border-radius:50%;background:var(--gruen);color:#fff;font-size:14px;font-weight:600;display:grid;place-items:center;box-shadow:0 0 0 3px #d4a24c55}
+
+/* Tabellen */
+.tab{overflow-x:auto;margin:18px 0;border:1px solid var(--linie);border-radius:14px}
+.tab table{border-collapse:collapse;width:100%;font-size:15.5px}
+.tab th{background:var(--gruen);color:#fff;text-align:left;font-weight:600;padding:10px 14px}
+.tab td{padding:10px 14px;border-top:1px solid var(--linie);vertical-align:top}
+.tab tr:nth-child(even) td{background:#f8f7f3}
+.tab td:first-child{font-weight:600;color:#14284c}
+
+/* Inhaltsverzeichnis */
+.inhalt #suche{width:100%;max-width:520px;font:inherit;font-size:16px;padding:11px 16px;border:1px solid var(--linie);border-radius:12px;margin:6px 0 22px;background:#f8f7f3}
+.inhalt #suche:focus{outline:2px solid var(--gold);background:#fff}
+ol.toc{list-style:none;padding:0;margin:0;columns:2;column-gap:40px}
+ol.toc > li{break-inside:avoid;margin:0 0 16px}
+ol.toc a{text-decoration:none;color:var(--text);display:flex;gap:8px}
+ol.toc a:hover{color:var(--gruen2);text-decoration:underline}
+ol.toc a.h{font-weight:700;font-size:17px}
+ol.toc a.h .nr{color:var(--gold)}
+ol.toc ol{list-style:none;padding:0 0 0 26px;margin:4px 0 0;font-size:15px}
+ol.toc ol li{margin:2px 0}
+ol.toc ol .nr{color:#8a8780;min-width:30px;font-variant-numeric:tabular-nums}
+.tipp{font-size:14px;color:var(--grau);margin-top:10px}
+kbd{font-family:inherit;font-size:12px;border:1px solid var(--linie);border-bottom-width:2px;border-radius:5px;padding:1px 6px;background:#fff}
+
+/* Ablaufgrafik */
+.ablauf{margin:22px 0;padding:18px;background:#f8f7f3;border:1px solid var(--linie);border-radius:16px}
+.ablauf svg{width:100%;height:auto;display:block}
+.ablauf figcaption{font-size:13px;color:var(--grau);text-align:center;margin-top:6px}
+
+/* Versionsverlauf */
+details.verlauf{background:#f8f7f3;border:1px solid var(--linie);border-radius:14px;padding:4px 18px}
+details.verlauf summary{cursor:pointer;font-weight:600;padding:10px 0}
+details.verlauf li{margin:8px 0}
+
+.hinweis-ende{margin-top:48px;font-size:14px;color:var(--grau);border-top:1px solid var(--linie);padding-top:18px}
+.nach-oben{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;background:var(--gruen);color:#fff;display:grid;place-items:center;text-decoration:none;font-size:20px;box-shadow:0 10px 24px -8px #0f1a3399;opacity:0;pointer-events:none;transition:opacity .3s;z-index:30}
+.nach-oben.da{opacity:1;pointer-events:auto}
+.hb footer a{margin-left:18px}
+
+@media (max-width:980px){
+  .hb-raster{grid-template-columns:minmax(0,1fr)}
+  .hb .knopf.zwei{margin:10px 0 0}
+  .hb-leiste{display:none}
+  .hb-text{padding:40px 22px}
+  ol.toc{columns:1}
+  nav a{margin-left:14px}
+}
+
+/* ---------- Druck / PDF ---------- */
+@page{size:A4;margin:18mm 17mm 20mm}
+@media print{
+  body{background:#fff;font-size:10.5pt;line-height:1.5}
+  header.top,.hb-kopf,.hb-leiste,.nach-oben,#suche,.tipp,footer,.knopf{display:none!important}
+  main{padding:0}
+  .hb-raster{display:block;margin:0}
+  .hb-text{box-shadow:none;border-radius:0;padding:0;max-width:none}
+  .deckblatt{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;height:259mm;page-break-after:always;padding:0 8mm;
+    background:radial-gradient(ellipse 60% 50% at 85% 15%,#d4a24c33 0%,transparent 60%),linear-gradient(150deg,#1d3461 0%,#0f1a33 100%);color:#fff;border-radius:6mm;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .db-logo svg{display:block}
+  .db-marke{font-size:30pt;font-weight:700;margin:10mm 0 0;letter-spacing:-.01em}
+  .db-marke span{color:#d4a24c;font-weight:600}
+  .deckblatt h1{font-size:36pt;margin:2mm 0 6mm;line-height:1.1}
+  .db-unter{font-size:14pt;color:#d3dbec;margin:0 0 18mm;max-width:130mm}
+  .db-stand{font-size:12pt;color:#f1d9a6;margin:0}
+  .db-copy{font-size:10pt;color:#97a8cc;margin-top:30mm}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .hb-text .kap{page-break-before:always;border-top:0;margin-top:0;padding-top:0}
+  .hb-text .kap.inhalt{page-break-before:avoid}
+  .hb-text h2{font-size:20pt}
+  .hb-text h3{font-size:13pt;page-break-after:avoid;margin-top:7mm}
+  .tab,.ablauf,ol.hb-schritte > li,p{page-break-inside:avoid}
+  ol.toc{columns:2;font-size:8.6pt;line-height:1.3}
+  ol.toc > li{margin:0 0 7px}
+  ol.toc a.h{font-size:9.6pt}
+  .inhalt h2{margin-bottom:5mm}
+  details.verlauf > *{display:block}
+  details.verlauf summary{display:none}
+  .hb-text a{color:inherit;text-decoration:none}
+}

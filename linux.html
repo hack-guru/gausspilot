@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GaussPilot für Linux – Installation</title><link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231d3461'/%3E%3Cg transform='translate%2814.0 14.0%29 scale%280.72%29'%3E%3Cpath d='M80 28 A34 34 0 1 0 84 56 L60 56' fill='none' stroke='%23e9edf6' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 42 H46 M8 58 H40' stroke='%23d4a24c' stroke-width='6' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E"><meta name="description" content="GaussPilot unter Linux installieren, aktualisieren und entfernen."></head>
+<body class="seite">
+<header class="top"><div class="wrap"><a class="marke" href="./"><span class="zeichen"><svg viewBox="0 0 100 100" width="34" height="34" aria-hidden="true"><rect width="100" height="100" rx="24" fill="#1d3461"/><g transform="translate(14.0 14.0) scale(0.72)"><path d="M80 28 A34 34 0 1 0 84 56 L60 56" fill="none" stroke="#e9edf6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 H46 M8 58 H40" stroke="#d4a24c" stroke-width="6" stroke-linecap="round"/></g></svg></span><span>Gauss<span class="pilot">Pilot</span></span></a><nav><a href="./">Startseite</a></nav></div></header>
+<main><div class="karte-gross" style="padding:0"><div class="wrap text">
+<h1>GaussPilot für Linux</h1>
+<p>GaussPilot läuft unter Windows und Linux. Der Programmstand ist gleich: Version 0.13.5. Nach der Installation startet GaussPilot leer mit der Ersteinrichtung.</p>
+
+<h2>So installieren Sie GaussPilot</h2>
+<ol>
+<li>Archiv <code>GaussPilot_Linux_0.13.5.tar.gz</code> entpacken.</li>
+<li>Im entpackten Ordner ein Terminal öffnen und eingeben:<pre>./installieren.sh</pre>Alternativ: Rechtsklick auf <code>installieren.sh</code> → „Als Programm ausführen“.</li>
+<li>GaussPilot steht danach im <strong>Anwendungsmenü unter „Büro“</strong>, mit dem Euro-G-Symbol. Der Browser öffnet sich mit der Ersteinrichtung.</li>
+</ol>
+
+<h2>Was das Installationsskript macht</h2>
+<ul>
+<li>Es installiert nur für Ihren eigenen Benutzer, ohne Root-Rechte oder <code>sudo</code>.</li>
+<li>Ihre Daten landen in <strong>Dokumente/GaussPilot</strong>, wie unter Windows.</li>
+<li>Es prüft, ob Python 3.10 oder neuer vorhanden ist. Fehlt etwas, nennt es den passenden Befehl:
+<table class="tab">
+<tr><td>Ubuntu, Debian, Mint</td><td><code>sudo apt install python3 python3-venv</code></td></tr>
+<tr><td>Fedora</td><td><code>sudo dnf install python3</code></td></tr>
+<tr><td>openSUSE</td><td><code>sudo zypper install python3</code></td></tr>
+<tr><td>Arch, Manjaro</td><td><code>sudo pacman -S python</code></td></tr>
+</table></li>
+<li>Beim ersten Mal lädt es die Programmbausteine aus dem Internet. Das dauert 1 bis 3 Minuten.</li>
+<li>Es fragt, ob GaussPilot beim Anmelden automatisch starten soll.</li>
+</ul>
+
+<h2>Update</h2>
+<p>Neues Archiv entpacken und <code>./installieren.sh</code> erneut ausführen. Ein laufendes GaussPilot wird vorher beendet, Ihre Daten bleiben erhalten.</p>
+
+<h2>Entfernen</h2>
+<pre>~/.local/share/gausspilot/deinstallieren.sh</pre>
+<p>Auch dabei bleiben Ihre Daten in Dokumente/GaussPilot erhalten.</p>
+
+<h2>Gut zu wissen</h2>
+<p><strong>Symbol in der Leiste:</strong> Unter KDE und Ubuntu erscheint es von selbst. Bei einem reinen GNOME braucht es die Erweiterung „AppIndicator and KStatusNotifierItem Support“. Ohne Symbol läuft GaussPilot trotzdem: erneut im Menü starten öffnet den Browser.</p>
+<p><strong>Handy-App und Firewall:</strong> Ist eine Firewall wie <code>ufw</code> aktiv, für die Handy-App die Ports 8766 und 8767 im Heim- oder Firmennetz freigeben:</p>
+<pre>sudo ufw allow from 192.168.0.0/16 to any port 8766,8767 proto tcp</pre>
+<p><strong>Voraussetzungen:</strong> 64-Bit-PC (x86_64), Python 3.10 oder neuer, eine gängige Distribution. Internet brauchen Sie bei der Installation sowie für E-Mail-Versand und Updates.</p>
+
+<p style="margin-top:36px"><a class="knopf" href="./#kontakt">Testversion anfragen</a></p>
+</div></div></main>
+<style>
+.text code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:#1d346112;padding:1px 6px;border-radius:5px}
+.text pre{font-family:ui-monospace,Consolas,monospace;background:#1d3461;color:#e9edf6;padding:12px 16px;border-radius:10px;overflow-x:auto;margin:10px 0}
+.text li{margin:6px 0}
+.text .tab{border-collapse:collapse;margin:10px 0;font-size:15px}
+.text .tab td{padding:5px 14px 5px 0;vertical-align:top}
+</style>
+<footer><div class="wrap"><span>© 2026 GaussPilot</span><span><a href="linux.html">Linux</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></span></div></footer>
+<script>
+/* E-Mail-Adresse steht nicht im Klartext im Quelltext: erst ein Klick setzt sie zusammen (Schutz vor Adress-Sammlern) */
+document.querySelectorAll('.mail-zeigen').forEach(function(b){
+  b.addEventListener('click', function(){
+    var m = b.dataset.m.split('').reverse().join('');
+    var a = document.createElement('a'); a.href = 'mai' + 'lto:' + m + (b.classList.contains('knopf') ? '?subject=GaussPilot%20Testversion' : '');
+    a.textContent = m; a.className = b.className.replace('mail-zeigen','').trim(); b.replaceWith(a);
+  });
+});
+</script>
+</body></html>

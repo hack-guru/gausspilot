@@ -111,3 +111,6 @@ details.verlauf li{margin:8px 0}
   details.verlauf summary{display:none}
   .hb-text a{color:inherit;text-decoration:none}
 }
+
+.austausch{background:#fbf3e2;border:1px solid #e6cf9f;border-radius:14px;padding:14px 18px;margin:0 0 22px}
+@media print{.austausch{display:none}}

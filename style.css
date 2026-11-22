@@ -17,8 +17,8 @@ nav a:hover{color:var(--gruen)}
 
 /* ---------- Feste Bühne im Hintergrund ---------- */
 .buehne{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse at 50% 40%,#f6f5f0 0%,var(--hell) 70%);transition:background .6s}
-.buehne .muster{position:absolute;inset:0;color:#2b4c8c;opacity:.13}
-.buehne.bild-an{background:radial-gradient(ellipse at 50% 40%,#f6f5f0 0%,var(--hell) 70%)}
+.buehne .muster{position:absolute;inset:0;color:var(--gruen);opacity:.075}
+.buehne.bild-an{background:radial-gradient(ellipse at 50% 45%,#e6eaf2 0%,#d8dde8 75%)}
 .blick{position:absolute;inset:64px 0 0 0;display:grid;place-items:center}
 .blick img{grid-area:1/1;width:auto;max-width:min(1100px,90vw);max-height:calc(100vh - 170px);border-radius:14px;
   box-shadow:0 40px 80px -30px #0f1a3380,0 0 0 1px #00000014;opacity:0;transform:scale(.92) translateY(28px);
@@ -106,3 +106,56 @@ footer a{color:var(--grau);margin-left:18px}
 
 button.knopf{border:0;font:inherit;font-weight:600;cursor:pointer}
 .mail-inline{background:none;border:0;padding:0;font:inherit;color:var(--gruen2);text-decoration:underline;cursor:pointer}
+
+/* ---------- Produktfamilie (ab 0.23) ---------- */
+:root{--m-start:#3f7d3a;--m-pro:#d4a24c;--m-team:#2b4c8c;--m-lager:#b5651d;--m-verleih:#6a4c93}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:-8px 0 30px}
+.chip{display:inline-block;padding:5px 13px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;color:#fff;background:#ffffff14;border:1px solid #ffffff3d;transition:background .2s}
+.chip:hover{background:#ffffff2e}
+.chip::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:1px;background:var(--f)}
+.c-start{--f:var(--m-start)}.c-pro{--f:var(--m-pro)}.c-team{--f:#6f8fcf}.c-lager{--f:#e08a3c}.c-verleih{--f:#a07cd0}
+.module{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:22px}
+.modul{position:relative;background:#f8f7f3;border:1px solid var(--linie);border-radius:18px;padding:22px 20px 20px;border-top:5px solid var(--f)}
+.modul.m-start{--f:var(--m-start);background:#fbfdf9}.modul.m-pro{--f:var(--m-pro)}.modul.m-team{--f:var(--m-team)}.modul.m-lager{--f:var(--m-lager)}.modul.m-verleih{--f:var(--m-verleih)}
+.modul .tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;color:#fff;background:var(--f);border-radius:5px;padding:2px 8px}
+.modul.m-pro .tag{color:var(--dunkel)}
+.modul h3{margin:12px 0 2px;font-size:19px}
+.modul .preis{margin:0 0 12px;font-size:14px;color:var(--grau);font-weight:600}
+.modul.m-start .preis{color:var(--m-start)}
+.modul ul{margin:0;padding:0;list-style:none;font-size:15px;color:#3b3b37}
+.modul li{padding:5px 0 5px 20px;position:relative;border-top:1px solid #e9e7e0}
+.modul li::before{content:"✓";position:absolute;left:0;color:var(--f);font-weight:700}
+.modul.m-pro li::before{color:#b07f2e}
+.hinweis-blau{background:#eef2f9;border:1px solid #cdd8ec;border-radius:12px;padding:16px 20px;color:#1d3461;font-size:16px}
+.tag-klein{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;color:#fff;background:var(--f);border-radius:5px;padding:2px 8px;margin-bottom:12px}
+.tag-klein.c-start{background:var(--m-start)}.tag-klein.c-pro{background:var(--m-pro);color:var(--dunkel)}.tag-klein.c-team{background:var(--m-team)}.tag-klein.c-lager{background:var(--m-lager)}.tag-klein.c-verleih{background:var(--m-verleih)}
+.lead.klein{font-size:16px;margin-top:-18px}
+.handys{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin:4px 0 34px}
+.handys figure{margin:0;text-align:center}
+.handys img{width:100%;max-width:230px;margin:0 auto;border-radius:30px;border:9px solid #10182b;box-shadow:0 24px 50px -24px #0f1a3399,0 0 0 1px #00000022}
+.handys figcaption{margin-top:10px;font-size:14px;color:var(--grau);font-weight:600}
+.beispiele{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:22px}
+.beispiel{background:#f8f7f3;border:1px solid var(--linie);border-radius:16px;padding:22px;display:flex;flex-direction:column}
+.beispiel h3{margin:0 0 8px;font-size:17px}
+.beispiel p{margin:0 0 14px;color:var(--grau);font-size:15px;flex:1}
+.mini{display:flex;flex-wrap:wrap;gap:6px}
+.mini span{font-size:12px;font-weight:700;padding:2px 9px;border-radius:999px;background:#fff;border:1px solid var(--linie);color:#33332f}
+.mini span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;background:var(--f);vertical-align:0}
+.weiter{margin:0;color:var(--grau)}
+.kachel.link{text-decoration:none;color:inherit;display:block;transition:transform .15s,box-shadow .15s}
+.kachel.link:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px #0f1a3366}
+.kachel .mehr{margin-top:14px;color:#b07f2e;font-weight:600}
+@media (max-width:1100px){.module{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:760px){.module{grid-template-columns:1fr 1fr}.handys{grid-template-columns:1fr 1fr;gap:16px}}
+@media (max-width:480px){.module{grid-template-columns:1fr}}
+footer .wrap > span:last-child{display:flex;flex-wrap:wrap;gap:4px 18px}
+footer .wrap > span:last-child a{margin-left:0}
+/* Programmbild im Kopfbereich (nur breite Bildschirme) */
+.held{overflow:hidden}
+.held-bild{display:none}
+@media (min-width:1180px){
+  .held .wrap{position:relative}
+  .held h1{max-width:600px}.held .gross{max-width:560px}
+  .held-bild{display:block;position:absolute;right:-250px;top:40px;width:640px;max-width:none;border-radius:12px;
+    box-shadow:0 40px 80px -30px #000a,0 0 0 1px #ffffff22;transform:perspective(1600px) rotateY(-16deg) rotateX(4deg);transform-origin:left center}
+}

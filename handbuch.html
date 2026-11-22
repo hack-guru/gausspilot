@@ -2,7 +2,7 @@
 <html lang="de">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Handbuch · GaussPilot</title>
-<meta name="description" content="GaussPilot Handbuch & FAQ: Installation unter Windows und Linux, Rechnungen, E-Rechnung, Handy-App, Finanzen, Datensicherung und häufige Fragen.">
+<meta name="description" content="GaussPilot Handbuch & FAQ: Installation unter Windows und Linux, Rechnungen und E-Rechnung, Handy-App, Lager, Verleih & Service, Finanzen, Datensicherung und häufige Fragen.">
 <meta name="author" content="Pierre Zwanziger">
 <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="handbuch.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231d3461'/%3E%3Cg transform='translate%2814.0 14.0%29 scale%280.72%29'%3E%3Cpath d='M80 28 A34 34 0 1 0 84 56 L60 56' fill='none' stroke='%23e9edf6' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 42 H46 M8 58 H40' stroke='%23d4a24c' stroke-width='6' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E"></head>
@@ -13,41 +13,42 @@
   <div class="db-logo"><svg viewBox="0 0 100 100" width="120" height="120" aria-hidden="true"><rect width="100" height="100" rx="24" fill="#1d3461"/><g transform="translate(14.0 14.0) scale(0.72)"><path d="M80 28 A34 34 0 1 0 84 56 L60 56" fill="none" stroke="#e9edf6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 H46 M8 58 H40" stroke="#d4a24c" stroke-width="6" stroke-linecap="round"/></g></svg></div>
   <p class="db-marke">Gauss<span>Pilot</span></p>
   <h1>Handbuch &amp; FAQ</h1>
-  <p class="db-unter">Angebote, Rechnungen und E-Rechnung für kleine und mittlere Betriebe</p>
-  <p class="db-stand">Version 0.13.5 · Stand 20.11.2026</p>
-  <p class="db-copy">© 2026 Pierre Zwanziger · hack-guru.github.io/gausspilot</p>
+  <p class="db-unter">Rechnung, Lager und Verleih – die Bürosoftware für kleine und mittlere Betriebe</p>
+  <p class="db-stand">Version 0.24.0 · Stand 22.11.2026</p>
+  <p class="db-copy">© 2026 Pierre Zwanziger · gausspilot.de</p>
 </div>
 
 <main>
 <section class="karte-gross held hb-kopf"><div class="wrap">
-  <span class="status">Version 0.13.5 · Stand 20.11.2026</span>
+  <span class="status">Version 0.24.0 · Stand 22.11.2026</span>
   <h1>Handbuch &amp; FAQ</h1>
-  <p class="gross">Alles zu GaussPilot an einem Ort: Installation unter Windows und Linux, Rechnungen und E-Rechnung, Handy-App, Finanzen, Datensicherung und Antworten auf häufige Fragen.</p>
+  <p class="gross">Alles zu GaussPilot an einem Ort: Installation unter Windows und Linux, Rechnungen und E-Rechnung, Handy-App, Lager, Verleih &amp; Service, Finanzen, Datensicherung und Antworten auf häufige Fragen.</p>
   <a class="knopf" href="#inhalt">Zum Inhalt</a><a class="knopf zwei" href="Handbuch_GaussPilot.pdf" download>PDF herunterladen</a>
 </div></section>
 
 <div class="hb-raster">
-<aside class="hb-leiste" aria-label="Kapitel"><p>Kapitel</p><a href="#kurzueberblick" data-ziel="kurzueberblick"><span class="nr">1</span>Kurzüberblick</a><a href="#erste-schritte" data-ziel="erste-schritte"><span class="nr">2</span>Erste Schritte</a><a href="#lizenz-start-pro-und-team" data-ziel="lizenz-start-pro-und-team"><span class="nr">3</span>Lizenz: Start, Pro und Team</a><a href="#lebenszyklus-einer-rechnung" data-ziel="lebenszyklus-einer-rechnung"><span class="nr">4</span>Lebenszyklus einer Rechnung</a><a href="#bedienung-schritt-fuer-schritt" data-ziel="bedienung-schritt-fuer-schritt"><span class="nr">5</span>Bedienung Schritt für Schritt</a><a href="#gestaltung-der-belege" data-ziel="gestaltung-der-belege"><span class="nr">6</span>Gestaltung der Belege</a><a href="#handy-app-fuer-mitarbeiter" data-ziel="handy-app-fuer-mitarbeiter"><span class="nr">7</span>Handy-App für Mitarbeiter</a><a href="#finanzen" data-ziel="finanzen"><span class="nr">8</span>Finanzen</a><a href="#testumgebung" data-ziel="testumgebung"><span class="nr">9</span>Testumgebung</a><a href="#datensicherung-und-sicherungsziele" data-ziel="datensicherung-und-sicherungsziele"><span class="nr">10</span>Datensicherung und Sicherungsziele</a><a href="#ki-assistent" data-ziel="ki-assistent"><span class="nr">11</span>KI-Assistent</a><a href="#sicherheit" data-ziel="sicherheit"><span class="nr">12</span>Sicherheit</a><a href="#sicherheit-datensicherung" data-ziel="sicherheit-datensicherung"><span class="nr">13</span>Sicherheit &amp; Datensicherung</a><a href="#faq" data-ziel="faq"><span class="nr">14</span>FAQ</a><a href="#fehlermeldungen-der-pruefung" data-ziel="fehlermeldungen-der-pruefung"><span class="nr">15</span>Fehlermeldungen der Prüfung</a><a href="#glossar" data-ziel="glossar"><span class="nr">16</span>Glossar</a><a href="#versionsverlauf" data-ziel="versionsverlauf"><span class="nr">17</span>Versionsverlauf</a></aside>
+<aside class="hb-leiste" aria-label="Kapitel"><p>Kapitel</p><a href="#kurzueberblick" data-ziel="kurzueberblick"><span class="nr">1</span>Kurzüberblick</a><a href="#erste-schritte" data-ziel="erste-schritte"><span class="nr">2</span>Erste Schritte</a><a href="#editionen-und-module" data-ziel="editionen-und-module"><span class="nr">3</span>Editionen und Module</a><a href="#lebenszyklus-einer-rechnung" data-ziel="lebenszyklus-einer-rechnung"><span class="nr">4</span>Lebenszyklus einer Rechnung</a><a href="#bedienung-schritt-fuer-schritt" data-ziel="bedienung-schritt-fuer-schritt"><span class="nr">5</span>Bedienung Schritt für Schritt</a><a href="#gestaltung-der-belege" data-ziel="gestaltung-der-belege"><span class="nr">6</span>Gestaltung der Belege</a><a href="#handy-app-fuer-mitarbeiter" data-ziel="handy-app-fuer-mitarbeiter"><span class="nr">7</span>Handy-App für Mitarbeiter</a><a href="#finanzen" data-ziel="finanzen"><span class="nr">8</span>Finanzen</a><a href="#lager-modul" data-ziel="lager-modul"><span class="nr">9</span>Lager (Modul)</a><a href="#verleih-service-modul" data-ziel="verleih-service-modul"><span class="nr">10</span>Verleih &amp; Service (Modul)</a><a href="#testumgebung" data-ziel="testumgebung"><span class="nr">11</span>Testumgebung</a><a href="#datensicherung-und-sicherungsziele" data-ziel="datensicherung-und-sicherungsziele"><span class="nr">12</span>Datensicherung und Sicherungsziele</a><a href="#ki-assistent" data-ziel="ki-assistent"><span class="nr">13</span>KI-Assistent</a><a href="#sicherheit" data-ziel="sicherheit"><span class="nr">14</span>Sicherheit</a><a href="#sicherheit-datensicherung" data-ziel="sicherheit-datensicherung"><span class="nr">15</span>Sicherheit &amp; Datensicherung</a><a href="#faq" data-ziel="faq"><span class="nr">16</span>FAQ</a><a href="#fehlermeldungen-der-pruefung" data-ziel="fehlermeldungen-der-pruefung"><span class="nr">17</span>Fehlermeldungen der Prüfung</a><a href="#glossar" data-ziel="glossar"><span class="nr">18</span>Glossar</a></aside>
 <article class="karte-gross hb-text">
 <section class="kap inhalt" id="inhalt"><h2>Inhalt</h2>
-<input type="search" id="suche" placeholder="Kapitel suchen, z. B. Mahnung, Linux, Lizenz …" aria-label="Kapitel suchen">
+<input type="search" id="suche" placeholder="Kapitel suchen, z. B. Mahnung, Lager, Linux …" aria-label="Kapitel suchen">
 <ol class="toc"><li><a class="h" href="#kurzueberblick"><span class="nr">1</span>Kurzüberblick</a></li>
 <li><a class="h" href="#erste-schritte"><span class="nr">2</span>Erste Schritte</a><ol><li><a href="#installation-unter-windows"><span class="nr">2.1</span>Installation unter Windows</a></li><li><a href="#installation-unter-linux"><span class="nr">2.2</span>Installation unter Linux</a></li><li><a href="#taeglicher-start"><span class="nr">2.3</span>Täglicher Start</a></li><li><a href="#einrichtung-beim-ersten-mal"><span class="nr">2.4</span>Einrichtung beim ersten Mal</a></li><li><a href="#updates"><span class="nr">2.5</span>Updates</a></li><li><a href="#deinstallieren"><span class="nr">2.6</span>Deinstallieren</a></li></ol></li>
-<li><a class="h" href="#lizenz-start-pro-und-team"><span class="nr">3</span>Lizenz: Start, Pro und Team</a></li>
+<li><a class="h" href="#editionen-und-module"><span class="nr">3</span>Editionen und Module</a><ol><li><a href="#arbeitsbereiche-nur-rechnungen-nur-lager-oder-beides"><span class="nr">3.1</span>Arbeitsbereiche: nur Rechnungen, nur Lager oder beides</a></li><li><a href="#wechsel-von-einem-anderen-programm"><span class="nr">3.2</span>Wechsel von einem anderen Programm</a></li></ol></li>
 <li><a class="h" href="#lebenszyklus-einer-rechnung"><span class="nr">4</span>Lebenszyklus einer Rechnung</a></li>
 <li><a class="h" href="#bedienung-schritt-fuer-schritt"><span class="nr">5</span>Bedienung Schritt für Schritt</a><ol><li><a href="#kunden-anlegen"><span class="nr">5.1</span>Kunden anlegen</a></li><li><a href="#artikel-leistungen"><span class="nr">5.2</span>Artikel &amp; Leistungen</a></li><li><a href="#angebot-schreiben"><span class="nr">5.3</span>Angebot schreiben</a></li><li><a href="#rechnung-schreiben-und-festschreiben"><span class="nr">5.4</span>Rechnung schreiben und festschreiben</a></li><li><a href="#versenden-und-zahlung-erfassen"><span class="nr">5.5</span>Versenden und Zahlung erfassen</a></li><li><a href="#korrigieren-und-stornieren"><span class="nr">5.6</span>Korrigieren und stornieren</a></li><li><a href="#eingehende-e-rechnungen-pruefen"><span class="nr">5.7</span>Eingehende E-Rechnungen prüfen</a></li><li><a href="#auswertung-und-export"><span class="nr">5.8</span>Auswertung und Export</a></li><li><a href="#rabatte-und-zuschlaege"><span class="nr">5.9</span>Rabatte und Zuschläge</a></li><li><a href="#abschlags-und-schlussrechnungen-groessere-auftraege"><span class="nr">5.10</span>Abschlags- und Schlussrechnungen (größere Aufträge)</a></li></ol></li>
 <li><a class="h" href="#gestaltung-der-belege"><span class="nr">6</span>Gestaltung der Belege</a></li>
-<li><a class="h" href="#handy-app-fuer-mitarbeiter"><span class="nr">7</span>Handy-App für Mitarbeiter</a><ol><li><a href="#einrichten-einmalig-im-buero"><span class="nr">7.1</span>Einrichten (einmalig, im Büro)</a></li><li><a href="#erfassen-unterwegs"><span class="nr">7.2</span>Erfassen (unterwegs)</a></li><li><a href="#uebernehmen-am-pc"><span class="nr">7.3</span>Übernehmen (am PC)</a></li><li><a href="#steuerordner"><span class="nr">7.4</span>Steuerordner</a></li><li><a href="#feste-ip-adresse-fuer-den-buero-pc"><span class="nr">7.5</span>Feste IP-Adresse für den Büro-PC</a></li><li><a href="#wenn-die-app-offline-nicht-reagiert"><span class="nr">7.6</span>Wenn die App offline nicht reagiert</a></li><li><a href="#stundenzettel"><span class="nr">7.7</span>Stundenzettel</a></li><li><a href="#angebote-unterwegs"><span class="nr">7.8</span>Angebote unterwegs</a></li><li><a href="#unterwegs-abgleichen-vpn"><span class="nr">7.9</span>Unterwegs abgleichen (VPN)</a></li><li><a href="#aussehen-der-app-und-nachtmodus"><span class="nr">7.10</span>Aussehen der App und Nachtmodus</a></li></ol></li>
+<li><a class="h" href="#handy-app-fuer-mitarbeiter"><span class="nr">7</span>Handy-App für Mitarbeiter</a><ol><li><a href="#einrichten-einmalig-im-buero"><span class="nr">7.1</span>Einrichten (einmalig, im Büro)</a></li><li><a href="#was-darf-wer-zugriffsstufen-je-mitarbeiter"><span class="nr">7.2</span>Was darf wer? Zugriffsstufen je Mitarbeiter</a></li><li><a href="#erfassen-unterwegs"><span class="nr">7.3</span>Erfassen (unterwegs)</a></li><li><a href="#uebernehmen-am-pc"><span class="nr">7.4</span>Übernehmen (am PC)</a></li><li><a href="#steuerordner"><span class="nr">7.5</span>Steuerordner</a></li><li><a href="#das-handy-findet-den-pc-nicht-mehr"><span class="nr">7.6</span>Das Handy findet den PC nicht mehr</a></li><li><a href="#feste-ip-adresse-fuer-den-buero-pc"><span class="nr">7.7</span>Feste IP-Adresse für den Büro-PC</a></li><li><a href="#wenn-die-app-offline-nicht-reagiert"><span class="nr">7.8</span>Wenn die App offline nicht reagiert</a></li><li><a href="#stundenzettel"><span class="nr">7.9</span>Stundenzettel</a></li><li><a href="#angebote-unterwegs"><span class="nr">7.10</span>Angebote unterwegs</a></li><li><a href="#unterwegs-abgleichen-vpn"><span class="nr">7.11</span>Unterwegs abgleichen (VPN)</a></li><li><a href="#aussehen-der-app-und-nachtmodus"><span class="nr">7.12</span>Aussehen der App und Nachtmodus</a></li></ol></li>
 <li><a class="h" href="#finanzen"><span class="nr">8</span>Finanzen</a><ol><li><a href="#ausgaben"><span class="nr">8.1</span>Ausgaben</a></li><li><a href="#auswertung"><span class="nr">8.2</span>Auswertung</a></li><li><a href="#steuer-abschluss-umsatzsteuer-voranmeldung"><span class="nr">8.3</span>Steuer-Abschluss (Umsatzsteuer-Voranmeldung)</a></li><li><a href="#zahlungen-und-skonto"><span class="nr">8.4</span>Zahlungen und Skonto</a></li><li><a href="#bank-zahlungen-kontoauszug-einlesen"><span class="nr">8.5</span>Bank &amp; Zahlungen (Kontoauszug einlesen)</a></li><li><a href="#mahnwesen"><span class="nr">8.6</span>Mahnwesen</a></li><li><a href="#datev-export"><span class="nr">8.7</span>DATEV-Export</a></li></ol></li>
-<li><a class="h" href="#testumgebung"><span class="nr">9</span>Testumgebung</a></li>
-<li><a class="h" href="#datensicherung-und-sicherungsziele"><span class="nr">10</span>Datensicherung und Sicherungsziele</a><ol><li><a href="#welche-ziele-gehen"><span class="nr">10.1</span>Welche Ziele gehen?</a></li><li><a href="#so-richten-sie-ein-ziel-ein"><span class="nr">10.2</span>So richten Sie ein Ziel ein</a></li><li><a href="#kopien-verschluesseln"><span class="nr">10.3</span>Kopien verschlüsseln</a></li></ol></li>
-<li><a class="h" href="#ki-assistent"><span class="nr">11</span>KI-Assistent</a><ol><li><a href="#einrichtung"><span class="nr">11.1</span>Einrichtung</a></li><li><a href="#was-sieht-die-ki"><span class="nr">11.2</span>Was sieht die KI?</a></li><li><a href="#grenzen"><span class="nr">11.3</span>Grenzen</a></li></ol></li>
-<li><a class="h" href="#sicherheit"><span class="nr">12</span>Sicherheit</a></li>
-<li><a class="h" href="#sicherheit-datensicherung"><span class="nr">13</span>Sicherheit &amp; Datensicherung</a></li>
-<li><a class="h" href="#faq"><span class="nr">14</span>FAQ</a></li>
-<li><a class="h" href="#fehlermeldungen-der-pruefung"><span class="nr">15</span>Fehlermeldungen der Prüfung</a></li>
-<li><a class="h" href="#glossar"><span class="nr">16</span>Glossar</a></li>
-<li><a class="h" href="#versionsverlauf"><span class="nr">17</span>Versionsverlauf</a></li></ol>
+<li><a class="h" href="#lager-modul"><span class="nr">9</span>Lager (Modul)</a><ol><li><a href="#so-starten-sie-mit-dem-lager"><span class="nr">9.1</span>So starten Sie mit dem Lager</a></li><li><a href="#etiketten-und-codes"><span class="nr">9.2</span>Etiketten und Codes</a></li><li><a href="#lager-in-der-handy-app"><span class="nr">9.3</span>Lager in der Handy-App</a></li><li><a href="#lager-und-rechnung"><span class="nr">9.4</span>Lager und Rechnung</a></li></ol></li>
+<li><a class="h" href="#verleih-service-modul"><span class="nr">10</span>Verleih &amp; Service (Modul)</a><ol><li><a href="#so-vermieten-sie-ein-geraet"><span class="nr">10.1</span>So vermieten Sie ein Gerät</a></li><li><a href="#kaution"><span class="nr">10.2</span>Kaution</a></li><li><a href="#uebersicht-und-kalender"><span class="nr">10.3</span>Übersicht und Kalender</a></li><li><a href="#service-pruefungen"><span class="nr">10.4</span>Service &amp; Prüfungen</a></li><li><a href="#ausgeben-und-zuruecknehmen-mit-dem-handy"><span class="nr">10.5</span>Ausgeben und zurücknehmen mit dem Handy</a></li></ol></li>
+<li><a class="h" href="#testumgebung"><span class="nr">11</span>Testumgebung</a></li>
+<li><a class="h" href="#datensicherung-und-sicherungsziele"><span class="nr">12</span>Datensicherung und Sicherungsziele</a><ol><li><a href="#welche-ziele-gehen"><span class="nr">12.1</span>Welche Ziele gehen?</a></li><li><a href="#so-richten-sie-ein-ziel-ein"><span class="nr">12.2</span>So richten Sie ein Ziel ein</a></li><li><a href="#kopien-verschluesseln"><span class="nr">12.3</span>Kopien verschlüsseln</a></li><li><a href="#wiederherstellen-zum-beispiel-auf-einem-neuen-pc"><span class="nr">12.4</span>Wiederherstellen – zum Beispiel auf einem neuen PC</a></li></ol></li>
+<li><a class="h" href="#ki-assistent"><span class="nr">13</span>KI-Assistent</a><ol><li><a href="#einrichtung"><span class="nr">13.1</span>Einrichtung</a></li><li><a href="#was-sieht-die-ki"><span class="nr">13.2</span>Was sieht die KI?</a></li><li><a href="#grenzen"><span class="nr">13.3</span>Grenzen</a></li></ol></li>
+<li><a class="h" href="#sicherheit"><span class="nr">14</span>Sicherheit</a></li>
+<li><a class="h" href="#sicherheit-datensicherung"><span class="nr">15</span>Sicherheit &amp; Datensicherung</a></li>
+<li><a class="h" href="#faq"><span class="nr">16</span>FAQ</a></li>
+<li><a class="h" href="#fehlermeldungen-der-pruefung"><span class="nr">17</span>Fehlermeldungen der Prüfung</a></li>
+<li><a class="h" href="#glossar"><span class="nr">18</span>Glossar</a></li></ol>
 <p class="tipp">Tipp: Mit <kbd>Strg</kbd> + <kbd>F</kbd> durchsuchen Sie den ganzen Text.</p>
 </section>
 <section class="kap" id="kurzueberblick"><h2><span class="nr">1</span>Kurzüberblick</h2>
@@ -160,7 +161,7 @@
 <li><strong>Einstellungen → Design</strong>: Logo, Farben, Rahmen wählen und mit Muster-PDF kontrollieren.</li>
 <li><strong>Einstellungen → E-Mail</strong>: Zugangsdaten Ihres Postfachs eintragen (z. B. GMX: <code>mail.gmx.net</code>, Port 587, STARTTLS) und Test-E-Mail senden.</li>
 <li>Optional: <strong>Konto &amp; 2FA</strong> → Zwei-Faktor-Anmeldung einschalten.</li>
-<li>Haben Sie eine Lizenz gekauft: <strong>Lizenz</strong> in der Seitenleiste → Schlüssel einfügen → <strong>Lizenz eintragen</strong>.</li>
+<li>Haben Sie Pro oder ein Modul bestellt: den Lizenzschlüssel eintragen, wie in Ihrer Bestellbestätigung beschrieben.</li>
 </ol>
 <h3 id="updates"><span class="nr">2.5</span>Updates</h3>
 <p>GaussPilot prüft einmal täglich, ob es eine neue Version gibt, und zeigt dann oben einen Hinweis. Ihre Daten bleiben bei jedem Update erhalten.</p>
@@ -176,36 +177,63 @@
 </ul>
 <p>In beiden Fällen bleibt der Ordner <code>Dokumente/GaussPilot</code> mit allen Daten und Sicherungen erhalten. Wer ihn nicht mehr braucht, löscht ihn von Hand – Rechnungen aber 8 Jahre aufbewahren (§ 147 AO).</p>
 </section>
-<section class="kap" id="lizenz-start-pro-und-team"><h2><span class="nr">3</span>Lizenz: Start, Pro und Team</h2>
-<p>GaussPilot Start ist kostenlos. Pro und das Modul Team schalten Sie mit einem Lizenzschlüssel frei; Funktionen mit <strong>PRO</strong> im Menü brauchen ihn.</p>
+<section class="kap" id="editionen-und-module"><h2><span class="nr">3</span>Editionen und Module</h2>
+<p>GaussPilot ist ein Programm mit einer Installation und einer Handy-App. Das Grundprogramm ist kostenlos; Pro und die Zusatzmodule werden einzeln dazu freigeschaltet – jedes Modul auch ohne Pro. Funktionen, die noch nicht freigeschaltet sind, tragen im Menü eine Markierung (z. B. <strong>PRO</strong>, <strong>LAGER</strong>) und zeigen eine kurze Beschreibung.</p>
 <div class="tab"><table>
 <thead>
 <tr>
-<th>Edition</th>
+<th>Edition / Modul</th>
 <th>Was enthalten ist</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Start (kostenlos)</td>
-<td>Angebote, Rechnungen, E-Rechnung mit Prüfung, E-Mail-Versand, Kunden, Artikel, Ausgaben, tägliche Sicherung auf dem PC</td>
+<td>Angebote, Rechnungen, E-Rechnung mit Prüfung, E-Mail-Versand, Kunden, Artikel, Ausgaben, Sicherung von Hand auf dem PC</td>
 </tr>
 <tr>
 <td>Pro</td>
-<td>zusätzlich Bank &amp; Zahlungen, Mahnwesen, Steuer-Abschluss, Auswertung, DATEV-Export, Abschlags- und Schlussrechnungen, zusätzliche Sicherungsziele</td>
+<td>zusätzlich Bank &amp; Zahlungen, Mahnwesen, Steuer-Abschluss, Auswertung, DATEV-Export, Abschlags- und Schlussrechnungen, automatische tägliche Sicherung, zusätzliche Sicherungsziele (externe Platte, NAS, Server, Cloud)</td>
 </tr>
 <tr>
-<td>Modul Team (zu Pro)</td>
-<td>Handy-App für Mitarbeiter, je Gerät; die Zahl der Geräte steht in der Lizenz</td>
+<td>Modul Team</td>
+<td>Handy-App für Mitarbeiter: Stundenzettel, Stunden, Material, Spesen, Aufmaß und Angebote unterwegs – je Gerät</td>
+</tr>
+<tr>
+<td>Modul Lager</td>
+<td>Material und Geräte: Lagerorte und Fahrzeuge, Bestand, Etiketten, Scanner in der Handy-App, Inventur, Lieferscheine, Bestellungen, Auswertung</td>
+</tr>
+<tr>
+<td>Modul Verleih &amp; Service</td>
+<td>Geräte vermieten: Kalender, Ausgabe und Rücknahme per Scan, Mietvertrag, Kaution, Mietrechnung; Reparatur, Wartung und Prüftermine</td>
 </tr>
 </tbody>
 </table></div>
+<p>Den Lizenzschlüssel und eine kurze Anleitung zum Eintragen erhalten Sie mit Ihrer Bestellung.</p>
+<p><strong>Ihre Daten bleiben immer lesbar:</strong> Läuft ein Modul aus, können Sie vorhandene Daten weiter ansehen und exportieren – nur Ändern und Buchen ist dann gesperrt.</p>
+<h3 id="arbeitsbereiche-nur-rechnungen-nur-lager-oder-beides"><span class="nr">3.1</span>Arbeitsbereiche: nur Rechnungen, nur Lager oder beides</h3>
+<p>Unter <strong>Einstellungen → Firma → Arbeitsbereiche</strong> legen Sie fest, was GaussPilot zeigt:</p>
+<ul>
+<li><strong>🧾 Angebote, Rechnungen &amp; Finanzen</strong> – das kostenlose Grundprogramm</li>
+<li><strong>📦 Lager</strong> – Bestand, Lagerorte, Geräte, Etiketten, Lieferscheine (Modul Lager)</li>
+</ul>
+<p>Dazu kommt als dritter Bereich <strong>🔧 Verleih &amp; Service</strong>. Wer nur vermietet, hakt nur diesen an – dann öffnet die Übersicht direkt den Verleih.</p>
+<p><strong>Reiner Lagerbetrieb:</strong> nur „Lager“ anhaken. Angebote, Rechnungen und Finanzen verschwinden aus der Seitenleiste, die Übersicht öffnet direkt den Bestand. Lieferscheine, Handy-Erfassungen und Stundenzettel bleiben da.</p>
+<p><strong>Kein Lager:</strong> nur „Angebote, Rechnungen &amp; Finanzen“ anhaken. Dann verschwindet das Lager-Menü samt Modul-Hinweis.</p>
+<p>Mindestens ein Bereich bleibt immer an. Ausgeblendetes wird <strong>nicht gelöscht</strong> – Haken wieder setzen, und alles ist zurück.</p>
+<p><strong>Ein Modul funktioniert auch ohne Pro</strong> – wer nur ein Lager braucht oder nur vermietet, nimmt nur dieses Modul.</p>
+<h3 id="wechsel-von-einem-anderen-programm"><span class="nr">3.2</span>Wechsel von einem anderen Programm</h3>
+<p>Kunden und Artikel nehmen Sie mit, auch mitten im Jahr: <strong>System → Daten übernehmen</strong> (oder der Knopf „Importieren“ bei Kunden und Artikeln).</p>
 <ol class="hb-schritte">
-<li><strong>Lizenz</strong> in der Seitenleiste öffnen.</li>
-<li>Den Schlüssel (beginnt mit <code>GP1.</code>) einfügen und <strong>Lizenz eintragen</strong> klicken. Der Schlüssel wird nur auf diesem PC geprüft, es werden keine Daten übertragen.</li>
-<li>Die Seite zeigt danach Lizenznehmer, Lizenz-Nr., Geräte für die Handy-App und das Ende des Update-Service.</li>
+<li>Im alten Programm die Kunden- bzw. Artikelliste als <strong>CSV</strong> oder <strong>Excel (.xlsx)</strong> exportieren – meist unter „Export“ oder „Datenexport“. Bei DATEV erstellt die Steuerberatung den Export der Debitoren.</li>
+<li>In GaussPilot auswählen, was übernommen wird, und die Datei hochladen.</li>
+<li>GaussPilot ordnet die Spalten automatisch zu (z. B. „Firmenname“ → Firma, „VK brutto“ → Preis). Zuordnung und Vorschau prüfen, bei Bedarf ändern.</li>
+<li>Festlegen, was mit schon vorhandenen Datensätzen passiert (überspringen oder aktualisieren), dann <strong>importieren</strong>.</li>
 </ol>
-<p>Pro gilt für jede Version, die bis zum Ende des Update-Service erscheint. Danach läuft diese Version unbegrenzt weiter; für neuere Versionen den Update-Service verlängern. Sind mehr Handys angemeldet als die Lizenz erlaubt, zeigt <strong>Mitarbeiter &amp; Geräte</strong> eine Warnung und die App meldet „Vom Büro gesperrt“. In der Testumgebung sind alle Funktionen frei.</p>
+<p>Getrennte Spalten für Vor- und Nachname oder Straße und Hausnummer werden zusammengefügt, Ländernamen in Länderkürzel und Einheiten wie „Stk“ oder „psch“ in die richtige Einheit umgesetzt. Steht nur ein Bruttopreis in der Liste, rechnet GaussPilot den Nettopreis aus. Übernommene Kundennummern bleiben erhalten; neue Kunden bekommen danach die nächste freie Nummer.</p>
+<p><strong>Nummern weiterzählen:</strong> Auf derselben Seite die letzte im alten Programm vergebene laufende Zahl für Rechnungen, Gutschriften, Angebote und Kunden eintragen – GaussPilot macht nahtlos weiter. Nummern lassen sich nur vorwärts stellen, nie zurück.</p>
+<p><strong>Falsche Datei erwischt?</strong> Unter „Bisherige Importe“ macht <strong>Rückgängig</strong> alle neu angelegten Datensätze wieder weg, solange sie noch nicht in Belegen stehen.</p>
+<p><strong>Offene Rechnungen</strong> aus dem alten Programm bis zur Zahlung dort weiterverfolgen; neue Rechnungen in GaussPilot schreiben. Die Übernahme offener Posten folgt in einer späteren Version.</p>
 </section>
 <section class="kap" id="lebenszyklus-einer-rechnung"><h2><span class="nr">4</span>Lebenszyklus einer Rechnung</h2>
 <p>Eine Rechnung durchläuft immer dieselben Stationen. Nur eine geprüfte Rechnung kann festgeschrieben werden.</p>
@@ -346,6 +374,7 @@
 </tbody>
 </table></div>
 <p>Das Tool hält automatisch ein: Anschriftfeld frei für Fensterumschläge (DIN 5008), alle Pflichtangaben sichtbar, Schriften eingebettet (PDF/A-3). Bei zu wenig Kontrast zwischen Schrift und Hintergrund erscheint eine Warnung.</p>
+<p><strong>Gilt das für alle Belege?</strong> Ja. Logo, Farben, Schrift, Hintergrund und Fußzeile stellen Sie <strong>einmal</strong> ein – sie gelten für Angebote, Rechnungen, Gutschriften, Mahnungen und Lieferscheine gleichermaßen. Nur die Standardtexte (Einleitung und Schluss) gibt es je Belegart einzeln, und der Zahlungs-QR-Code steht nur auf Rechnungen. Tipp: Nach jeder Änderung einmal <strong>Vorschau</strong> ansehen, bevor Sie den nächsten Beleg versenden.</p>
 </section>
 <section class="kap" id="handy-app-fuer-mitarbeiter"><h2><span class="nr">7</span>Handy-App für Mitarbeiter</h2>
 <p>Mitarbeiter erfassen unterwegs Stunden, Material, Spesen mit Belegfoto, Angebotsaufnahmen und Aufmaße – auch ohne Netz. Im Firmen-WLAN wird automatisch und verschlüsselt zum Büro-PC übertragen.</p>
@@ -356,7 +385,46 @@
 <li>Im Router dem PC immer dieselbe IP-Adresse geben (FRITZ!Box: Heimnetz → Netzwerk → Gerät bearbeiten).</li>
 <li>Der Mitarbeiter scannt im Firmen-WLAN den QR-Code aus Schritt 2. Die Einrichtungsseite führt durch drei Schritte: Sicherheitszertifikat installieren, App öffnen und anmelden, auf den Startbildschirm legen.</li>
 </ol>
-<h3 id="erfassen-unterwegs"><span class="nr">7.2</span>Erfassen (unterwegs)</h3>
+<h3 id="was-darf-wer-zugriffsstufen-je-mitarbeiter"><span class="nr">7.2</span>Was darf wer? Zugriffsstufen je Mitarbeiter</h3>
+<p>Unter <strong>Stammdaten → Mitarbeiter &amp; Geräte</strong> wählen Sie beim Anlegen eine <strong>Zugriffsstufe</strong>. Unter der Auswahl steht in einem Satz, was sie bedeutet:</p>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Stufe</th>
+<th>Was darf er?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Admin – Vollzugriff</strong></td>
+<td>Alles, am PC und in der App – auch Rechnungen, Einstellungen und Mitarbeiter</td>
+</tr>
+<tr>
+<td><strong>Geselle</strong></td>
+<td>Stundenzettel, alles erfassen, Angebote mit Preisen schreiben und senden, Material entnehmen</td>
+</tr>
+<tr>
+<td><strong>Mitarbeiter</strong></td>
+<td>Stundenzettel, Stunden, Material, Spesen und Aufmaß erfassen; Lager nur ansehen</td>
+</tr>
+<tr>
+<td><strong>Lager &amp; Inventur</strong></td>
+<td>Stundenzettel, Bestand nachsehen, Inventur zählen, Verbrauchsmaterial entnehmen, Mietgeräte ausgeben und zurücknehmen</td>
+</tr>
+<tr>
+<td><strong>Azubi – nur Stundenzettel</strong></td>
+<td>Kommen, Pause, Gehen und die Woche einreichen – sonst nichts</td>
+</tr>
+<tr>
+<td><strong>Vollzugriff in der App</strong></td>
+<td>Alles in der App (auch Wareneingang und Umbuchen), aber kein Zugang am PC</td>
+</tr>
+</tbody>
+</table></div>
+<p>Die Stufe ist nur der Start. In der Liste „Zugänge“ stehen bei jedem Mitarbeiter die einzelnen Häkchen: Stundenzettel, jede Erfassungsart, Angebote und Lager (kein / nur ansehen / ansehen, Material entnehmen &amp; Inventur / alles buchen). Jeder Haken wird sofort gespeichert. Wer etwas ändert, sieht in der Zeile „Individuell angepasst“. Mit <strong>„Schnell umstellen“</strong> setzen Sie alle Häkchen wieder passend zu einer Stufe.</p>
+<p><strong>Ich sehe keine Häkchen?</strong> Admins haben keine – sie dürfen immer alles. Gibt es noch keinen anderen Zugang, legen Sie ihn unter <strong>Neuer Zugang</strong> an.</p>
+<p><strong>Stolperstellen:</strong> Neue Freigaben gelten auf dem Handy erst nach dem nächsten Abgleich (App öffnen, im WLAN). Hat jemand vorher etwas erfasst, das nicht (mehr) freigegeben ist, nimmt der PC es nicht an – auf dem Handy steht am Eintrag „vom Büro nicht angenommen“ mit dem Grund. Jede Änderung der Freigaben steht im Protokoll.</p>
+<h3 id="erfassen-unterwegs"><span class="nr">7.3</span>Erfassen (unterwegs)</h3>
 <div class="tab"><table>
 <thead>
 <tr>
@@ -388,7 +456,7 @@
 </tbody>
 </table></div>
 <p>Oben zeigt die App den Stand: <strong>Abgeglichen</strong> (grün), <strong>X warten</strong> (gelb) oder <strong>Offline</strong> (rot). Einträge mit Status „Im Büro“ dürfen noch geändert werden, „Erledigt“ ist abgerechnet und gesperrt.</p>
-<h3 id="uebernehmen-am-pc"><span class="nr">7.3</span>Übernehmen (am PC)</h3>
+<h3 id="uebernehmen-am-pc"><span class="nr">7.4</span>Übernehmen (am PC)</h3>
 <ol class="hb-schritte">
 <li><strong>Handy-Erfassungen</strong> öffnen (die Zahl im Menü zeigt neue Einträge).</li>
 <li>Unbekannte Kunden zuordnen („zuordnen“) oder vorher unter Kunden anlegen.</li>
@@ -396,9 +464,16 @@
 <li>Preise im Entwurf prüfen. Stunden ohne Artikel nutzen den Standard-Stundensatz aus Einstellungen → Firma.</li>
 <li>Spesen prüfen und <strong>Erledigt / Spesen geprüft</strong> klicken. Sie landen mit Belegfoto im Steuerordner.</li>
 </ol>
-<h3 id="steuerordner"><span class="nr">7.4</span>Steuerordner</h3>
+<h3 id="steuerordner"><span class="nr">7.5</span>Steuerordner</h3>
 <p>Im Ordner <code>Dokumente\GaussPilot\Steuer\&lt;Jahr&gt;</code> liegen automatisch: alle festgeschriebenen Rechnungen und Gutschriften (PDF + XML), die geprüften Spesenbelege, das Rechnungsausgangsbuch und die Spesenliste als CSV. Manuell aktualisieren: <strong>Rechnungen → Steuerordner aktualisieren</strong>.</p>
-<h3 id="feste-ip-adresse-fuer-den-buero-pc"><span class="nr">7.5</span>Feste IP-Adresse für den Büro-PC</h3>
+<h3 id="das-handy-findet-den-pc-nicht-mehr"><span class="nr">7.6</span>Das Handy findet den PC nicht mehr</h3>
+<ol class="hb-schritte">
+<li>Am PC unter <strong>Einstellungen → Handy-App</strong> nachsehen: Steht dort <strong>„Läuft“</strong>? Wenn nicht, auf <strong>„Handy-Zugang jetzt starten“</strong> klicken.</li>
+<li>Kommt die Meldung <strong>„Port … schon belegt“</strong>, läuft noch ein zweites GaussPilot – zum Beispiel die installierte Version neben der Testumgebung. Dieses beenden (€-Symbol neben der Uhr → Rechtsklick → Beenden) und dann „Jetzt starten“ klicken. Dieselbe Meldung steht beim Start auch im schwarzen Fenster.</li>
+<li>Handy und PC müssen im selben WLAN sein (oder per VPN verbunden, siehe „Unterwegs abgleichen“).</li>
+</ol>
+<p>Das Zertifikat muss nach einem Neustart des Programms <strong>nicht</strong> neu eingerichtet werden. Nur wenn sich die Adresse des PCs geändert hat, hilft die feste IP (nächster Abschnitt).</p>
+<h3 id="feste-ip-adresse-fuer-den-buero-pc"><span class="nr">7.7</span>Feste IP-Adresse für den Büro-PC</h3>
 <p>Das Handy findet den Büro-PC über seine Adresse im WLAN (z. B. <code>192.168.178.25</code>). Vergibt der Router nach einem Neustart eine andere Adresse, findet die App den PC nicht mehr und das Zertifikat passt nicht mehr. Deshalb einmalig im Router eine <strong>feste IP</strong> für den Büro-PC einstellen:</p>
 <ol class="hb-schritte">
 <li>Im Browser die Router-Oberfläche öffnen (FRITZ!Box: <code>http://fritz.box</code>, sonst meist <code>http://192.168.0.1</code> oder <code>http://192.168.1.1</code>).</li>
@@ -407,7 +482,7 @@
 <li>GaussPilot einmal neu starten (Symbol in der Leiste → Beenden, dann Desktop-Verknüpfung).</li>
 </ol>
 <p>Wurde die Adresse bereits geändert: Programm neu starten und auf jedem Handy die Einrichtung (QR-Code unter Einstellungen → Handy-App) wiederholen.</p>
-<h3 id="wenn-die-app-offline-nicht-reagiert"><span class="nr">7.6</span>Wenn die App offline nicht reagiert</h3>
+<h3 id="wenn-die-app-offline-nicht-reagiert"><span class="nr">7.8</span>Wenn die App offline nicht reagiert</h3>
 <p>Die Offline-Funktion setzt voraus, dass das Handy dem Sicherheitszertifikat des Büro-PCs vertraut. Ist das Zertifikat nicht (oder als falscher Typ) installiert, lädt die App online noch, darf sich aber nicht aufs Handy speichern – offline ist dann nichts mehr anklickbar.</p>
 <ol class="hb-schritte">
 <li>Am Handy die Einrichtungsseite öffnen (QR-Code unter Einstellungen → Handy-App).</li>
@@ -416,10 +491,10 @@
 <li>Altes App-Symbol löschen und die App neu installieren – auf Android mit <strong>Chrome</strong>, auf dem iPhone mit <strong>Safari</strong> (nicht Samsung Internet oder Firefox).</li>
 </ol>
 <p>Am PC zeigt <strong>Mitarbeiter &amp; Geräte</strong> pro Handy, ob der Offline-Betrieb bereit ist, und warnt, wenn ein Handy das Zertifikat ablehnt.</p>
-<h3 id="stundenzettel"><span class="nr">7.7</span>Stundenzettel</h3>
+<h3 id="stundenzettel"><span class="nr">7.9</span>Stundenzettel</h3>
 <p>In der App gibt es den Reiter <strong>Zeit</strong>: Mit <strong>Kommen / Pause / Gehen</strong> wird gestempelt, vergessene Zeiten lassen sich nachtragen. Am Ende der Woche tippt der Mitarbeiter auf <strong>Woche einreichen</strong>. Die App weist auf Grenzen des Arbeitszeitgesetzes hin (über 10 Stunden, Pausen ab 6 bzw. 9 Stunden, Sonntagsarbeit) – das ersetzt keine rechtliche Prüfung.</p>
 <p>Am PC unter <strong>Stundenzettel</strong> sehen Sie die Zeiten je Mitarbeiter und Woche. Einträge oder ganze Wochen <strong>freigeben</strong> oder mit Grund <strong>ablehnen</strong> (der Mitarbeiter sieht den Grund in der App). Mit <strong>Korrigieren</strong> ändern Sie Tag, Beginn, Ende, Pause oder Tätigkeit – oder löschen den Eintrag; jede Änderung wird protokolliert und kommt beim nächsten Abgleich aufs Handy. In der App startet „Zeit nachtragen“ mit dem heutigen Datum, das ＋ neben jedem Tag trägt für genau diesen Tag nach. Freigegebene Zeiten kann das Handy nicht mehr ändern. <strong>Export</strong>: CSV für alle, PDF-Arbeitszeitnachweis mit Unterschriftszeilen je Mitarbeiter (Kopie in <code>Steuer\&lt;Jahr&gt;\Stundenzettel</code>). Unter <strong>Mitarbeiter &amp; Geräte</strong> lässt sich der Stundenzettel pro Zugang ein- und ausschalten.</p>
-<h3 id="angebote-unterwegs"><span class="nr">7.8</span>Angebote unterwegs</h3>
+<h3 id="angebote-unterwegs"><span class="nr">7.10</span>Angebote unterwegs</h3>
 <p>Mitarbeiter mit dem Recht <strong>„Angebote erstellen &amp; senden“</strong> (Mitarbeiter &amp; Geräte) und der Chef haben in der App den Reiter <strong>Angebote</strong>:</p>
 <ol class="hb-schritte">
 <li><strong>＋ Neues Angebot</strong>: Kunde wählen (oder „Neuer Kunde“ mit Name, Ort), Betreff, Positionen aus der Artikelliste oder frei. Die Summen rechnen live mit.</li>
@@ -428,7 +503,7 @@
 <li><strong>Teilen</strong> öffnet E-Mail-App, WhatsApp usw. mit dem PDF im Anhang. <strong>Über die Firmen-E-Mail senden</strong> (nur im WLAN) verschickt der Büro-PC von der Firmenadresse.</li>
 <li>Angenommen/abgelehnt lässt sich in der App markieren. Wurde dasselbe Angebot inzwischen im Büro geändert, bleibt die Büro-Version und die Handy-Änderung wird als Kopie „(Handy-Version)“ gespeichert.</li>
 </ol>
-<h3 id="unterwegs-abgleichen-vpn"><span class="nr">7.9</span>Unterwegs abgleichen (VPN)</h3>
+<h3 id="unterwegs-abgleichen-vpn"><span class="nr">7.11</span>Unterwegs abgleichen (VPN)</h3>
 <p>Ohne Firmen-WLAN, zum Beispiel über mobile Daten auf der Baustelle, „wählt“ sich das Handy per <strong>VPN</strong> ins Büronetz ein. Danach erreicht es den Büro-PC unter derselben Adresse wie im WLAN: gleiche App, gleiches Zertifikat, gleiche Daten. GaussPilot bleibt vom Internet aus unsichtbar. Bitte <strong>keine Portfreigabe</strong> im Router einrichten.</p>
 <p><strong>Einrichten mit FRITZ!Box</strong> (FRITZ!OS 7.50 oder neuer; das Tool zeigt unter Einstellungen → Handy-App, ob die Box es kann):</p>
 <ol class="hb-schritte">
@@ -441,7 +516,7 @@
 <p>Pro Handy eine eigene VPN-Verbindung anlegen. Bei Verlust in der FRITZ!Box löschen und unter Mitarbeiter &amp; Geräte abmelden.</p>
 <p><strong>Wichtig:</strong> Der Büro-PC muss laufen. Unter Einstellungen → Handy-App lässt sich einstellen, dass er an bestimmten Tagen und Uhrzeiten nicht in den Energiesparmodus geht. Ist das Handy im WLAN eines Kunden, der denselben Adressbereich nutzt (häufig bei FRITZ!Boxen: 192.168.178.x), klappt der Abgleich dort nicht. Dann einfach WLAN aus und mobile Daten an.</p>
 <p>Andere Router: Viele haben ebenfalls einen VPN-Server (WireGuard/OpenVPN). Wichtig ist nur, dass das Handy damit Geräte im Büronetz erreicht.</p>
-<h3 id="aussehen-der-app-und-nachtmodus"><span class="nr">7.10</span>Aussehen der App und Nachtmodus</h3>
+<h3 id="aussehen-der-app-und-nachtmodus"><span class="nr">7.12</span>Aussehen der App und Nachtmodus</h3>
 <p>Unter <strong>Einstellungen → Handy-App → Aussehen der Handy-App</strong> legen Sie Hauptfarbe, Schriftart, Logo in der Kopfzeile und hell/dunkel fest. Die Handys übernehmen das beim nächsten Abgleich. Jeder Mitarbeiter kann den Nachtmodus in der App unter <strong>Mehr → Darstellung</strong> für sich umstellen. Am PC schaltet der Knopf unten in der Seitenleiste zwischen Tag- und Nachtmodus; ohne Auswahl folgt das Tool der Windows-Einstellung.</p>
 </section>
 <section class="kap" id="finanzen"><h2><span class="nr">8</span>Finanzen</h2>
@@ -491,7 +566,358 @@
 </ol>
 <p>Jeder Kunde wird zum Debitor (Kunde 1 = 10001, Kunde 2 = 10002 …). Erlöse laufen über die Automatikkonten mit Steuer, Ausgaben mit Vorsteuerschlüssel. Die Kontenzuordnung ist ein Vorschlag und unter „Kontenzuordnung anpassen“ änderbar – am besten einmal mit der Steuerberatung abstimmen.</p>
 </section>
-<section class="kap" id="testumgebung"><h2><span class="nr">9</span>Testumgebung</h2>
+<section class="kap" id="lager-modul"><h2><span class="nr">9</span>Lager (Modul)</h2>
+<p>Das Modul Lager führt Material und Geräte: was im Lager liegt, was im Transporter ist, wo der Bohrhammer gerade ist und was nachbestellt werden muss. Sie finden es in der Seitenleiste in der Gruppe <strong>Lager</strong>. Ohne Lizenz für das Modul tragen die Menüpunkte die Markierung <strong>LAGER</strong> und öffnen eine kurze Beschreibung.</p>
+<p><strong>So funktioniert der Bestand:</strong> Er wird nie von Hand überschrieben, sondern aus Buchungen berechnet – Eingang, Ausgang, Umbuchung, Inventur. Jede Buchung bleibt mit Zeit und Person erhalten. Ein Fehler wird nicht gelöscht, sondern mit einer <strong>Gegenbuchung</strong> korrigiert. So stimmt der Bestand auch dann, wenn später mehrere Handys ohne Netz buchen, und jede Bewegung ist für Prüfer nachvollziehbar.</p>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Seite</th>
+<th>Wofür</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bestand</td>
+<td>was liegt wo, je Artikel und Lagerort</td>
+</tr>
+<tr>
+<td>Buchungen</td>
+<td>alle Lagerbewegungen, lückenlos</td>
+</tr>
+<tr>
+<td>Lagerorte</td>
+<td>Lager, Regal, Fach, Fahrzeuge, Mitarbeiter, Baustellen</td>
+</tr>
+<tr>
+<td>Geräte</td>
+<td>Einzelgeräte mit Seriennummer, Status, Ort und Garantie</td>
+</tr>
+<tr>
+<td>Nachbestellen</td>
+<td>alles unter Mindestbestand, nach Lieferant</td>
+</tr>
+<tr>
+<td>Etiketten</td>
+<td>QR- und Barcode-Etiketten für Artikel, Geräte und Lagerorte</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="so-starten-sie-mit-dem-lager"><span class="nr">9.1</span>So starten Sie mit dem Lager</h3>
+<ol class="hb-schritte">
+<li><strong>Lagerorte anlegen</strong> (Lager → Lagerorte): zum Beispiel „Hauptlager“, darin „Regal A“ (bei „liegt in“ das Hauptlager wählen), dazu jedes Fahrzeug als Art „Fahrzeug“. Mitarbeiter und Baustellen können ebenfalls Lagerorte sein.</li>
+<li><strong>Artikel zu Lagerartikeln machen</strong> (Stammdaten → Artikel &amp; Leistungen → Bearbeiten → Abschnitt „Lager“): Art „Verbrauchsmaterial“ oder „Gerät“, dazu Einkaufspreis, Lieferant, Mindestbestand, Standard-Lagerort und EAN. Große Listen am schnellsten über <strong>Daten übernehmen</strong> – ein Mindestbestand in der Liste macht den Artikel automatisch zum Lagerartikel.</li>
+<li><strong>Anfangsbestand buchen</strong> (Lager → Buchungen): „Inventur“ wählen, Artikel, Lagerort und gezählte Menge eintragen.</li>
+</ol>
+<p><strong>Im Alltag:</strong></p>
+<ul>
+<li><strong>Eingang</strong>, wenn Ware kommt (Lieferschein-Nr. als Notiz), <strong>Ausgang</strong>, wenn Material verbraucht, verkauft oder entsorgt wird, <strong>Umbuchung</strong> für Lager → Transporter oder Transporter → Baustelle.</li>
+<li><strong>Inventur:</strong> gezählte Menge eintragen – GaussPilot bucht nur die Differenz.</li>
+<li><strong>Fehler korrigieren:</strong> In jeder Buchungsliste steht „Rückgängig“. Das legt eine Gegenbuchung an, die ursprüngliche Buchung bleibt sichtbar (ausgegraut).</li>
+<li><strong>Einzelgeräte</strong> (Lager → Geräte): mit Seriennummer, Anschaffung, Preis, Garantie und Prüftermin (z. B. DGUV V3) erfassen. Der Status folgt dem Ort (Transporter = unterwegs, Baustelle = beim Kunden); „Defekt melden“, „In Reparatur“ und „Aussondern“ gibt es auf der Geräteseite. Eine Ampel zeigt das Garantieende, fällige Prüfungen sind rot markiert.</li>
+<li><strong>Anhänge:</strong> Datenblätter, Anleitungen, Fotos und Garantiebelege (PDF oder Bild) direkt am Artikel oder Gerät ablegen.</li>
+<li><strong>Nachbestellen:</strong> Liste aller Artikel unter Mindestbestand, nach Lieferant sortiert, als CSV für die Bestellung.</li>
+<li><strong>Bestand:</strong> je Artikel und Lagerort, mit Suche, Filter nach Ort und Lagerwert zum Einkaufspreis.</li>
+</ul>
+<h3 id="etiketten-und-codes"><span class="nr">9.2</span>Etiketten und Codes</h3>
+<p>Jeder Lagerartikel, jedes Gerät und jeder Lagerort hat einen festen Code: <strong>GP-A-…</strong> für Artikel, <strong>GP-E-…</strong> für ein einzelnes Gerät, <strong>GP-O-…</strong> für einen Lagerort. Er wird automatisch vergeben und ändert sich nie – ein einmal geklebtes Etikett bleibt gültig, auch wenn sich Name oder Artikelnummer ändern.</p>
+<ol class="hb-schritte">
+<li><strong>Lager → Etiketten</strong> öffnen und oben wählen, was beklebt werden soll: Artikel, Geräte oder Lagerorte. Wählen Sie im zweiten Feld einen Lagerort, erscheint nur, was dort liegt (mit allen Unterorten) – so ist ein ganzes Regal in einem Rutsch erledigt.</li>
+<li>Häkchen und Anzahl je Etikett prüfen, dann <strong>Format</strong> wählen: A4-Bogen 70 × 36 mm (3 × 8, z. B. Zweckform 3475), 48,5 × 25,4 mm (4 × 10, z. B. Zweckform 3657), 99,1 × 38,1 mm (2 × 7, z. B. Avery L7163) oder eine Etikettendrucker-Rolle 62 × 29, 57 × 32, 50 × 25 oder 102 × 51 mm.</li>
+<li><strong>Code</strong> wählen: QR-Code (empfohlen, für die Handy-App), Barcode Code 128 oder EAN-13. Bei EAN-13 bekommt ein Artikel mit gültiger Hersteller-EAN deren Barcode, alle anderen automatisch Code 128.</li>
+<li><strong>Etiketten als PDF erstellen</strong> und drucken.</li>
+</ol>
+<p><strong>Stolperstelle:</strong> Im Druckdialog <strong>„Tatsächliche Größe“ bzw. „100 %“</strong> wählen, nicht „An Seite anpassen“ – sonst rutschen die Etiketten vom Bogen. Ist ein Bogen schon angebrochen, bei <strong>„Start bei Etikett Nr.“</strong> das erste freie Feld eintragen (gezählt von links oben, Zeile für Zeile).</p>
+<p>Einzelne Etiketten gibt es direkt am Artikel, am Gerät (<strong>Etikett drucken</strong>) und in der Lagerortliste (🏷) – mit dem zuletzt gewählten Format.</p>
+<p><strong>Handscanner am PC:</strong> Ein USB- oder Bluetooth-Handscanner arbeitet wie eine Tastatur. Auf der Seite <strong>Lager → Bestand</strong> in das Suchfeld scannen – GaussPilot öffnet sofort den Artikel, das Gerät oder den Lagerort. Erkannt werden GaussPilot-Codes, Hersteller-Barcodes (EAN) und Seriennummern.</p>
+<h4>Firmenlogo auf den Etiketten</h4>
+<p>Zuerst unter <strong>Einstellungen → Design</strong> das Logo hochladen (dasselbe wie auf den Rechnungen). Dann auf <strong>Lager → Etiketten</strong> bei <strong>Firmenlogo</strong> wählen:</p>
+<ul>
+<li><strong>in der Mitte des QR-Codes:</strong> Das Logo sitzt auf einem weißen Feld mitten im Code. GaussPilot schaltet dafür die stärkste Fehlerkorrektur des QR-Codes ein (bis zu 30 % dürfen fehlen) und macht kurze Codes eine Stufe größer. Das Feld passt sich der Logoform an – ein breiter Schriftzug bekommt ein breites Feld –, verdeckt aber nie mehr als etwa 5 % des Codes.</li>
+<li><strong>klein auf dem Etikett:</strong> unten rechts neben dem Text (QR-Code) bzw. oben rechts neben der Bezeichnung (Barcode). Diese Variante gilt auch für Barcodes, denn in einen Strichcode darf kein Bild.</li>
+</ul>
+<p>Ohne hinterlegtes Logo ist die Auswahl gesperrt und zeigt einen Link zu den Design-Einstellungen.</p>
+<p><strong>Stolperstelle:</strong> Ein Logo mit durchsichtigem Hintergrund wird auf Weiß gedruckt – sehr helle Logos (weiße Schrift) sind dann kaum zu sehen. Am besten ein dunkles Logo verwenden.</p>
+<h4>Farben für Regale und Bereiche</h4>
+<ol class="hb-schritte">
+<li><strong>Lager → Lagerorte</strong> → beim Regal (oder Lager, Fahrzeug, Baustelle) auf <strong>Bearbeiten</strong>, unten eine der zehn Farben antippen (Rot, Orange, Gelb, Grün, Blau, Türkis, Violett, Pink, Braun, Grau) oder unter <strong>eigene</strong> eine beliebige Farbe wählen, speichern. In der Liste zeigt ein Farbpunkt die Farbe.</li>
+<li>Auf <strong>Lager → Etiketten</strong> bei <strong>Farbstreifen</strong> die Option <strong>Farbe des Lagerorts</strong> wählen. Jedes Etikett bekommt am linken Rand einen Farbstreifen.</li>
+</ol>
+<p>So kommt die Farbe zustande:</p>
+<ul>
+<li>Ein <strong>Lagerort</strong> nimmt seine eigene Farbe; hat er keine, die des übergeordneten Orts. Fach A1 im blauen Regal A wird also auch blau (in der Liste blass angezeigt).</li>
+<li>Ein <strong>Artikel</strong> nimmt die Farbe seines Standard-Lagerorts, ohne Standard-Lagerort die des Orts mit dem größten Bestand.</li>
+<li>Ein <strong>Gerät</strong> nimmt die Farbe des Orts, an dem es gerade ist.</li>
+<li>Alternativ: <strong>eine feste Farbe</strong> für alle Etiketten eines Drucks, z. B. Rot für Gefahrstoffe.</li>
+</ul>
+<p><strong>Stolperstelle:</strong> Der Code selbst bleibt immer schwarz auf weiß – farbige Codes lesen viele Scanner schlecht. Für die Farbstreifen brauchen Sie einen Farbdrucker; auf einem Schwarz-Weiß-Drucker erscheinen sie grau.</p>
+<h4>Welche Etiketten und welcher Drucker?</h4>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Einsatz</th>
+<th>Empfehlung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Für den Anfang</td>
+<td>normaler Bürodrucker mit A4-Etikettenbögen; gleich große Etiketten anderer Marken passen auch</td>
+</tr>
+<tr>
+<td>Regale, Kisten</td>
+<td>70 × 36 mm, 3 × 8 je Bogen (z. B. Zweckform 3475)</td>
+</tr>
+<tr>
+<td>Kleine Teile</td>
+<td>48,5 × 25,4 mm, 4 × 10 je Bogen (z. B. Zweckform 3657)</td>
+</tr>
+<tr>
+<td>Große Regaletiketten</td>
+<td>99,1 × 38,1 mm, 2 × 7 je Bogen (z. B. Avery L7163)</td>
+</tr>
+<tr>
+<td>Viel etikettieren, nachdrucken</td>
+<td>Etikettendrucker mit Rolle: 62 × 29 mm (z. B. Brother DK-11209), 57 × 32 mm (z. B. Dymo 11354), 50 × 25 mm, 102 × 51 mm (z. B. Zebra, Dymo XL) – ein PDF mit einer Seite pro Etikett, kein eigener Treiber im Programm nötig</td>
+</tr>
+<tr>
+<td>Werkstatt, Fahrzeug</td>
+<td>Folienetiketten (Polyester) statt Papier – halten Öl, Staub und Nässe aus</td>
+</tr>
+</tbody>
+</table></div>
+<h4>Welche Codeart?</h4>
+<ul>
+<li><strong>QR-Code</strong> ist die Empfehlung: klein, liest sich aus jedem Winkel, verträgt Kratzer und ist der Code für die Handy-App.</li>
+<li><strong>Code 128</strong> (Strichcode), wenn Sie schon einen Strichcode-Handscanner haben, der keine QR-Codes kann.</li>
+<li><strong>EAN-13</strong> druckt bei Artikeln mit gültigem Hersteller-Barcode genau diesen nach – praktisch, wenn die Originalverpackung fehlt. Artikel ohne gültige EAN bekommen automatisch Code 128.</li>
+<li><strong>DataMatrix</strong> (die kleinen quadratischen Codes auf Elektronikteilen) ist noch nicht dabei, weil es dafür keinen Baustein ohne Zusatzinstallation gibt. Der QR-Code erfüllt denselben Zweck.</li>
+</ul>
+<p><strong>So wird geprüft:</strong> Bei jeder neuen Version druckt ein automatischer Test die Etiketten als PDF, und ein unabhängiger Barcode-Leser muss jeden Code wieder richtig erkennen – in allen Formaten, mit und ohne Logo (quadratische, breite und hohe Logos) und mit Farbstreifen.</p>
+<h3 id="lager-in-der-handy-app"><span class="nr">9.3</span>Lager in der Handy-App</h3>
+<p>Mit dem Modul Lager hat die Handy-App unten den Reiter <strong>Lager</strong>. Alles funktioniert <strong>ohne Netz</strong>: Die Buchungen warten auf dem Handy („Wartet“) und gehen beim nächsten Abgleich im Firmen-WLAN oder per VPN an den PC („Im Büro“). Jede Buchung trägt eine eigene Nummer und kommt genau einmal an, auch wenn der Abgleich unterbrochen und wiederholt wird.</p>
+<h4>Scannen</h4>
+<ol class="hb-schritte">
+<li><strong>Lager → 📷 Scannen</strong> und die Kamera auf das Etikett halten. Erkannt werden QR-Codes, Strichcodes (Code 128) und Hersteller-Barcodes (EAN-13) – meist in unter einer Sekunde.</li>
+<li>Ohne Kamera: den Code in das Feld unter dem Kamerabild tippen. Ein Bluetooth-Handscanner tippt dort ebenfalls hinein.</li>
+<li>Je nach Code öffnet sich der <strong>Artikel</strong>, das <strong>Gerät</strong> oder der <strong>Lagerort</strong>. Das Suchfeld auf der Lager-Seite findet auch nach Name, Nummer oder Seriennummer.</li>
+</ol>
+<p><strong>Stolperstelle:</strong> Beim ersten Scannen fragt das Handy, ob die App die Kamera benutzen darf – mit „Erlauben“ bestätigen. Wurde das versehentlich abgelehnt, in den Browser-Einstellungen bei der GaussPilot-Adresse die Kamera freigeben. Neue Artikel oder Etiketten kennt das Handy erst nach dem nächsten Abgleich.</p>
+<h4>Buchen</h4>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Gescannt</th>
+<th>Möglichkeiten</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Artikel</td>
+<td><strong>Beim Kunden verbraucht</strong> – bucht den Abgang aus dem Lager und legt gleichzeitig eine Material-Erfassung für die Rechnung an; <strong>In meinen Transporter</strong>; <strong>Umbuchen</strong>; <strong>Wareneingang</strong>; <strong>Ausgang</strong> (Bruch, Schwund, Entsorgung)</td>
+</tr>
+<tr>
+<td>Gerät</td>
+<td><strong>In meinen Transporter</strong>; <strong>An einen Ort bringen</strong> (Ort auswählen oder sein Etikett scannen); <strong>Defekt melden</strong> mit Beschreibung und Foto</td>
+</tr>
+<tr>
+<td>Lagerort</td>
+<td>zeigt Material und Geräte an diesem Ort; <strong>Artikel scannen</strong> und <strong>Inventur hier</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h4>Inventur mit dem Handy</h4>
+<ol class="hb-schritte">
+<li><strong>Lager → 🔢 Inventur</strong>, dann das Etikett am Regal oder Fach scannen (oder den Ort auswählen).</li>
+<li><strong>Artikel scannen</strong>, gezählte Menge eingeben, <strong>Speichern</strong> – und weiter mit dem nächsten Artikel.</li>
+</ol>
+<p>Gebucht wird nur die Differenz zwischen gezählt und Bestand, und zwar beim Abgleich mit dem PC. Am besten zählen, wenn an diesem Ort gerade nichts anderes gebucht wird.</p>
+<h4>Rechte und „Mein Transporter“</h4>
+<ul>
+<li>Unter <strong>Mitarbeiter</strong> je Mitarbeiter einstellen: <strong>kein Lager</strong>, <strong>Lager ansehen</strong> (Standard – sieht Bestände, kann nichts ändern) oder <strong>Lager ansehen und buchen</strong>. Chef/Büro darf immer alles.</li>
+<li>Unter <strong>Lager → Lagerorte</strong> beim Fahrzeug einen <strong>Fahrer</strong> eintragen. Der sieht sein Fahrzeug in der App ganz oben mit allem, was gerade drin ist; „In meinen Transporter“ bucht direkt dorthin.</li>
+</ul>
+<p><strong>Neu: „ansehen, Material entnehmen &amp; Inventur“</strong> – die passende Stufe für Lagerhelfer und Gesellen. Erlaubt sind: beim Kunden verbraucht, Ausgang (Bruch, Schwund), Inventur zählen und Defekt melden. Nicht erlaubt sind Wareneingang und Umbuchen – die Knöpfe fehlen dann in der App, und der PC würde solche Buchungen auch nicht annehmen.</p>
+<h4>Bestand unter null und Defektmeldungen am PC</h4>
+<p>Haben zwei Mitarbeiter ohne Netz dasselbe Material entnommen (oder fehlt ein Wareneingang), bucht GaussPilot trotzdem alles, was wirklich passiert ist, und zeigt die Stelle oben auf <strong>Lager → Bestand</strong> als „Bitte prüfen – Bestand unter null“ an. Lösung: am Ort nachzählen und per Inventur korrigieren. Defektmeldungen vom Handy erscheinen an derselben Stelle; das Foto hängt am Gerät, das Gerät steht auf „defekt“.</p>
+<p><strong>So wurde geprüft:</strong> Die App wurde im Browser mit simulierter Kamera getestet – ein Video mit einem gedruckten Etikett als Kamerabild, QR-Code und Strichcode, Buchung ohne Netz und anschließender Abgleich. Der Test auf echten Geräten (iPhone mit Safari, Android mit Chrome) steht noch aus.</p>
+<h3 id="lager-und-rechnung"><span class="nr">9.4</span>Lager und Rechnung</h3>
+<p>Mit dem Modul Lager hängen Rechnung und Lager zusammen: Was verkauft wird, geht automatisch aus dem Bestand.</p>
+<h4>Artikel per Scan in Angebot und Rechnung</h4>
+<ul>
+<li><strong>Am PC:</strong> Im Angebot oder Rechnungsentwurf steht unter den Positionen das Feld <strong>„Code scannen oder Artikelnummer eingeben“</strong>. Mit dem Handscanner hineinscannen oder Code bzw. Artikelnummer tippen und Enter drücken – der Artikel kommt mit Preis, Einheit und Steuersatz als neue Position dazu.</li>
+<li><strong>Handy:</strong> Im Angebot auf <strong>📷 Artikel scannen</strong> tippen und die Kamera auf das Etikett halten.</li>
+<li>Erkannt werden GaussPilot-Code (GP-A-…), Hersteller-Barcode (EAN) und Artikelnummer. Denselben Artikel nochmal scannen erhöht die Menge um 1.</li>
+</ul>
+<p>Beispiel: 10 Packungen kommen rein, 8 werden verkauft – achtmal scannen oder einmal scannen und Menge 8 eintragen. Mit dem Modul Lager bucht die Rechnung beim Festschreiben automatisch ab.</p>
+<h4>Rechnung bucht das Lager</h4>
+<ol class="hb-schritte">
+<li>Rechnung wie gewohnt schreiben. Positionen mit einem Lagerartikel (erkannt an der Artikelnummer, z. B. aus der Artikelliste gewählt) sind automatisch Lagerpositionen.</li>
+<li>Nach dem Speichern zeigt der Kasten <strong>📦 Lager</strong> unter dem Beleg, was beim Festschreiben gebucht wird: Artikel, Menge, Lagerort und Bestand dort.</li>
+<li>Den <strong>Lagerort</strong> je Position bei Bedarf ändern – oder <strong>„nicht aus dem Lager“</strong> wählen, z. B. wenn der Großhandel direkt zum Kunden geliefert hat.</li>
+<li><strong>Festschreiben</strong> – die Meldung nennt, wie viele Lagerpositionen gebucht wurden. Am festgeschriebenen Beleg steht die Liste der zugehörigen Lagerbuchungen.</li>
+</ol>
+<p>Woher das Material kommt: der gewählte Ort, sonst der <strong>Standard-Lagerort</strong> des Artikels, sonst der Ort mit dem größten Bestand. Reicht der Bestand nicht, zeigt der Kasten „Bestand reicht nicht“ – gebucht wird trotzdem, damit der Bestand der Wirklichkeit folgt; die Stelle erscheint dann auf <strong>Lager → Bestand</strong> zum Prüfen.</p>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Fall</th>
+<th>Was passiert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Material schon am Handy als „beim Kunden verbraucht“ gebucht</td>
+<td>wird erkannt („schon am Handy gebucht“) und nicht doppelt abgezogen</td>
+</tr>
+<tr>
+<td>Storno-Gutschrift festgeschrieben</td>
+<td>alle Lagerabgänge der Rechnung werden zurückgebucht (Gegenbuchung, nichts wird gelöscht); Material vom Handy bleibt abgebucht, denn es wurde verbraucht</td>
+</tr>
+<tr>
+<td>Abschlagsrechnung</td>
+<td>bucht nichts – erst die Schlussrechnung</td>
+</tr>
+<tr>
+<td>Einzelgerät mit Seriennummer verkauft</td>
+<td>wird nicht automatisch ausgebucht – am Gerät „Aussondern“ wählen</td>
+</tr>
+<tr>
+<td>Andere Einheit als am Artikel (z. B. Karton statt Stück)</td>
+<td>wird nicht gebucht, Hinweis „andere Einheit“</td>
+</tr>
+</tbody>
+</table></div>
+<h4>Inventurliste zum Stichtag</h4>
+<p><strong>Lager → Bestand</strong>, ganz unten <strong>Inventurliste zum Stichtag</strong>: Datum wählen (im Januar ist der 31.12. des Vorjahres vorgeschlagen), dann <strong>PDF</strong> oder <strong>CSV (Excel)</strong>. Die Liste zeigt den Bestand je Lagerort am Ende des Stichtags mit Einkaufspreis und Wert sowie die <strong>Summe Lagerwert</strong>. Einzelgeräte stehen getrennt darunter, weil sie meist zum Anlagevermögen gehören. Unten ist Platz für Unterschrift und Datum.</p>
+<p><strong>Stolperstelle:</strong> Artikel ohne Einkaufspreis haben keinen Wert – den Einkaufspreis am Artikel ergänzen. Für eine genaue Liste vorher zählen und per Inventur korrigieren (am PC oder mit dem Handy). Ob und wie der Lagerwert in den Abschluss gehört, klärt die Steuerberatung.</p>
+<h4>Lieferscheine</h4>
+<p>Mit dem Modul Lager gibt es den Belegtyp <strong>Lieferschein</strong> – für Ware, die vor der Rechnung rausgeht.</p>
+<ol class="hb-schritte">
+<li><strong>Belege → Lieferscheine → + Lieferschein</strong> – oder im Angebot <strong>„🚚 Lieferschein erstellen“</strong> (übernimmt die Positionen).</li>
+<li>Positionen wie gewohnt eintragen oder scannen. Die Preise werden für die spätere Rechnung gemerkt, stehen aber <strong>nicht</strong> auf dem Lieferschein.</li>
+<li><strong>Speichern</strong>, dann <strong>„🚚 Ausliefern“</strong>: Der Lieferschein bekommt seine Nummer (LS-Jahr-Nummer), wird gesperrt, als PDF abgelegt und bucht das Material aus dem Lager (Lagerort wählbar wie bei der Rechnung). Unten auf dem PDF unterschreibt der Empfänger.</li>
+<li>Später <strong>„In Rechnung umwandeln“</strong> – oder in der Liste mehrere ausgelieferte Lieferscheine <strong>eines Kunden</strong> anhaken und <strong>„Ausgewählte in eine Rechnung“</strong> (Sammelrechnung).</li>
+</ol>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Fall</th>
+<th>Was passiert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rechnung aus Lieferscheinen</td>
+<td>nennt alle Lieferscheine in der Einleitung und an der ersten Position; bucht das Material <strong>nicht noch einmal</strong> ab („schon mit Lieferschein gebucht“); Leistungsdatum = letzter Liefertag</td>
+</tr>
+<tr>
+<td>Rechnungsentwurf aus Lieferscheinen gelöscht</td>
+<td>die Lieferscheine sind wieder offen („Geliefert“)</td>
+</tr>
+<tr>
+<td>Ware kommt komplett zurück</td>
+<td>am ausgelieferten Lieferschein „Zurücknehmen“ – storniert ihn und bucht das Material zurück; berechnete Lieferscheine bleiben, wie sie sind</td>
+</tr>
+<tr>
+<td>Rechnung wird storniert</td>
+<td>die Ware bleibt beim Kunden – das Lager ändert sich nicht (Storno der Rechnung ist keine Rücknahme)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Lieferscheine sind <strong>kein Umsatz</strong>: Sie erscheinen nicht in Auswertung, Steuer-Abschluss, DATEV oder Mahnwesen und haben keine E-Rechnung.</p>
+<p><strong>Gut zu wissen:</strong> In der Sammelrechnung steht an der ersten Position jedes Lieferscheins „Lieferschein LS-… vom …“ – so ist jedes Lieferdatum auf der Rechnung zu sehen; als Leistungsdatum oben steht der letzte Liefertag. <strong>Abweichungen</strong> (z. B. weniger geliefert als bestellt) einfach in die Beschreibungszeile der Position schreiben. Lieferscheine sehen aus wie die übrigen Belege: Logo, Farben, Schrift und Hintergrund aus <strong>Einstellungen → Design</strong> gelten auch hier, ebenso eigene Standardtexte („Lieferschein – Einleitung/Schluss“).</p>
+<h4>Bestellungen beim Lieferanten</h4>
+<p>Was fehlt, bestellen Sie in vier Schritten – ohne Abtippen:</p>
+<ol class="hb-schritte">
+<li><strong>Lager → Nachbestellen:</strong> Dort steht nach Lieferant, was unter dem Mindestbestand liegt. Bei einem Lieferanten auf <strong>„🛒 Bestellung anlegen“</strong> klicken. Die angehakten Artikel werden bis zum doppelten Mindestbestand aufgefüllt; was schon bestellt und unterwegs ist (Spalte „schon bestellt“), wird abgezogen.</li>
+<li><strong>Prüfen:</strong> Mengen, Einkaufspreise und Lagerort ansehen, bei Bedarf Zeilen ergänzen („+ Zeile“), E-Mail des Lieferanten eintragen – sie wird für diesen Lieferanten gemerkt.</li>
+<li><strong>„✓ Bestellen“</strong> vergibt die Bestellnummer (BE-Jahr-Nummer). Danach das <strong>PDF</strong> drucken oder die Bestellung direkt <strong>per E-Mail</strong> senden (PDF im Anhang).</li>
+<li><strong>Ware kommt:</strong> Bestellung unter <strong>Lager → Bestellungen</strong> öffnen, gelieferte Menge eintragen und <strong>„📦 Wareneingang buchen“</strong>. Das bucht den Lager-Eingang mit der Bestellnummer im Text.</li>
+</ol>
+<p><strong>Teillieferung:</strong> Nur eintragen, was wirklich da ist – der Rest bleibt offen („teilweise geliefert“), bis das nächste Paket kommt. Kommt der Rest nie, „Abschließen – Rest kommt nicht“. Vor der Lieferung lässt sich eine Bestellung stornieren. Auf Wunsch übernimmt der Wareneingang die Einkaufspreise in die Artikel.</p>
+<p><strong>Stolperstelle:</strong> Die Menge „jetzt geliefert“ ist mit dem offenen Rest vorausgefüllt. Kam weniger, bitte die Zahl ändern – gebucht wird genau, was dort steht. Die Rechnung des Lieferanten erfassen Sie wie bisher unter Finanzen → Ausgaben.</p>
+<h4>Wareneingang direkt aus der E-Rechnung</h4>
+<p>Kommt die Ware mit einer E-Rechnung des Lieferanten (XRechnung oder ZUGFeRD-PDF), müssen Sie nichts abtippen. Drei Wege führen zum selben Ziel:</p>
+<ul>
+<li><strong>Lager → Bestellungen:</strong> oben „Ware mit E-Rechnung gekommen?“ – Datei wählen.</li>
+<li><strong>In der Bestellung</strong> ganz unten: „E-Rechnung des Lieferanten hochladen“.</li>
+<li><strong>Belege → E-Rechnung prüfen &amp; lesen:</strong> nach der Prüfung „Als Wareneingang übernehmen …“.</li>
+</ul>
+<p>GaussPilot liest die Rechnungszeilen und ordnet sie Ihren Artikeln zu – über die <strong>EAN</strong>, die <strong>Artikelnummer</strong> oder die gleiche Bezeichnung. Steht Ihre Bestellnummer auf der Rechnung, wird die Bestellung erkannt und die gelieferte Menge darauf angerechnet. Auf einer Prüfseite sehen Sie je Zeile Menge, Artikel und Lagerort und klicken dann <strong>„📦 Wareneingang buchen“</strong>. Auf Wunsch kommen die Einkaufspreise in die Artikel und die Rechnung gleich ins Ausgabenbuch (Kategorie „Material / Wareneinkauf“).</p>
+<p><strong>Stolperstellen:</strong> Zeilen wie Fracht, Verpackung oder Pfand haben keinen Lagerartikel – sie bleiben auf „nicht ins Lager“, das ist richtig so. Eine normale PDF-Rechnung ohne eingebettete E-Rechnung kann GaussPilot nicht lesen; dann den Wareneingang in der Bestellung von Hand eintragen. Lädt jemand dieselbe Rechnung ein zweites Mal hoch, warnt GaussPilot und bucht nur nach ausdrücklicher Bestätigung.</p>
+<h4>Lager-Auswertung</h4>
+<p>Unter <strong>Lager → Auswertung</strong> sehen Sie auf einer Seite, wie es um Ihr Lager steht:</p>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Bereich</th>
+<th>Was zeigt er?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lagerwert</strong></td>
+<td>Wert des Materials zum Einkaufspreis, der Verlauf der letzten 12 Monate und wo der Wert liegt: Lager &amp; Regale, Fahrzeuge, Mitarbeiter, Baustellen, nach Lieferant. Einzelgeräte zählen getrennt (Anlagevermögen).</td>
+</tr>
+<tr>
+<td><strong>🐌 Ladenhüter</strong></td>
+<td>Artikel mit Bestand, die seit 90, 180 oder 365 Tagen nie ausgebucht wurden – sortiert nach gebundenem Geld.</td>
+</tr>
+<tr>
+<td><strong>⏳ Wird knapp</strong></td>
+<td>Reicht beim Verbrauch der letzten 90 Tage nur noch unter 30 Tage – auch wenn der Mindestbestand noch nicht erreicht ist.</td>
+</tr>
+<tr>
+<td><strong>🔥 Renner</strong></td>
+<td>Was am meisten verbraucht wird, nach Wert.</td>
+</tr>
+<tr>
+<td><strong>🔍 Schwund</strong></td>
+<td>Was bei Inventur und Zählungen am Handy fehlte (rot) oder zu viel war, mit Wert; dazu die Zahl der Defektmeldungen.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Ladenhüter, Knappes und Schwund gibt es als CSV für Excel.</p>
+<p><strong>Stolperstellen:</strong> Gerechnet wird mit den <strong>heutigen</strong> Einkaufspreisen. Artikel ohne Einkaufspreis zählen mit 0 € – die Seite nennt sie. Rückgängig gemachte Buchungen zählen nicht mit. Für die Inventur zum Jahresende nehmen Sie weiterhin die Inventurliste unter „Bestand“.</p>
+<p><strong>So lesen Sie es:</strong> Fehlt bei der Inventur immer wieder derselbe Artikel, wird er oft beim Kunden verbraucht, aber nicht gebucht – dann hilft „Beim Kunden verbraucht“ in der App. Große Ladenhüter: im nächsten Auftrag verbauen, an den Lieferanten zurückgeben oder den Mindestbestand senken.</p>
+<p>In der Testumgebung ist ein Beispiellager mit Regalen, Transporter, Baustelle, Material und Geräten angelegt.</p>
+</section>
+<section class="kap" id="verleih-service-modul"><h2><span class="nr">10</span>Verleih &amp; Service (Modul)</h2>
+<p>Mit dem Modul <strong>Verleih &amp; Service</strong> vermieten Sie Geräte und behalten Reparaturen und Prüftermine im Blick. Das Modul läuft auch ohne Pro und ohne Lager – es bringt die Geräteverwaltung mit. Ohne Lizenz trägt die Gruppe in der Seitenleiste die Markierung VERLEIH.</p>
+<h3 id="so-vermieten-sie-ein-geraet"><span class="nr">10.1</span>So vermieten Sie ein Gerät</h3>
+<ol class="hb-schritte">
+<li><strong>Mietgeräte anlegen:</strong> Verleih &amp; Service → <strong>Mietgeräte</strong> → „Neues Mietgerät“ mit Tagespreis, Wochenpreis (freiwillig), Kaution und Prüfintervall – oder ein vorhandenes Gerät aus dem Lager „vermietbar machen“.</li>
+<li><strong>Reservieren:</strong> „+ Neue Vermietung“ → Zeitraum wählen, <strong>„Verfügbarkeit prüfen“</strong>, Kunde und Geräte anhaken, „Reservieren“. Belegte, defekte oder in Reparatur befindliche Geräte sind ausgegraut – doppelt vermieten geht nicht.</li>
+<li><strong>Ausgeben:</strong> Bei Abholung die Vermietung öffnen – am schnellsten den Code am Gerät in der Übersicht scannen. Zustand je Gerät notieren, Kaution abhaken, <strong>„Ausgeben“</strong>. Den <strong>Mietvertrag / das Übergabeprotokoll</strong> als PDF drucken und unterschreiben lassen.</li>
+<li><strong>Zurücknehmen:</strong> Gerät scannen, Zustand prüfen. Bei einem Schaden kurz beschreiben – auf Wunsch wird gleich ein Reparatur-Auftrag angelegt und das Gerät gesperrt. <strong>„Zurücknehmen“</strong>.</li>
+<li><strong>Abrechnen:</strong> <strong>„Rechnungsentwurf erstellen“</strong> – die Miete (und auf Wunsch Schadensersatz als eigene Zeile) kommt als Rechnung mit dem Rückgabetag als Leistungsdatum. Dort prüfen und festschreiben wie jede Rechnung.</li>
+</ol>
+<p>Läuft eine Miete länger, ändern Sie unten in der Vermietung das Mietende – GaussPilot prüft, ob die Geräte in der neuen Zeit frei sind.</p>
+<p><strong>Stolperstellen:</strong> Erster und letzter Tag zählen beide mit (Montag bis Mittwoch = 3 Tage). Beim Preis nimmt GaussPilot automatisch das Günstigste: Tage × Tagespreis, volle Wochen + Resttage oder aufgerundete Wochen.</p>
+<h3 id="kaution"><span class="nr">10.2</span>Kaution</h3>
+<p>Die Kaution ist eine Sicherheit, kein Umsatz – sie steht im Mietvertrag, aber nicht auf der Rechnung. In der Vermietung vermerken Sie den Stand: noch nicht erhalten, erhalten, zurückgezahlt oder mit der Rechnung verrechnet.</p>
+<h3 id="uebersicht-und-kalender"><span class="nr">10.3</span>Übersicht und Kalender</h3>
+<p>Die <strong>Übersicht</strong> zeigt, was heute ausgegeben wird, was zurückkommen muss (rot = überfällig), was gerade beim Kunden ist, was noch abzurechnen ist und was demnächst ansteht. Der <strong>Kalender</strong> zeigt die Belegung aller Geräte über vier Wochen (gelb = reserviert, blau = beim Kunden). Ein Klick auf einen Balken öffnet die Vermietung, ein Klick auf ein freies Feld legt eine Reservierung für dieses Gerät und diesen Tag an.</p>
+<h3 id="service-pruefungen"><span class="nr">10.4</span>Service &amp; Prüfungen</h3>
+<p>Unter <strong>Service &amp; Prüfungen</strong> stehen alle Geräte, deren Prüfung (z. B. DGUV V3) fällig ist oder in den nächsten 30 Tagen fällig wird, und alle offenen Aufträge. Die Zahl am Reiter zeigt, wie viel ansteht.</p>
+<ul>
+<li><strong>Prüfung erledigt:</strong> Ergebnis eintragen, <strong>„✓ Geprüft“</strong> – der nächste Termin wird automatisch gesetzt.</li>
+<li><strong>Reparatur oder Wartung:</strong> „Neuer Auftrag“ (oder automatisch bei der Rücknahme). Eine Reparatur sperrt das Gerät für neue Vermietungen; „erledigt“ gibt es wieder frei, wenn kein weiterer Auftrag offen ist.</li>
+</ul>
+<h3 id="ausgeben-und-zuruecknehmen-mit-dem-handy"><span class="nr">10.5</span>Ausgeben und zurücknehmen mit dem Handy</h3>
+<p>Draußen auf dem Hof geht es mit der Handy-App – auch ohne Netz. Unter <strong>🔧 Verleih</strong> auf <strong>„📷 Gerät scannen“</strong> tippen und den Code am Gerät scannen: Die passende Vermietung öffnet sich.</p>
+<ul>
+<li><strong>Ausgeben:</strong> Zustand je Gerät eintragen (z. B. „neuwertig, 2 Akkus“), Kaution abhaken, <strong>„📤 Ausgeben“</strong>.</li>
+<li><strong>Zurücknehmen:</strong> Zustand eintragen, bei einem Schaden kurz beschreiben – auf Wunsch wird gleich ein Reparatur-Auftrag angelegt und das Gerät gesperrt. <strong>„📥 Zurücknehmen“</strong>.</li>
+</ul>
+<p>Die App zeigt außerdem, was heute abgeholt wird, was zurückkommen muss und was beim Kunden ist. Den Mietvertrag druckt und die Abrechnung macht weiterhin das Büro.</p>
+<p><strong>Wer darf das?</strong> Admins immer. Mitarbeiter, wenn unter <strong>Stammdaten → Mitarbeiter &amp; Geräte</strong> „🔧 Verleih: Mietgeräte ausgeben &amp; zurücknehmen“ gewählt ist – in den Stufen „Lager &amp; Inventur“ und „Vollzugriff in der App“ ist das schon dabei.</p>
+<p><strong>Stolperstelle:</strong> Das Handy kennt nur, was beim letzten Abgleich da war: laufende Vermietungen und Reservierungen der nächsten 14 Tage. Wurde gerade im Büro reserviert, einmal im WLAN abgleichen. Bis zum Abgleich steht am Eintrag „Wartet“.</p>
+<p>In der Testumgebung sind die beiden Bohrhämmer und das Rollgerüst vermietbar, und eine Beispiel-Reservierung beginnt übermorgen.</p>
+</section>
+<section class="kap" id="testumgebung"><h2><span class="nr">11</span>Testumgebung</h2>
+<p>Die Testumgebung ist zum Ausprobieren gedacht, nicht für den Betrieb: Alle Belege tragen „TEST-“ in der Nummer und das Wasserzeichen „TESTUMGEBUNG – kein gültiger Beleg“, E-Mails haben „[TEST]“ im Betreff – und sie arbeitet nur mit ihren eigenen Beispieldaten, nie mit Ihren echten Daten.</p>
 <p>Zum gefahrlosen Ausprobieren gibt es ein zweites GaussPilot mit Beispieldaten: in der Seitenleiste unten auf <strong>🧪 Testumgebung</strong> klicken. Es öffnet sich ein neues Fenster mit orangem Balken; Anmeldung <strong>test</strong> / <strong>test1234</strong>.</p>
 <ul>
 <li>Eigene Daten im Ordner <code>Dokumente\GaussPilot\Testumgebung</code> – die echten Daten, Nummernkreise und Sicherungen werden nicht berührt.</li>
@@ -499,18 +925,36 @@
 <li>Unter <strong>Bank &amp; Zahlungen</strong> liegt ein passender <strong>Beispiel-Kontoauszug</strong> zum Herunterladen und Einlesen.</li>
 <li><strong>Zurücksetzen</strong> im orangen Balken löscht alles und legt die Beispieldaten neu an.</li>
 </ul>
-<p>Die Handy-App und die automatische Datensicherung sind in der Testumgebung abgeschaltet.</p>
+<p>Die Handy-App und die Datensicherung sind in der Testumgebung abgeschaltet.</p>
 </section>
-<section class="kap" id="datensicherung-und-sicherungsziele"><h2><span class="nr">10</span>Datensicherung und Sicherungsziele</h2>
-<p>Das Programm sichert einmal täglich automatisch alle Daten in den Ordner <strong>Sicherungen</strong> auf dem PC – seit Version 0.11 einschließlich des <strong>Steuerordners</strong> (Jahresordner mit Rechnungen, Belegen und Abschlüssen). Eine Sicherung nur auf demselben PC hilft aber nicht bei Festplattendefekt, Diebstahl oder Brand. Deshalb können Sie unter <strong>Einstellungen → Datensicherung</strong> beliebige zusätzliche <strong>Sicherungsziele</strong> einrichten. Jede Sicherung wird dann automatisch auch dorthin kopiert.</p>
-<h3 id="welche-ziele-gehen"><span class="nr">10.1</span>Welche Ziele gehen?</h3>
+<section class="kap" id="datensicherung-und-sicherungsziele"><h2><span class="nr">12</span>Datensicherung und Sicherungsziele</h2>
+<div class="tab"><table>
+<thead>
+<tr>
+<th>Edition</th>
+<th>Sicherung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start (kostenlos)</td>
+<td><strong>von Hand</strong>: Einstellungen → Datensicherung → „Jetzt sichern“ oder Rechtsklick auf das Symbol neben der Uhr → „Jetzt sichern“. Gesichert wird nur lokal in den Ordner <strong>Sicherungen</strong> auf dem PC. Rechnungen müssen 8–10 Jahre aufbewahrt werden.</td>
+</tr>
+<tr>
+<td>Pro</td>
+<td><strong>automatisch</strong> einmal täglich, zusätzlich an beliebige Sicherungsziele: externe Platte, NAS, Server oder Cloud – auf Wunsch verschlüsselt.</td>
+</tr>
+</tbody>
+</table></div>
+<p>In der kostenlosen Version denken Sie bitte selbst ans Sichern – am besten nach jedem Arbeitstag – und kopieren den Ordner Sicherungen regelmäßig auf einen USB-Stick. <strong>Wichtig:</strong> Rechnungen müssen 8–10 Jahre aufbewahrt werden – eine Sicherung nur von Hand und nur auf dem PC reicht dafür auf Dauer nicht aus. Gesichert werden alle Daten – einschließlich des <strong>Steuerordners</strong> (Jahresordner mit Rechnungen, Belegen und Abschlüssen). Eine Sicherung nur auf demselben PC hilft aber nicht bei Festplattendefekt, Diebstahl oder Brand. Deshalb können Sie mit Pro unter <strong>Einstellungen → Datensicherung</strong> beliebige zusätzliche <strong>Sicherungsziele</strong> einrichten. Jede Sicherung wird dann automatisch auch dorthin kopiert.</p>
+<h3 id="welche-ziele-gehen"><span class="nr">12.1</span>Welche Ziele gehen?</h3>
 <ul>
 <li><strong>Ordner auf einer zweiten oder externen Festplatte / USB-Stick</strong> – über „Ordner auswählen …“ das Laufwerk anklicken.</li>
 <li><strong>Netzlaufwerk oder NAS / Server im Büro</strong> – entweder das verbundene Laufwerk wählen oder den Pfad eintippen, z. B. <code>\\NAS\Buero\Sicherung</code>.</li>
 <li><strong>Cloud-Ordner</strong> (OneDrive, Dropbox, Google Drive, Nextcloud-Client …) – der Ordner-Dialog zeigt vorhandene Cloud-Ordner ganz oben an. Das Cloud-Programm lädt die Sicherung dann von selbst hoch.</li>
 <li><strong>Online-Speicher direkt per WebDAV</strong> – für Nextcloud, HiDrive, MagentaCLOUD, GMX/WEB.DE-Cloud oder einen eigenen Server, ohne dass ein Cloud-Programm installiert sein muss. Sie brauchen die WebDAV-Adresse des Anbieters, Benutzername und am besten ein eigenes App-Passwort.</li>
 </ul>
-<h3 id="so-richten-sie-ein-ziel-ein"><span class="nr">10.2</span>So richten Sie ein Ziel ein</h3>
+<h3 id="so-richten-sie-ein-ziel-ein"><span class="nr">12.2</span>So richten Sie ein Ziel ein</h3>
 <ol class="hb-schritte">
 <li><strong>Einstellungen → Datensicherung → Neues Ziel hinzufügen</strong>.</li>
 <li>Art wählen, Bezeichnung vergeben (z. B. „Externe Platte Büro“), Ordner auswählen oder WebDAV-Daten eintragen.</li>
@@ -519,37 +963,46 @@
 </ol>
 <p>In der Liste sehen Sie je Ziel, wann zuletzt erfolgreich gesichert wurde. Ist ein Ziel nicht erreichbar (z. B. externe Platte nicht angesteckt), steht dort der Grund. Die lokale Sicherung läuft trotzdem, und das Programm <strong>holt die Kopie automatisch nach</strong>, sobald das Ziel wieder da ist (Prüfung alle 10 Minuten). Hat ein Ziel 7 Tage nichts bekommen, erscheint ein Hinweis auf der Übersicht.</p>
 <p><strong>Steuerordner lesbar ablegen:</strong> Bei Ordner-Zielen können Sie anhaken, dass der Steuerordner zusätzlich als normale Ordner und Dateien abgelegt wird – praktisch, wenn z. B. die Steuerberatung direkt auf einen freigegebenen Ordner schauen soll.</p>
-<h3 id="kopien-verschluesseln"><span class="nr">10.3</span>Kopien verschlüsseln</h3>
-<p>Unter <strong>Optionen für die Kopien</strong> können Sie ein <strong>Sicherungs-Passwort</strong> festlegen. Die Kopien an den Zielen werden dann vor dem Kopieren verschlüsselt (AES-256) und enden auf <code>.rtenc</code>. Das ist für Cloud-Speicher und tragbare Datenträger sehr zu empfehlen: Wer die Datei findet, kann nichts damit anfangen.</p>
+<h3 id="kopien-verschluesseln"><span class="nr">12.3</span>Kopien verschlüsseln</h3>
+<p>Unter <strong>Optionen für die Kopien</strong> können Sie ein <strong>Sicherungs-Passwort</strong> festlegen. Die Kopien an den Zielen werden dann vor dem Kopieren verschlüsselt (AES-256) und enden auf <code>.gpenc</code>. Das ist für Cloud-Speicher und tragbare Datenträger sehr zu empfehlen: Wer die Datei findet, kann nichts damit anfangen.</p>
 <p><strong>Wichtig:</strong> Ohne das Passwort kommt niemand mehr an die Daten – auch Sie nicht. Bewahren Sie es getrennt auf, z. B. ausgedruckt im Tresor. Die Sicherungen im Ordner „Sicherungen“ auf dem PC bleiben unverschlüsselt.</p>
-<p><strong>Verschlüsselte Sicherung wieder öffnen:</strong> Einstellungen → Datensicherung → „Verschlüsselte Sicherung (.rtenc) wieder öffnen“, Datei wählen, Passwort eingeben – Sie erhalten eine normale ZIP-Datei. Auf einem neuen PC ohne eingerichtetes Programm geht das auch mit dem mitgelieferten Werkzeug <code>tools\sicherung_entschluesseln.py</code>.</p>
+<p><strong>Verschlüsselte Sicherung wieder öffnen:</strong> Einstellungen → Datensicherung → „Verschlüsselte Sicherung (.gpenc) wieder öffnen“, Datei wählen, Passwort eingeben – Sie erhalten eine normale ZIP-Datei. Auf einem neuen PC ohne eingerichtetes Programm geht das auch mit dem mitgelieferten Werkzeug <code>tools\sicherung_entschluesseln.py</code>.</p>
 <p><strong>Empfehlung (3-2-1-Regel):</strong> drei Kopien, auf zwei verschiedenen Datenträgern, eine davon außer Haus. Mit dem PC, einer externen Platte und einem Cloud-Ziel ist das erfüllt.</p>
+<h3 id="wiederherstellen-zum-beispiel-auf-einem-neuen-pc"><span class="nr">12.4</span>Wiederherstellen – zum Beispiel auf einem neuen PC</h3>
+<p>Ist der PC kaputt oder wird er ersetzt, holen Sie den kompletten alten Stand mit einer Sicherung zurück: Kunden, Artikel, Mitarbeiter, Belege, Archiv, Einstellungen, Lizenz und – falls in der Sicherung – den Steuerordner.</p>
+<ol class="hb-schritte">
+<li>GaussPilot auf dem neuen PC installieren und starten.</li>
+<li>Auf der Willkommensseite unter <strong>„Neuer PC oder Neuinstallation?“</strong> die Sicherungsdatei wählen (<code>GaussPilot_…zip</code> oder verschlüsselt <code>….gpenc</code>, z. B. von der externen Platte, dem NAS oder aus dem Cloud-Ordner). Bei <code>.gpenc</code> das Sicherungs-Passwort eingeben.</li>
+<li><strong>Sicherung prüfen</strong> zeigt Firma, Stand und Inhalt. Stimmt alles: <strong>Jetzt wiederherstellen</strong>.</li>
+<li>Mit den bisherigen Zugangsdaten anmelden. E-Mail-Passwort, Cloud-Zugang und KI-Schlüssel einmal neu eintragen – sie sind aus Sicherheitsgründen an den alten PC gebunden.</li>
+</ol>
+<p>Auf einem laufenden PC geht das unter <strong>Einstellungen → Datensicherung → Sicherung zurückspielen</strong> (Auswahl aus der Liste oder eine Datei). Zur Sicherheit wird Ihr Anmelde-Passwort abgefragt, und der aktuelle Stand wird vorher automatisch als „…_vor_wiederherstellung.zip“ gesichert. Eine Sicherung aus einer neueren GaussPilot-Version wird nicht eingespielt – dann zuerst das Update installieren.</p>
 </section>
-<section class="kap" id="ki-assistent"><h2><span class="nr">11</span>KI-Assistent</h2>
+<section class="kap" id="ki-assistent"><h2><span class="nr">13</span>KI-Assistent</h2>
 <p>Unter <strong>System → KI-Assistent</strong> finden Sie einen Chat, der Fragen zur Bedienung beantwortet, Texte formuliert (Angebotstexte, Zahlungserinnerungen, E-Mails) und kaufmännische Begriffe erklärt. Das Besondere: <strong>Sie wählen die KI selbst</strong> und verbinden sie über deren API – das Programm ist an keinen Anbieter gebunden.</p>
-<h3 id="einrichtung"><span class="nr">11.1</span>Einrichtung</h3>
+<h3 id="einrichtung"><span class="nr">13.1</span>Einrichtung</h3>
 <ol class="hb-schritte">
 <li>Anbieter wählen: Anthropic (Claude), OpenAI, Mistral, Google Gemini, OpenRouter, eine beliebige „OpenAI-kompatible“ Adresse – oder <strong>Ollama</strong> für ein Modell, das lokal auf Ihrem PC läuft.</li>
 <li>Beim Anbieter ein Konto anlegen und dort einen <strong>API-Schlüssel</strong> erzeugen; im Programm eintragen. (Abgerechnet wird beim Anbieter nach Verbrauch, meist Cent-Beträge je Frage. Tipp: dort ein Monatslimit setzen.) Für Ollama ist kein Schlüssel nötig.</li>
 <li><strong>Modelle abrufen</strong> klicken und ein Modell auswählen.</li>
 <li>Festlegen, was der Assistent sehen darf, dann <strong>Speichern &amp; Verbindung testen</strong>.</li>
 </ol>
-<h3 id="was-sieht-die-ki"><span class="nr">11.2</span>Was sieht die KI?</h3>
+<h3 id="was-sieht-die-ki"><span class="nr">13.2</span>Was sieht die KI?</h3>
 <p>Ohne weitere Freigabe nur Ihre Frage, eine Beschreibung des Programms sowie Firmenname und Ort. Zusätzlich einzeln zuschaltbar:</p>
 <ul>
 <li><strong>Geschäftszahlen</strong> – Umsatz, Ausgaben, USt-Zahllast, offene Rechnungen (Nummer, Betrag, Fälligkeit). Nötig für Fragen wie „Was ist überfällig?“.</li>
 <li><strong>Kundennamen</strong> – zu offenen Rechnungen und zu einem Beleg, den Sie im Chat mitgeben.</li>
 </ul>
 <p>Bei Anbietern im Internet werden diese Daten dorthin übertragen. Wenn Sie Kundendaten freigeben, klären Sie bitte mit dem Anbieter die Auftragsverarbeitung (AVV) – oder nutzen Sie ein lokales Modell, dann verlässt nichts Ihren Rechner. Gespräche werden in GaussPilot nicht gespeichert.</p>
-<h3 id="grenzen"><span class="nr">11.3</span>Grenzen</h3>
+<h3 id="grenzen"><span class="nr">13.3</span>Grenzen</h3>
 <ul>
 <li>Der Assistent <strong>liest nur</strong>. Er kann nichts buchen, ändern, festschreiben oder versenden.</li>
 <li><strong>Eine KI kann sich irren.</strong> Antworten zu Steuern und Recht sind keine Beratung; verbindlich sind Steuerberater und Finanzamt.</li>
 <li>Zahlen rechnet weiterhin das Programm – der Assistent bekommt sie nur zum Erklären.</li>
 </ul>
 </section>
-<section class="kap" id="sicherheit"><h2><span class="nr">12</span>Sicherheit</h2>
-<p>Das Programm läuft nur auf Ihrem PC und ist aus dem Internet nicht erreichbar. Mit Version 0.11 wurde es zusätzlich komplett durchgeprüft und gehärtet:</p>
+<section class="kap" id="sicherheit"><h2><span class="nr">14</span>Sicherheit</h2>
+<p>Das Programm läuft nur auf Ihrem PC und ist aus dem Internet nicht erreichbar. Es ist zusätzlich durchgeprüft und gehärtet:</p>
 <ul>
 <li><strong>Anmeldung:</strong> Nach 5 falschen Versuchen wird die Anmeldung gesperrt (erst 1 Minute, dann länger, höchstens 15 Minuten) – am PC, beim 2FA-Code und in der Handy-App. Nach 12 Stunden ohne Aktivität werden Sie automatisch abgemeldet. Empfehlung: <strong>2-Faktor-Anmeldung</strong> unter „Konto &amp; 2FA“ einschalten.</li>
 <li><strong>Fremde Dateien:</strong> E-Rechnungen und Kontoauszüge von außen werden vor der Verarbeitung entschärft, sodass eine präparierte Datei keine lokalen Dateien nachladen kann.</li>
@@ -560,7 +1013,7 @@
 </ul>
 <p>Was Sie selbst tun können: Windows und Browser aktuell halten, den PC mit Passwort sperren, die Festplatte verschlüsseln (BitLocker), ein Sicherungsziel außer Haus einrichten und für den Zugriff von unterwegs nur das VPN nutzen – niemals eine Portfreigabe im Router.</p>
 </section>
-<section class="kap" id="sicherheit-datensicherung"><h2><span class="nr">13</span>Sicherheit &amp; Datensicherung</h2>
+<section class="kap" id="sicherheit-datensicherung"><h2><span class="nr">15</span>Sicherheit &amp; Datensicherung</h2>
 <p>Die wichtigste Regel: den Ordner <code>Dokumente\GaussPilot\Daten</code> regelmäßig sichern. Darin liegt alles, was Sie erfasst haben.</p>
 <div class="tab"><table>
 <thead>
@@ -588,7 +1041,7 @@
 </tr>
 <tr>
 <td>Sicherung</td>
-<td>Automatisch einmal täglich in den Ordner <code>Sicherungen</code> (letzte 30 bleiben), manuell über Einstellungen → Datensicherung oder das €-Symbol. Den Ordner <code>Sicherungen</code> zusätzlich wöchentlich auf USB-Stick oder Cloud kopieren.</td>
+<td>Kostenlos: von Hand in den Ordner <code>Sicherungen</code> auf dem PC. Mit Pro: automatisch einmal täglich (letzte 30 bleiben) und an weitere Ziele. Von Hand jederzeit über Einstellungen → Datensicherung oder das €-Symbol. Den Ordner <code>Sicherungen</code> zusätzlich wöchentlich auf USB-Stick oder Cloud kopieren.</td>
 </tr>
 <tr>
 <td>Aufbewahrung</td>
@@ -610,8 +1063,10 @@
 </table></div>
 <p>Das Programm ist nur auf dem eigenen PC erreichbar (<code>127.0.0.1</code>), nicht aus dem Internet. Jede festgeschriebene Datei erhält eine SHA-256-Prüfsumme, mit der sich spätere Veränderungen nachweisen lassen.</p>
 </section>
-<section class="kap" id="faq"><h2><span class="nr">14</span>FAQ</h2>
+<section class="kap" id="faq"><h2><span class="nr">16</span>FAQ</h2>
 <p class="austausch">Ihre Frage ist nicht dabei? Im <a href="https://github.com/hack-guru/gausspilot/discussions">Erfahrungsaustausch</a> helfen sich Nutzer gegenseitig bei Einrichtung und Installation – und berichten, wie GaussPilot in ihrem Betrieb läuft.</p>
+<p><strong>Brauche ich für das Lager ein zweites Programm?</strong> Nein. Lager ist ein Modul von GaussPilot: gleiche Installation, gleiche Kunden, Artikel und Mitarbeiter, gleiche Handy-App. Es wird nur über den Lizenzschlüssel freigeschaltet.</p>
+<p><strong>Was passiert mit meinen Lagerdaten, wenn die Lizenz ausläuft?</strong> Nichts geht verloren. Die Lager-Seiten zeigen dann „Nur Ansicht“: Sie können alles ansehen und exportieren, nur neue Buchungen sind gesperrt, bis wieder eine gültige Lizenz eingetragen ist.</p>
 <p><strong>Der Browser zeigt „Seite nicht erreichbar“.</strong> Das Programm wurde beendet. Doppelklick auf <strong>GaussPilot</strong> auf dem Desktop bzw. im Anwendungsmenü. Hilft das nicht: Rechtsklick auf das Symbol → <strong>Protokolldatei öffnen</strong>; unten steht die letzte Fehlermeldung.</p>
 <p><strong>Das Windows-Setup bricht beim Laden von Python ab.</strong> Das Setup lädt die Python-Laufzeit von python.org und prüft ihre Echtheit. Internetverbindung prüfen (Firmennetze sperren Downloads manchmal) und das Setup erneut starten. Meldet es „Datei wird verwendet“, läuft GaussPilot noch: über das Symbol beenden und <strong>Wiederholen</strong> klicken.</p>
 <p><strong>Linux: <code>installieren.sh</code> meldet, dass Python fehlt.</strong> Den angezeigten Befehl ausführen, z. B. <code>sudo apt install python3 python3-venv</code>, dann <code>./installieren.sh</code> erneut starten. Bricht das Laden der Programmbausteine ab: Internetverbindung prüfen und das Skript einfach noch einmal ausführen.</p>
@@ -633,16 +1088,16 @@
 <p><strong>Wie stelle ich eine Sicherung wieder her?</strong> GaussPilot beenden, im Ordner <code>Dokumente/GaussPilot</code> den Ordner <code>Daten</code> umbenennen (z. B. in <code>Daten_alt</code>), die ZIP-Datei aus <code>Sicherungen</code> in den Ordner <code>Dokumente/GaussPilot</code> entpacken, GaussPilot starten.</p>
 <p><strong>Wie bekomme ich ein Update?</strong> GaussPilot zeigt einen Hinweis, sobald eine neue Version da ist. Unter Windows das neue Setup ausführen, unter Linux das neue Archiv entpacken und <code>./installieren.sh</code> starten (siehe „Updates“). Ihre Daten bleiben unberührt, die Handy-App zieht von selbst nach.</p>
 <p><strong>Kann ich von Windows auf Linux wechseln (oder umgekehrt)?</strong> Ja. Auf dem alten PC eine Sicherung erstellen, auf dem neuen GaussPilot installieren und die Sicherung wie oben beschrieben einspielen. E-Mail-Passwort, WebDAV-Passwort und KI-Schlüssel danach einmal neu eingeben, sie sind an das Benutzerkonto des alten PCs gebunden.</p>
-<p><strong>Ich sehe meine Pro-Funktionen nicht.</strong> Unter <strong>Lizenz</strong> prüfen, ob der Schlüssel eingetragen ist. Steht dort, dass der Update-Service abgelaufen ist, ist diese Version nach dem Ende erschienen: Update-Service verlängern oder die vorige Version weiter nutzen.</p>
 <p><strong>Das Handy zeigt „Offline“, obwohl es im WLAN ist.</strong> Läuft der Büro-PC und ist das €-Symbol da? Ist der Handy-Zugang eingeschaltet? Hat sich die IP-Adresse des PCs geändert, zeigt Einstellungen → Handy-App den neuen QR-Code – dann im Router eine feste Adresse vergeben.</p>
 <p><strong>Gehen Daten verloren, wenn das Handy lange offline ist?</strong> Nein. Alles bleibt auf dem Handy gespeichert, bis die Übertragung geklappt hat. Erst danach gilt ein Eintrag als „Im Büro“.</p>
 <p><strong>Ein Handy ist verloren gegangen.</strong> <strong>Mitarbeiter &amp; Geräte → Angemeldete Geräte → Abmelden.</strong> Der Zugang auf dem Handy ist sofort ungültig. Mitarbeiter sehen in der App ohnehin nur ihre eigenen Erfassungen, keine Rechnungen.</p>
 <p><strong>Kann ein Mitarbeiter am PC Rechnungen sehen?</strong> Nein. Zugänge mit der Rolle „Mitarbeiter“ landen auch am PC nur in der Handy-App.</p>
-<p><strong>Funktioniert der Abgleich auch von unterwegs über mobiles Internet?</strong> Ja, ab Version 0.9 über ein VPN ins Büronetz (bei der FRITZ!Box kostenlos eingebaut: WireGuard). Siehe Abschnitt „Unterwegs abgleichen (VPN)“.</p>
+<p><strong>Funktioniert der Abgleich auch von unterwegs über mobiles Internet?</strong> Ja,  über ein VPN ins Büronetz (bei der FRITZ!Box kostenlos eingebaut: WireGuard). Siehe Abschnitt „Unterwegs abgleichen (VPN)“.</p>
 <p><strong>Warum ist in der Vorschau kein QR-Code?</strong> Der Zahlungs-QR-Code (GiroCode) enthält Ihre IBAN. Ohne gültige IBAN unter Einstellungen → Firma kann er nicht erzeugt werden; die Vorschau zeigt dann einen gestrichelten Platzhalter. Sobald die IBAN eingetragen ist, erscheint der QR-Code auf jeder Rechnung.</p>
 <p><strong>Die Prüfung meldet viele Fehler auf einmal – was tun?</strong> Meist fehlen nur ein oder zwei Angaben (häufig Steuernummer bzw. USt-IdNr. und IBAN), die viele Regeln gleichzeitig auslösen – z. B. BR-S-02 einmal pro Position. Der Kasten <strong>„So beheben Sie das“</strong> oben im Prüfprotokoll nennt die Ursachen mit Link zur richtigen Einstellung. Danach erneut prüfen.</p>
 <p><strong>Kann ich Handy-Einträge zu einer bestehenden Rechnung hinzufügen?</strong> Ja. In <strong>Handy-Erfassungen</strong> Einträge anhaken und <strong>unten „bestehenden Beleg wählen …“ → Hinzufügen</strong>. Möglich bei Rechnungs-Entwürfen und bei Angeboten (Entwurf oder versendet). Spesen werden als „Auslage“ netto weiterberechnet.</p>
 <p><strong>Ein Handy-Eintrag hat einen neuen Kunden – wie lege ich ihn an?</strong> Bei der Übernahme auf <strong>„+ als neuen Kunden anlegen“</strong> klicken: Das Kundenformular ist mit dem Namen vorausgefüllt. Nach dem Speichern werden alle Handy-Einträge mit diesem Namen dem Kunden zugeordnet.</p>
+<p><strong>Kann ich beim Schreiben eines Belegs einen neuen Kunden anlegen?</strong> Ja. Im Angebot, in der Rechnung oder im Lieferschein unter der Kundenauswahl auf <strong>„+ neuen Kunden anlegen“</strong> klicken. Der Beleg wird dabei gespeichert, die Kundenmaske öffnet sich, und nach <strong>„Speichern &amp; zurück …“</strong> sind Sie wieder im Beleg – mit dem neuen Kunden schon eingetragen.</p>
 <p><strong>Wie storniere ich eine Rechnung?</strong> Rechnung öffnen → <strong>Stornieren (Gutschrift)</strong>. Es entsteht ein Gutschrift-Entwurf mit denselben Positionen und dem Bezug zur Rechnung. Diesen prüfen und <strong>festschreiben</strong> – erst dann gilt die Rechnung als storniert und bekommt den Status „Storniert“. Die Gutschrift (GS-…) ist selbst eine E-Rechnung und kann an den Kunden geschickt werden. Danach bei Bedarf eine neue, korrigierte Rechnung schreiben (oder „Kopie“ der alten nutzen). Nur festgeschriebene Rechnungen werden storniert, Entwürfe einfach ändern oder löschen.</p>
 <p><strong>Kann das Tool direkt an ELSTER senden?</strong> Noch nicht. Dafür braucht es die offizielle ELSTER-Schnittstelle ERiC; dazu muss man sich bei der Steuerverwaltung als Softwarehersteller registrieren. Bis dahin zeigt der Steuer-Abschluss die Werte so an, dass sie in wenigen Minuten in „Mein ELSTER“ übertragen sind, und die CSV-Datei geht an die Steuerberatung.</p>
 <p><strong>Kann ich WISO o. Ä. anbinden?</strong> Kaufprogramme wie WISO bieten keine Schnittstelle, über die ein anderes Programm sie steuern könnte. Daten lassen sich aber über die CSV-Exporte (Rechnungsausgangsbuch, Spesen, Steuer-Abschluss) weitergeben.</p>
@@ -654,7 +1109,7 @@
 <p><strong>Kostet der KI-Assistent etwas?</strong> GaussPilot selbst nicht. Der KI-Anbieter rechnet nach Verbrauch über Ihren API-Schlüssel ab; ein lokales Modell mit Ollama ist kostenlos, braucht aber einen leistungsfähigen PC.</p>
 <p><strong>Kann die KI versehentlich etwas buchen oder löschen?</strong> Nein. Der Assistent hat nur Lesezugriff auf die freigegebenen Angaben und kann im Programm nichts ausführen.</p>
 </section>
-<section class="kap" id="fehlermeldungen-der-pruefung"><h2><span class="nr">15</span>Fehlermeldungen der Prüfung</h2>
+<section class="kap" id="fehlermeldungen-der-pruefung"><h2><span class="nr">17</span>Fehlermeldungen der Prüfung</h2>
 <p>Jede Meldung hat eine Kennung (z. B. <code>BR-DE-15</code>). Die häufigsten und ihre Lösung:</p>
 <div class="tab"><table>
 <thead>
@@ -739,7 +1194,7 @@
 </table></div>
 <p><strong>Warnungen</strong> und <strong>Hinweise</strong> blockieren das Festschreiben nicht. Nur <strong>Fehler</strong> müssen behoben werden.</p>
 </section>
-<section class="kap" id="glossar"><h2><span class="nr">16</span>Glossar</h2>
+<section class="kap" id="glossar"><h2><span class="nr">18</span>Glossar</h2>
 <div class="tab"><table>
 <thead>
 <tr>
@@ -798,8 +1253,6 @@
 </tr>
 </tbody>
 </table></div></section>
-<section class="kap" id="versionsverlauf"><h2><span class="nr">17</span>Versionsverlauf</h2>
-<details class="verlauf"><summary>Was ist in welcher Version neu?</summary><ul><li>Version 0.3: mit Handy-App für Mitarbeiter (offline erfassen, Abgleich im Firmen-WLAN), Steuerordner je Jahr und erweiterter Gestaltung (Schriften, Farbverlauf, Banner). Noch nicht enthalten: ELSTER-Übermittlung, DATEV-Export, Bankabgleich, Mahnwesen.</li><li><strong>Version 0.4</strong> bringt: Stundenzettel mit Freigabe im Büro, Angebote direkt in der Handy-App (auch offline, mit PDF und Versand), Suche und Filter in allen Beleglisten, neue Kunden direkt aus dem Handy-Namen, Handy-Einträge an bestehende Belege anhängen, verständliche deutsche Prüfmeldungen und einen QR-Platzhalter in der Vorschau.</li><li><strong>Version 0.5</strong> bringt: Finanzen mit Ausgabenbuch, Auswertung und Steuer-Abschluss (Werte für die Umsatzsteuer-Voranmeldung), eine neue Übersicht mit Diagramm und „Neu vom Handy“, eine Seitenleiste mit Gruppen zum Zuklappen, Nachtmodus am PC und in der App, das Aussehen der App am PC einstellbar, und im Stundenzettel lässt sich jetzt auch der Tag korrigieren.</li><li><strong>Version 0.6</strong> bringt: Zahlungen mit Teilzahlung und Skonto, Bankabgleich per Kontoauszug-Datei (CAMT.053 oder CSV) und das Mahnwesen mit Zahlungserinnerung, Mahnungen und Verzugszinsen.</li><li><strong>Version 0.7</strong> bringt: den DATEV-Export für die Steuerberatung und eine Testumgebung mit Beispieldaten zum gefahrlosen Ausprobieren.</li><li><strong>Version 0.8</strong> bringt: Abschlags- und Schlussrechnungen für größere Aufträge.</li><li><strong>Version 0.9</strong> bringt: Handy-Abgleich von unterwegs über VPN (FRITZ!Box-WireGuard) und auf Wunsch einen Büro-PC, der während der Arbeitszeit wach bleibt.</li><li><strong>Version 0.10</strong> bringt: Rabatte je Position sowie Rabatte und Zuschläge auf den ganzen Beleg.</li><li><strong>Version 0.11</strong> bringt frei wählbare Sicherungsziele (externe Platte, Netzlaufwerk, Cloud – auf Wunsch verschlüsselt), einen KI-Assistenten mit selbst gewählter KI und einen umfassenden Sicherheits-Check mit Härtung des Programms.</li><li><strong>Version 0.12 und 0.13</strong> bringen: den neuen Namen GaussPilot mit eigenem Logo, ein Installationsprogramm für Windows, eine Linux-Version, Lizenzen (Start, Pro, Team), eine tägliche Update-Prüfung, Farbverläufe in beliebigem Winkel und eine Handy-App, die sich selbst aktualisiert und einen Netzwechsel des Büro-PCs von allein erkennt.</li></ul></details></section>
 <p class="hinweis-ende">GaussPilot ist eine rechnerische Hilfe und ersetzt keine Steuer- oder Rechtsberatung.</p>
 </article>
 </div>

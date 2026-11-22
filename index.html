@@ -3,16 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>GaussPilot – Angebote, Rechnungen und E-Rechnung für kleine und mittlere Betriebe</title>
-<meta name="description" content="GaussPilot: Rechnungsprogramm für kleine und mittlere Betriebe und das Handwerk. E-Rechnung nach EN 16931 (ZUGFeRD, XRechnung), Versand per E-Mail, Umsatzsteuer-Voranmeldung, Handy-App. Alle Daten bleiben lokal.">
+<title>GaussPilot – Rechnung, Lager und Verleih für kleine und mittlere Betriebe</title>
+<meta name="description" content="GaussPilot: Bürosoftware für Handwerk und kleine und mittlere Betriebe. E-Rechnung nach EN 16931 kostenlos, dazu Module für Finanzen, Handy-App, Lager und Geräteverleih. Läuft lokal unter Windows und Linux.">
 <meta name="theme-color" content="#1d3461">
+<link rel="canonical" href="https://gausspilot.de/">
+<meta property="og:title" content="GaussPilot – Rechnung, Lager und Verleih">
+<meta property="og:description" content="Ein Programm für Ihren Betrieb: E-Rechnung kostenlos, dazu Pro, Handy-App, Lager und Verleih &amp; Service.">
+<meta property="og:image" content="https://gausspilot.de/bilder/uebersicht.webp">
 <link rel="stylesheet" href="style.css">
 <script>document.documentElement.classList.add("js")</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231d3461'/%3E%3Cg transform='translate%2814.0 14.0%29 scale%280.72%29'%3E%3Cpath d='M80 28 A34 34 0 1 0 84 56 L60 56' fill='none' stroke='%23e9edf6' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 42 H46 M8 58 H40' stroke='%23d4a24c' stroke-width='6' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E">
 </head>
 <body>
 
-<!-- Fester Hintergrund: dezentes Finanz-Muster + wechselnde Programmbilder hinter den „Fenstern“ -->
 <div class="buehne" aria-hidden="true">
   <svg class="muster" width="100%" height="100%">
     <defs>
@@ -43,90 +46,159 @@
     <rect width="100%" height="100%" fill="url(#p)"/>
   </svg>
   <div class="blick">
-    <img data-bild="uebersicht" src="bilder/uebersicht.webp" width="1200" height="724" alt="">
+    <img data-bild="uebersicht" src="bilder/uebersicht.webp" width="1600" height="1000" alt="">
     <img data-bild="rechnung" src="bilder/rechnung.webp" width="720" height="744" alt="" class="hoch">
-    <img data-bild="e-rechnung" src="bilder/e-rechnung.webp" width="1100" height="539" alt="">
-    <img data-bild="steuer" src="bilder/steuer-abschluss.webp" width="1100" height="663" alt="">
+    <img data-bild="festgeschrieben" src="bilder/rechnung-festgeschrieben.webp" width="1600" height="1000" alt="">
+    <img data-bild="lager" src="bilder/lager.webp" width="1600" height="1000" alt="">
+    <img data-bild="lager-auswertung" src="bilder/lager-auswertung.webp" width="1600" height="1000" alt="">
+    <img data-bild="verleih" src="bilder/verleih-kalender.webp" width="1600" height="1000" alt="">
+    <img data-bild="steuer" src="bilder/steuer-abschluss.webp" width="1600" height="1000" alt="">
   </div>
 </div>
 
 <header class="top"><div class="wrap">
   <a class="marke" href="./"><span class="zeichen"><svg viewBox="0 0 100 100" width="34" height="34" aria-hidden="true"><rect width="100" height="100" rx="24" fill="#1d3461"/><g transform="translate(14.0 14.0) scale(0.72)"><path d="M80 28 A34 34 0 1 0 84 56 L60 56" fill="none" stroke="#e9edf6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 H46 M8 58 H40" stroke="#d4a24c" stroke-width="6" stroke-linecap="round"/></g></svg></span><span>Gauss<span class="pilot">Pilot</span></span></a>
-  <nav><a class="opt" href="#funktionen">Funktionen</a><a class="opt" href="#versand">Versand</a><a class="opt" href="#besonderes">Besonderheiten</a><a class="opt" href="#steuer">ELSTER</a><a href="handbuch.html">Handbuch</a><a href="#kontakt">Kontakt</a></nav>
+  <nav><a class="opt" href="#familie">Module</a><a class="opt" href="#rechnung">Rechnung</a><a class="opt" href="#app">Handy-App</a><a class="opt" href="#lager">Lager</a><a class="opt" href="#verleih">Verleih</a><a href="handbuch.html">Handbuch</a><a href="#kontakt">Kontakt</a></nav>
 </div></header>
 
 <main>
 
 <section class="karte-gross held">
   <div class="wrap">
-    <span class="status">In Entwicklung · Testversion verfügbar</span>
-    <h1>Angebote, Rechnungen und E&#8209;Rechnung – sicher durch den Papierkram.</h1>
-    <p class="gross">GaussPilot ist ein Rechnungsprogramm für kleine und mittlere Betriebe und das Handwerk. Es prüft jede E-Rechnung nach EN&nbsp;16931, verschickt sie direkt aus dem Programm, bereitet die Umsatzsteuer-Voranmeldung vor – und läuft auf Ihrem eigenen PC.</p>
-    <a class="knopf" href="#kontakt">Testversion anfragen</a><a class="knopf zwei" href="#funktionen">Funktionen ansehen</a>
+    <img class="held-bild" src="bilder/uebersicht.webp" width="1600" height="1000" alt="GaussPilot-Übersicht mit Umsatz, offenen Rechnungen und Verleih" fetchpriority="high">
+    <span class="status">Version 0.24 · Testversion verfügbar</span>
+    <h1>Rechnung, Lager und Verleih – ein Programm für Ihren Betrieb.</h1>
+    <p class="gross">GaussPilot ist die Bürosoftware für das Handwerk und kleine und mittlere Betriebe. Die geprüfte E&#8209;Rechnung ist kostenlos – dazu nehmen Sie nur die Module, die Ihr Betrieb braucht. Alles läuft auf Ihrem eigenen PC, ohne Abo-Cloud.</p>
+    <div class="chips" aria-label="Module">
+      <a href="#familie" class="chip c-start">Start · kostenlos</a><a href="#rechnung" class="chip c-pro">Pro</a><a href="#app" class="chip c-team">Team</a><a href="#lager" class="chip c-lager">Lager</a><a href="#verleih" class="chip c-verleih">Verleih &amp; Service</a>
+    </div>
+    <a class="knopf" href="#kontakt">Testversion anfragen</a><a class="knopf zwei" href="#familie">Module ansehen</a>
     <p class="scroll-hinweis">Weiterscrollen ↓</p>
   </div>
 </section>
 
 <div class="luecke"></div>
 
-<section id="funktionen" class="karte-gross">
+<section id="familie" class="karte-gross">
   <div class="wrap">
-    <h2>Was GaussPilot kann</h2>
-    <p class="lead">Vom Angebot bis zum Steuerberater – in einem Programm, ohne Abo-Cloud.</p>
-    <div class="raster">
-      <div class="kachel"><div class="ic">🧾</div><h3>E-Rechnung nach EN 16931</h3><p>ZUGFeRD/Factur-X und XRechnung 3.0 aus einem Datensatz – mit eingebauter Prüfung gegen die offiziellen CEN- und KoSIT-Regeln.</p></div>
-      <div class="kachel"><div class="ic">✉️</div><h3>Direkt per E-Mail versenden</h3><p>Rechnung, Angebot oder Mahnung mit einem Klick verschicken – über Ihr eigenes Postfach, mit PDF und E-Rechnung im Anhang.</p></div>
-      <div class="kachel"><div class="ic">📱</div><h3>Handy-App für unterwegs</h3><p>Stunden, Material, Spesen und Aufmaße offline erfassen – im Büro mit einem Klick in die Rechnung übernehmen.</p></div>
-      <div class="kachel"><div class="ic">🏦</div><h3>Zahlungen &amp; Mahnwesen</h3><p>Kontoauszug einlesen, Zahlungen automatisch zuordnen, Skonto, Erinnerungen und Mahnungen mit Verzugszinsen.</p></div>
-      <div class="kachel"><div class="ic">🔒</div><h3>Ihre Daten bleiben bei Ihnen</h3><p>Läuft lokal auf Ihrem PC, Anmeldung mit 2-Faktor, tägliche Sicherung – auf Wunsch verschlüsselt auf externe Platte oder Cloud.</p></div>
-      <div class="kachel"><div class="ic">📊</div><h3>Für die Steuerberatung</h3><p>DATEV-Export (SKR03/SKR04), Rechnungsausgangsbuch und Belege – fertig sortiert je Jahr.</p></div>
+    <h2>Die GaussPilot-Familie</h2>
+    <p class="lead">Ein Programm, eine Installation, eine Handy-App. Sie starten kostenlos und schalten dazu, was Sie brauchen – jedes Modul auch einzeln.</p>
+    <div class="module">
+      <article class="modul m-start">
+        <span class="tag">START</span><h3>E-Rechnung</h3><p class="preis">kostenlos</p>
+        <ul><li>Angebote und Rechnungen im eigenen Design</li><li>ZUGFeRD und XRechnung, geprüft nach EN 16931</li><li>Versand per E-Mail aus dem Programm</li><li>Kunden, Artikel, Ausgaben, Sicherung per Klick auf dem PC</li></ul>
+      </article>
+      <article class="modul m-pro">
+        <span class="tag">PRO</span><h3>Finanzen</h3><p class="preis">die komplette Rechnungssoftware</p>
+        <ul><li>Kontoauszug einlesen, Zahlungen zuordnen</li><li>Mahnwesen mit Verzugszinsen</li><li>Werte für die Umsatzsteuer-Voranmeldung</li><li>DATEV-Export, Abschlags- und Schlussrechnungen</li><li>Automatische Sicherung, auch auf NAS, Server oder Cloud</li></ul>
+      </article>
+      <article class="modul m-team">
+        <span class="tag">TEAM</span><h3>Handy-App</h3><p class="preis">je Gerät</p>
+        <ul><li>Stundenzettel mit Stempeluhr</li><li>Material, Spesen, Aufmaß – auch offline</li><li>Angebote unterwegs schreiben und senden</li><li>Zugriffsstufen vom Azubi bis zum Admin</li></ul>
+      </article>
+      <article class="modul m-lager">
+        <span class="tag">LAGER</span><h3>Material &amp; Geräte</h3><p class="preis">Warenwirtschaft für den Betrieb</p>
+        <ul><li>Lagerorte, Regale, Transporter, Baustellen</li><li>Etiketten drucken, mit dem Handy scannen</li><li>Lieferscheine, Bestellungen, Inventur</li><li>Material vom Scan bis zur Rechnung</li></ul>
+      </article>
+      <article class="modul m-verleih">
+        <span class="tag">VERLEIH</span><h3>Verleih &amp; Service</h3><p class="preis">Geräte vermieten und warten</p>
+        <ul><li>Kalender ohne Doppelbuchungen</li><li>Ausgabe und Rücknahme per Scan – am PC oder mit dem Handy</li><li>Mietvertrag, Kaution, Mietrechnung</li><li>Reparaturen und Prüftermine (z.&nbsp;B. DGUV V3)</li></ul>
+      </article>
     </div>
+    <div class="hinweis-blau"><b>Nur Lager? Nur Verleih?</b> Geht auch. Unter „Arbeitsbereiche“ blenden Sie aus, was Sie nicht nutzen – ein reiner Lager- oder Verleihbetrieb sieht nur sein Modul. Ausgeblendetes wird nicht gelöscht.</div>
   </div>
 </section>
 
-<div class="fenster" data-zeige="uebersicht"><span class="schild">Alles auf einen Blick: Umsatz, offene Rechnungen, Ausgaben und was zu erledigen ist</span></div>
+<div class="fenster" data-zeige="uebersicht"><span class="schild">Die Übersicht: Umsatz, offene Rechnungen, Ausgaben und was zu erledigen ist</span></div>
 
-<section id="versand" class="karte-gross">
+<section id="rechnung" class="karte-gross">
   <div class="wrap zwei-spalten">
     <div>
+      <span class="tag-klein c-start">START</span> <span class="tag-klein c-pro">PRO</span>
       <h2>Schreiben, prüfen, versenden – ohne Programmwechsel</h2>
-      <p class="lead">Kein Herunterladen, kein Anhängen, kein Suchen im Mailprogramm: GaussPilot verschickt direkt über Ihr eigenes E-Mail-Postfach. Der Kunde bekommt die Mail von Ihrer Adresse.</p>
+      <p class="lead">Jede Rechnung wird vor dem Festschreiben nach EN 16931 geprüft. Fehler stehen auf Deutsch da, mit „So beheben Sie das“. Was nicht stimmt, geht gar nicht erst raus.</p>
+      <p class="lead klein">Bereit für die E-Rechnungspflicht: ab 2027 für Firmen über 800.000 € Umsatz, ab 2028 für alle Unternehmen untereinander.</p>
     </div>
     <ol class="schritte">
-      <li><b>Rechnung schreiben</b><span>Kunde wählen, Positionen aus Ihren Artikeln übernehmen, Rabatt oder Skonto dazu.</span></li>
-      <li><b>Prüfen &amp; festschreiben</b><span>Die EN-16931-Prüfung zeigt Fehler auf Deutsch – mit „So beheben Sie das“. Erst dann bekommt die Rechnung ihre Nummer.</span></li>
-      <li><b>Per E-Mail senden</b><span>PDF und E-Rechnung hängen automatisch an, der Text ist vorbereitet. Gesendet wird über Ihr Postfach (z.&nbsp;B. GMX, Web.de, Telekom, eigene Domain).</span></li>
-      <li><b>Zahlung verfolgen</b><span>Kontoauszug einlesen – bezahlte Rechnungen werden automatisch erkannt, offene erinnert und gemahnt, ebenfalls per E-Mail.</span></li>
+      <li><b>Rechnung schreiben</b><span>Kunde wählen, Positionen aus Ihren Artikeln übernehmen oder scannen, Rabatt oder Skonto dazu.</span></li>
+      <li><b>Prüfen &amp; festschreiben</b><span>Die Prüfung läuft gegen die offiziellen Regeln von CEN und KoSIT. Erst dann bekommt die Rechnung ihre Nummer.</span></li>
+      <li><b>Per E-Mail senden</b><span>PDF und E-Rechnung hängen automatisch an. Gesendet wird über Ihr eigenes Postfach.</span></li>
+      <li><b>Zahlung verfolgen</b><span>Mit Pro: Kontoauszug einlesen, bezahlte Rechnungen werden erkannt, offene erinnert und gemahnt.</span></li>
     </ol>
   </div>
 </section>
 
-<div class="fenster" data-zeige="rechnung"><span class="schild">So kommt sie beim Kunden an: Ihre Rechnung mit QR-Code zum Bezahlen und Skonto</span></div>
+<div class="fenster" data-zeige="rechnung"><span class="schild">So kommt sie beim Kunden an: Ihre Rechnung mit QR-Code zum Bezahlen</span></div>
 
-<div class="fenster" data-zeige="e-rechnung"><span class="schild">Geprüft nach EN 16931 und festgeschrieben: ZUGFeRD, XML und XRechnung mit Prüfsumme</span></div>
+<div class="fenster" data-zeige="festgeschrieben"><span class="schild">Geprüft und festgeschrieben: ZUGFeRD, XML und XRechnung, archiviert mit Prüfsumme</span></div>
 
-<section id="besonderes" class="karte-gross">
+<section id="app" class="karte-gross">
   <div class="wrap">
-    <h2>Was GaussPilot besonders macht</h2>
-    <p class="lead">Dinge, die Sie bei vielen Rechnungsprogrammen vergeblich suchen. Zum Aufklappen:</p>
-    <div class="klapp">
-      <details open><summary>📱 Handy-App, die auch ohne Netz funktioniert</summary><p>Mitarbeiter erfassen auf der Baustelle Stunden (mit Stempeluhr), Material, Spesen mit Belegfoto, Aufmaße und sogar Angebote – komplett offline. Im Firmen-WLAN gleicht die App verschlüsselt mit dem Büro-PC ab; mit der FRITZ!Box geht das per VPN auch von unterwegs, ganz ohne Portfreigabe. Jeder Mitarbeiter hat einen eigenen Zugang, Geräte lassen sich sperren.</p></details>
-      <details><summary>🛡️ Fehlerhafte E-Rechnungen können gar nicht erst raus</summary><p>Jede Rechnung wird vor dem Festschreiben gegen das XML-Schema, die offiziellen EN-16931-Regeln (CEN), die XRechnung-Regeln (KoSIT) und die Pflichtangaben nach § 14 UStG geprüft. Was nicht konform ist, lässt sich nicht festschreiben – die Meldungen sind auf Deutsch und führen direkt zur richtigen Stelle.</p></details>
-      <details><summary>📥 Eingangsrechnungen prüfen und lesbar machen</summary><p>E-Rechnungen von Lieferanten (XRechnung, ZUGFeRD, UBL) hochladen: GaussPilot prüft sie, zeigt sie mit der offiziellen KoSIT-Darstellung lesbar an und schlägt bei Fehlern gleich eine Rückweisungs-Mail vor. Mit einem Klick landen sie im Ausgabenbuch.</p></details>
-      <details><summary>🏗️ Abschlags- und Schlussrechnungen für größere Aufträge</summary><p>Zu einem Angebot beliebig viele Abschlagsrechnungen (Prozent oder Betrag) und am Ende die Schlussrechnung, die alle Abschläge mit ihren Steuerbeträgen sauber abzieht – nach § 14 Abs. 5 UStG und auch in der E-Rechnung korrekt gekennzeichnet.</p></details>
-      <details><summary>⏱️ Stundenzettel mit Freigabe</summary><p>Kommen, Pause, Gehen in der App stempeln, Wochen einreichen, am PC freigeben oder mit Begründung ablehnen. Korrekturen werden protokolliert, Hinweise zum Arbeitszeitgesetz inklusive. Der Arbeitszeitnachweis entsteht als PDF und CSV.</p></details>
-      <details><summary>📑 GoBD-Grundlagen eingebaut</summary><p>Lückenlose Rechnungsnummern erst beim Festschreiben, danach ist die Rechnung gesperrt und mit SHA-256-Prüfsumme archiviert. Storno nur per Gutschrift, jede Aktion steht im Protokoll. Ein Steuerordner je Jahr wird automatisch gepflegt.</p></details>
-      <details><summary>🧪 Testumgebung zum gefahrlosen Ausprobieren</summary><p>Ein zweites GaussPilot mit Beispieldaten: festschreiben, mahnen, Kontoauszug einlesen, Steuer-Abschluss und DATEV-Export ausprobieren – und mit einem Klick alles zurücksetzen. Ihre echten Daten bleiben unberührt.</p></details>
-      <details><summary>💾 Sicherung an mehreren Orten – auf Wunsch verschlüsselt</summary><p>Täglich automatisch, zusätzlich an beliebig viele Ziele: externe Platte, USB, NAS, Cloud-Ordner oder per WebDAV in einen Online-Speicher. Optional mit AES-256 verschlüsselt, mit Warnung, wenn ein Ziel länger nichts bekommen hat.</p></details>
-      <details><summary>🤖 KI-Assistent mit der KI Ihrer Wahl</summary><p>Hilfe bei der Bedienung, beim Formulieren von Angeboten und Zahlungserinnerungen oder beim Erklären von Fachbegriffen – mit Claude, OpenAI, Mistral, Gemini oder ganz lokal mit Ollama. Der Assistent liest nur; welche Daten er sehen darf, schalten Sie einzeln frei.</p></details>
+    <span class="tag-klein c-team">TEAM</span>
+    <h2>Die Handy-App für Ihre Leute</h2>
+    <p class="lead">Ihre Mitarbeiter erfassen auf der Baustelle, im Lager oder beim Kunden – auch ohne Netz. Im Firmen-WLAN gleicht die App verschlüsselt mit dem Büro-PC ab, von unterwegs per VPN über die FRITZ!Box.</p>
+    <div class="handys">
+      <figure><img src="bilder/app-start.webp" width="390" height="844" alt="Handy-App: Startseite mit Stundenzettel, Angebot, Stunden, Material, Spesen, Aufmaß, Lager und Verleih" loading="lazy"><figcaption>Alles erfassen</figcaption></figure>
+      <figure><img src="bilder/app-zeit.webp" width="390" height="844" alt="Handy-App: Stundenzettel mit Kommen und Gehen" loading="lazy"><figcaption>Stundenzettel</figcaption></figure>
+      <figure><img src="bilder/app-lager.webp" width="390" height="844" alt="Handy-App: Lager scannen und buchen" loading="lazy"><figcaption>Lager scannen</figcaption></figure>
+      <figure><img src="bilder/app-verleih.webp" width="390" height="844" alt="Handy-App: Verleih – Gerät scannen, ausgeben und zurücknehmen" loading="lazy"><figcaption>Mietgeräte ausgeben</figcaption></figure>
     </div>
+    <ul class="liste">
+      <li>Stunden, Material, Spesen mit Belegfoto, Aufmaß und Notizen</li>
+      <li>Kommen, Pause, Gehen stempeln, Woche einreichen, Freigabe am PC</li>
+      <li>Angebote anlegen, als PDF teilen oder über die Firmen-E-Mail senden</li>
+      <li>Am PC mit einem Klick in Rechnung oder Angebot übernehmen</li>
+      <li>Zugriffsstufen: Admin, Geselle, Mitarbeiter, Lager, Azubi – Rechte auch einzeln</li>
+      <li>Lager buchen und Mietgeräte ausgeben – mit den Modulen Lager und Verleih</li>
+      <li>Läuft auf Android und iPhone, aktualisiert sich selbst</li>
+    </ul>
   </div>
 </section>
 
 <div class="luecke"></div>
 
+<section id="lager" class="karte-gross">
+  <div class="wrap">
+    <span class="tag-klein c-lager">LAGER</span>
+    <h2>Wissen, was wo liegt</h2>
+    <p class="lead">Material im Regal, im Transporter oder auf der Baustelle, Geräte mit Seriennummer und Garantie – der Bestand ergibt sich aus jeder Buchung und ist jederzeit nachvollziehbar.</p>
+    <div class="raster">
+      <div class="kachel"><div class="ic">🗄️</div><h3>Lagerorte &amp; Fahrzeuge</h3><p>Lager, Regal, Fach, Transporter, Mitarbeiter und Baustellen – beliebig verschachtelt, mit Farben für die Etiketten.</p></div>
+      <div class="kachel"><div class="ic">🏷️</div><h3>Etiketten &amp; Scanner</h3><p>QR- und Barcode-Etiketten auf A4-Bögen oder dem Etikettendrucker. Gebucht wird mit der Handy-Kamera oder dem Handscanner.</p></div>
+      <div class="kachel"><div class="ic">🧾</div><h3>Lager trifft Rechnung</h3><p>Was auf der Rechnung steht, geht beim Festschreiben vom Lager ab. Ohne doppeltes Abtippen, ohne doppelte Buchung.</p></div>
+      <div class="kachel"><div class="ic">🚚</div><h3>Lieferscheine</h3><p>Ohne Preise ausliefern, Ware zurücknehmen, mehrere Lieferscheine in eine Sammelrechnung.</p></div>
+      <div class="kachel"><div class="ic">🛒</div><h3>Bestellen &amp; Wareneingang</h3><p>Was fehlt, mit einem Klick beim Lieferanten bestellen. Die Eingangs-E-Rechnung bucht den Wareneingang gleich mit.</p></div>
+      <div class="kachel"><div class="ic">📊</div><h3>Inventur &amp; Auswertung</h3><p>Inventurliste zum Stichtag, Lagerwert im Verlauf, Ladenhüter, Schwund und was bald knapp wird.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="fenster" data-zeige="lager"><span class="schild">Der Bestand: Artikel, Lagerorte, Geräte und Lagerwert auf einen Blick</span></div>
+
+<div class="fenster" data-zeige="lager-auswertung"><span class="schild">Die Lager-Auswertung: Lagerwert, Ladenhüter, Schwund und was bald knapp wird</span></div>
+
+<section id="verleih" class="karte-gross">
+  <div class="wrap zwei-spalten">
+    <div>
+      <span class="tag-klein c-verleih">VERLEIH</span>
+      <h2>Geräte vermieten – und im Blick behalten</h2>
+      <p class="lead">Für Werkzeugverleih, Gerüstbau, Event- und Maschinenvermietung: vom Kalender bis zur Mietrechnung in einem Ablauf. Reparaturen, Wartungen und wiederkehrende Prüfungen gleich mit.</p>
+      <p class="lead klein">Läuft auch ohne Lager und ohne Pro – die Geräteverwaltung ist dabei.</p>
+    </div>
+    <ol class="schritte">
+      <li><b>Reservieren</b><span>Im Kalender über vier Wochen – Doppelbuchungen sind ausgeschlossen, defekte Geräte gesperrt.</span></li>
+      <li><b>Ausgeben</b><span>Gerät scannen – am PC oder mit dem Handy im Lager –, Zustand und Kaution festhalten, Mietvertrag mit Übergabeprotokoll als PDF.</span></li>
+      <li><b>Zurücknehmen</b><span>Zustand prüfen, Schäden notieren – auch offline in der Handy-App. Auf Wunsch entsteht gleich ein Reparatur-Auftrag.</span></li>
+      <li><b>Abrechnen</b><span>Der günstigste Preis aus Tagen und Wochen wird automatisch ermittelt, als E-Rechnung wie gewohnt.</span></li>
+    </ol>
+  </div>
+</section>
+
+<div class="fenster" data-zeige="verleih"><span class="schild">Der Verleih-Kalender: welches Gerät wann reserviert oder beim Kunden ist</span></div>
+
 <section id="steuer" class="karte-gross">
   <div class="wrap">
+    <span class="tag-klein c-pro">PRO</span>
     <h2>Steuer &amp; ELSTER</h2>
     <p class="lead">GaussPilot ermittelt aus Ihren Belegen die Werte für die Umsatzsteuer-Voranmeldung – monatlich oder vierteljährlich, Soll- oder Ist-Versteuerung.</p>
     <ul class="liste">
@@ -143,13 +215,48 @@
 
 <div class="fenster" data-zeige="steuer"><span class="schild">Der Steuer-Abschluss: Kennzahlen 81, 66, 83 – fertig für Mein ELSTER</span></div>
 
+<section id="passt" class="karte-gross">
+  <div class="wrap">
+    <h2>Passt GaussPilot zu mir?</h2>
+    <p class="lead">Ein paar Beispiele, wie Betriebe ihr GaussPilot zusammenstellen können:</p>
+    <div class="beispiele">
+      <div class="beispiel"><h3>🎨 Malerbetrieb, 4 Leute</h3><p>Angebote und Rechnungen, Stundenzettel und Material per Handy, Mahnwesen und DATEV für die Steuerberatung.</p><div class="mini"><span class="c-start">Start</span><span class="c-pro">Pro</span><span class="c-team">Team</span></div></div>
+      <div class="beispiel"><h3>⚡ Elektro mit Transportern</h3><p>Material im Lager und in den Fahrzeugen, Entnahme per Scan auf der Baustelle, direkt in die Rechnung.</p><div class="mini"><span class="c-start">Start</span><span class="c-pro">Pro</span><span class="c-team">Team</span><span class="c-lager">Lager</span></div></div>
+      <div class="beispiel"><h3>🔧 Werkzeug- und Geräteverleih</h3><p>Kalender, Ausgabe und Rücknahme, Kaution, Prüftermine – und die Mietrechnung als E-Rechnung.</p><div class="mini"><span class="c-start">Start</span><span class="c-verleih">Verleih &amp; Service</span></div></div>
+      <div class="beispiel"><h3>🧾 Kleinunternehmer</h3><p>Rechnungen nach § 19 UStG ohne Umsatzsteuer, sauber geprüft und per E-Mail verschickt.</p><div class="mini"><span class="c-start">Start</span></div></div>
+    </div>
+    <p class="weiter">Unsicher? Im <a href="https://github.com/hack-guru/gausspilot/discussions">Erfahrungsaustausch</a> erzählen Betriebe, wie sie GaussPilot einsetzen – oder schreiben Sie uns.</p>
+  </div>
+</section>
+
+<div class="luecke"></div>
+
+<section id="besonderes" class="karte-gross">
+  <div class="wrap">
+    <h2>Was GaussPilot besonders macht</h2>
+    <p class="lead">Dinge, die Sie bei vielen Programmen vergeblich suchen. Zum Aufklappen:</p>
+    <div class="klapp">
+      <details open><summary>🏠 Ihre Daten bleiben bei Ihnen</summary><p>GaussPilot läuft auf Ihrem eigenen PC unter Windows oder Linux – ohne Abo-Cloud und ohne Internetzwang. Anmeldung mit 2-Faktor, verschlüsselte Zugangsdaten, Sicherung per Klick – mit Pro automatisch.</p></details>
+      <details><summary>📱 Eine Handy-App, die ohne Netz funktioniert</summary><p>Erfassen, scannen, Angebote schreiben – komplett offline. Abgeglichen wird verschlüsselt im Firmen-WLAN oder per VPN über die FRITZ!Box, ganz ohne Portfreigabe.</p></details>
+      <details><summary>🛡️ Fehlerhafte E-Rechnungen können gar nicht erst raus</summary><p>Geprüft wird gegen das XML-Schema, die offiziellen EN-16931-Regeln (CEN), die XRechnung-Regeln (KoSIT) und die Pflichtangaben nach § 14 UStG. Eingehende E-Rechnungen prüft und zeigt GaussPilot ebenfalls lesbar an.</p></details>
+      <details><summary>🔄 Wechsel von einem anderen Programm – auch mitten im Jahr</summary><p>Kunden und Artikel aus CSV oder Excel übernehmen, zum Beispiel aus lexoffice, sevdesk, WISO MeinBüro oder DATEV. Rechnungs- und Kundennummern zählen nahtlos weiter.</p></details>
+      <details><summary>💾 PC kaputt? Daten schnell zurück</summary><p>In der kostenlosen Version sichern Sie von Hand per Klick auf Ihrem PC – denken Sie daran: Rechnungen müssen 8–10 Jahre aufbewahrt werden. Mit Pro sichert GaussPilot automatisch jeden Tag – zusätzlich auf externe Platte, NAS, Server oder in die Cloud, auf Wunsch verschlüsselt. Auf einem neuen PC spielt ein Assistent alles in einem Schritt zurück.</p></details>
+      <details><summary>🧪 Testumgebung zum gefahrlosen Ausprobieren</summary><p>Ein zweites GaussPilot mit Beispieldaten – Rechnungen, Lager und Verleih zum Ausprobieren. Mit einem Klick zurücksetzen, Ihre echten Daten bleiben unberührt.</p></details>
+      <details><summary>📑 GoBD-Grundlagen eingebaut</summary><p>Lückenlose Nummern erst beim Festschreiben, festgeschriebene Rechnungen gesperrt und mit Prüfsumme archiviert, Storno nur per Gutschrift, jede Aktion im Protokoll – auch Lagerbuchungen werden nur per Gegenbuchung korrigiert.</p></details>
+      <details><summary>🤖 KI-Assistent mit der KI Ihrer Wahl</summary><p>Hilfe bei der Bedienung und beim Formulieren – mit Claude, OpenAI, Mistral, Gemini oder lokal mit Ollama. Der Assistent liest nur; welche Daten er sehen darf, schalten Sie einzeln frei.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="luecke"></div>
+
 <section id="hilfe" class="karte-gross">
   <div class="wrap">
     <h2>Handbuch &amp; Erfahrungen</h2>
     <p class="lead">Alles zum Nachlesen – und ein Ort, an dem Betriebe ihre Erfahrungen mit GaussPilot teilen.</p>
     <div class="raster">
-      <a class="kachel" href="handbuch.html" style="text-decoration:none;color:inherit;display:block"><div class="ic">📘</div><h3>Handbuch &amp; FAQ</h3><p>Installation unter Windows und Linux, Bedienung Schritt für Schritt und Antworten auf häufige Fragen. Online lesen oder als PDF.</p><p style="margin-top:14px;color:#b07f2e;font-weight:600">Handbuch öffnen →</p></a>
-      <a class="kachel" href="https://github.com/hack-guru/gausspilot/discussions" style="text-decoration:none;color:inherit;display:block"><div class="ic">💬</div><h3>Erfahrungen &amp; Fragen</h3><p>Passt GaussPilot zu meinem Betrieb? Wie läuft es bei anderen? Fragen zur Einrichtung. Lesen geht ohne Anmeldung.</p><p style="margin-top:14px;color:#b07f2e;font-weight:600">Zum Austausch →</p></a>
+      <a class="kachel link" href="handbuch.html"><div class="ic">📘</div><h3>Handbuch &amp; FAQ</h3><p>Installation unter Windows und Linux, Rechnung, Handy-App, Lager und Verleih Schritt für Schritt. Online lesen oder als PDF.</p><p class="mehr">Handbuch öffnen →</p></a>
+      <a class="kachel link" href="https://github.com/hack-guru/gausspilot/discussions"><div class="ic">💬</div><h3>Erfahrungen &amp; Fragen</h3><p>Passt GaussPilot zu meinem Betrieb? Wie läuft es bei anderen? Fragen zur Einrichtung. Lesen geht ohne Anmeldung.</p><p class="mehr">Zum Austausch →</p></a>
     </div>
   </div>
 </section>
@@ -159,13 +266,13 @@
 <section id="kontakt" class="karte-gross dunkel">
   <div class="wrap">
     <h2>Neugierig geworden?</h2>
-    <p class="lead">Sie möchten GaussPilot ausprobieren oder haben Fragen? Schreiben Sie uns – Sie bekommen eine Testversion mit Beispieldaten.</p>
+    <p class="lead">Sie möchten GaussPilot ausprobieren oder haben Fragen? Schreiben Sie uns – Sie bekommen eine Testversion mit Beispieldaten für Rechnung, Lager und Verleih.</p>
     <p class="lead" style="font-size:16px;margin-top:-4px">Läuft unter Windows und Linux · <a href="linux.html" style="color:#d4a24c">So installieren Sie GaussPilot unter Linux</a></p>
-    <button type="button" class="knopf mail-zeigen" data-m="ed.xmg@pohs.baLtrAngiseD">E-Mail-Adresse anzeigen</button><noscript><p class="lead" style="margin-top:12px">DesignArtLab.shop [at] gmx [Punkt] de</p></noscript>
+    <button type="button" class="knopf mail-zeigen" data-m="ed.tolipssuag@ofni">E-Mail-Adresse anzeigen</button><noscript><p class="lead" style="margin-top:12px">info [at] gausspilot [Punkt] de</p></noscript>
   </div>
   <footer><div class="wrap">
-    <span>© 2026 GaussPilot</span>
-    <span><a href="handbuch.html">Handbuch</a><a href="linux.html">Linux</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></span>
+    <span>© 2026 Pierre Zwanziger · GaussPilot</span>
+    <span><a href="handbuch.html">Handbuch</a><a href="https://github.com/hack-guru/gausspilot/discussions">Austausch</a><a href="linux.html">Linux</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></span>
   </div></footer>
 </section>
 

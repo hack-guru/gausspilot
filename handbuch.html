@@ -14,13 +14,13 @@
   <p class="db-marke">Gauss<span>Pilot</span></p>
   <h1>Handbuch &amp; FAQ</h1>
   <p class="db-unter">Rechnung, Lager und Verleih – die Bürosoftware für kleine und mittlere Betriebe</p>
-  <p class="db-stand">Version 0.24.0 · Stand 22.11.2026</p>
+  <p class="db-stand">Version 0.24.2 · Stand 23.11.2026</p>
   <p class="db-copy">© 2026 Pierre Zwanziger · gausspilot.de</p>
 </div>
 
 <main>
 <section class="karte-gross held hb-kopf"><div class="wrap">
-  <span class="status">Version 0.24.0 · Stand 22.11.2026</span>
+  <span class="status">Version 0.24.2 · Stand 23.11.2026</span>
   <h1>Handbuch &amp; FAQ</h1>
   <p class="gross">Alles zu GaussPilot an einem Ort: Installation unter Windows und Linux, Rechnungen und E-Rechnung, Handy-App, Lager, Verleih &amp; Service, Finanzen, Datensicherung und Antworten auf häufige Fragen.</p>
   <a class="knopf" href="#inhalt">Zum Inhalt</a><a class="knopf zwei" href="Handbuch_GaussPilot.pdf" download>PDF herunterladen</a>
@@ -53,6 +53,8 @@
 </section>
 <section class="kap" id="kurzueberblick"><h2><span class="nr">1</span>Kurzüberblick</h2>
 <p>GaussPilot erstellt Angebote und Rechnungen im eigenen Design und prüft jede Rechnung vor dem Festschreiben nach der Norm EN 16931. Es läuft auf Ihrem PC unter Windows oder Linux, alle Daten bleiben im Ordner <code>Dokumente\GaussPilot</code>.</p>
+<figure class="hb-bild"><img src="bilder/uebersicht.webp" alt="Die Übersicht: offene Posten, Umsatz, Fristen und die nächsten Schritte auf einen Blick" loading="lazy"><figcaption>Die Übersicht: offene Posten, Umsatz, Fristen und die nächsten Schritte auf einen Blick</figcaption></figure>
+
 <div class="tab"><table>
 <thead>
 <tr>
@@ -292,6 +294,8 @@
 </ol>
 <p>Angebote bleiben änderbar und löschbar. Sie sind keine E-Rechnungen und werden nicht nach EN 16931 geprüft.</p>
 <h3 id="rechnung-schreiben-und-festschreiben"><span class="nr">5.4</span>Rechnung schreiben und festschreiben</h3>
+<figure class="hb-bild"><img src="bilder/rechnung-festgeschrieben.webp" alt="Geprüft und festgeschrieben: ZUGFeRD, XML und XRechnung, archiviert mit Prüfsumme" loading="lazy"><figcaption>Geprüft und festgeschrieben: ZUGFeRD, XML und XRechnung, archiviert mit Prüfsumme</figcaption></figure>
+
 <ol class="hb-schritte">
 <li><strong>Rechnungen → + Rechnung</strong> (oder aus einem Angebot umwandeln).</li>
 <li>Kunde, Rechnungsdatum, <strong>Leistungsdatum</strong> und Fälligkeit prüfen. Das Leistungsdatum ist Pflicht.</li>
@@ -301,6 +305,8 @@
 <li>Rotes Ergebnis: Die Fehlerliste zeigt, was fehlt. Beleg oder Firmendaten korrigieren und erneut prüfen (siehe Tabelle „Fehlermeldungen“).</li>
 </ol>
 <h3 id="versenden-und-zahlung-erfassen"><span class="nr">5.5</span>Versenden und Zahlung erfassen</h3>
+<figure class="hb-bild"><img src="bilder/rechnung.webp" alt="So kommt die Rechnung beim Kunden an – im eigenen Design, mit QR-Code zum Bezahlen" loading="lazy"><figcaption>So kommt die Rechnung beim Kunden an – im eigenen Design, mit QR-Code zum Bezahlen</figcaption></figure>
+
 <ol class="hb-schritte">
 <li>In der festgeschriebenen Rechnung <strong>Per E-Mail senden</strong>. Standardanhang ist die ZUGFeRD-PDF, bei Behörden zusätzlich die XRechnung.</li>
 <li>Ohne E-Mail-Einrichtung: <strong>⬇ ZUGFeRD-PDF</strong> herunterladen und selbst versenden, dann <strong>Als versendet markieren</strong>.</li>
@@ -378,6 +384,8 @@
 </section>
 <section class="kap" id="handy-app-fuer-mitarbeiter"><h2><span class="nr">7</span>Handy-App für Mitarbeiter</h2>
 <p>Mitarbeiter erfassen unterwegs Stunden, Material, Spesen mit Belegfoto, Angebotsaufnahmen und Aufmaße – auch ohne Netz. Im Firmen-WLAN wird automatisch und verschlüsselt zum Büro-PC übertragen.</p>
+<figure class="hb-bild hb-handys"><div><img src="bilder/app-start.webp" alt="Startseite der App" loading="lazy"><img src="bilder/app-zeit.webp" alt="Stundenzettel" loading="lazy"></div><figcaption>Die Handy-App: alles erfassen und die Stempeluhr – auch ohne Netz</figcaption></figure>
+
 <h3 id="einrichten-einmalig-im-buero"><span class="nr">7.1</span>Einrichten (einmalig, im Büro)</h3>
 <ol class="hb-schritte">
 <li><strong>Mitarbeiter &amp; Geräte → Neuer Zugang</strong>: Benutzername und Startpasswort je Mitarbeiter anlegen, Rolle „Mitarbeiter“.</li>
@@ -496,6 +504,8 @@
 <p>Am PC unter <strong>Stundenzettel</strong> sehen Sie die Zeiten je Mitarbeiter und Woche. Einträge oder ganze Wochen <strong>freigeben</strong> oder mit Grund <strong>ablehnen</strong> (der Mitarbeiter sieht den Grund in der App). Mit <strong>Korrigieren</strong> ändern Sie Tag, Beginn, Ende, Pause oder Tätigkeit – oder löschen den Eintrag; jede Änderung wird protokolliert und kommt beim nächsten Abgleich aufs Handy. In der App startet „Zeit nachtragen“ mit dem heutigen Datum, das ＋ neben jedem Tag trägt für genau diesen Tag nach. Freigegebene Zeiten kann das Handy nicht mehr ändern. <strong>Export</strong>: CSV für alle, PDF-Arbeitszeitnachweis mit Unterschriftszeilen je Mitarbeiter (Kopie in <code>Steuer\&lt;Jahr&gt;\Stundenzettel</code>). Unter <strong>Mitarbeiter &amp; Geräte</strong> lässt sich der Stundenzettel pro Zugang ein- und ausschalten.</p>
 <h3 id="angebote-unterwegs"><span class="nr">7.10</span>Angebote unterwegs</h3>
 <p>Mitarbeiter mit dem Recht <strong>„Angebote erstellen &amp; senden“</strong> (Mitarbeiter &amp; Geräte) und der Chef haben in der App den Reiter <strong>Angebote</strong>:</p>
+<figure class="hb-bild hb-handys"><div><img src="bilder/app-angebote.webp" alt="Angebot in der App" loading="lazy"></div><figcaption>Angebote direkt beim Kunden schreiben</figcaption></figure>
+
 <ol class="hb-schritte">
 <li><strong>＋ Neues Angebot</strong>: Kunde wählen (oder „Neuer Kunde“ mit Name, Ort), Betreff, Positionen aus der Artikelliste oder frei. Die Summen rechnen live mit.</li>
 <li>Die Angebotsnummer kommt aus einem Vorrat von 5 Nummern, den der Büro-PC dem Handy reserviert – so bleiben die Nummern auch offline eindeutig.</li>
@@ -531,6 +541,8 @@
 <h3 id="auswertung"><span class="nr">8.2</span>Auswertung</h3>
 <p>Zeigt für Monat, Quartal, Jahr oder einen freien Zeitraum: Einnahmen, Ausgaben, Ergebnis, Umsatzsteuer und Vorsteuer, ein Diagramm der letzten 12 Monate, Ausgaben nach Kategorie, Umsatz nach Kunden und offene Forderungen. Gutschriften/Stornos werden abgezogen.</p>
 <h3 id="steuer-abschluss-umsatzsteuer-voranmeldung"><span class="nr">8.3</span>Steuer-Abschluss (Umsatzsteuer-Voranmeldung)</h3>
+<figure class="hb-bild"><img src="bilder/steuer-abschluss.webp" alt="Steuer-Abschluss: die Werte für die Umsatzsteuer-Voranmeldung, als PDF und CSV" loading="lazy"><figcaption>Steuer-Abschluss: die Werte für die Umsatzsteuer-Voranmeldung, als PDF und CSV</figcaption></figure>
+
 <ol class="hb-schritte">
 <li>Einmalig rechts einstellen: <strong>monatlich oder vierteljährlich</strong>, <strong>Soll- oder Ist-Versteuerung</strong>, ggf. <strong>Dauerfristverlängerung</strong> und Sondervorauszahlung.</li>
 <li>Zeitraum wählen. Das Tool zeigt die Werte so, wie sie in <strong>„Mein ELSTER“</strong> einzutragen sind: Kz. 81 (19 %), 86 (7 %), 41, 60, 66 (Vorsteuer) und 83 (Zahllast bzw. Erstattung), dazu die Fälligkeit.</li>
@@ -568,6 +580,8 @@
 </section>
 <section class="kap" id="lager-modul"><h2><span class="nr">9</span>Lager (Modul)</h2>
 <p>Das Modul Lager führt Material und Geräte: was im Lager liegt, was im Transporter ist, wo der Bohrhammer gerade ist und was nachbestellt werden muss. Sie finden es in der Seitenleiste in der Gruppe <strong>Lager</strong>. Ohne Lizenz für das Modul tragen die Menüpunkte die Markierung <strong>LAGER</strong> und öffnen eine kurze Beschreibung.</p>
+<figure class="hb-bild"><img src="bilder/lager.webp" alt="Der Bestand: Artikel und Geräte je Lagerort, Regal und Fahrzeug" loading="lazy"><figcaption>Der Bestand: Artikel und Geräte je Lagerort, Regal und Fahrzeug</figcaption></figure>
+
 <p><strong>So funktioniert der Bestand:</strong> Er wird nie von Hand überschrieben, sondern aus Buchungen berechnet – Eingang, Ausgang, Umbuchung, Inventur. Jede Buchung bleibt mit Zeit und Person erhalten. Ein Fehler wird nicht gelöscht, sondern mit einer <strong>Gegenbuchung</strong> korrigiert. So stimmt der Bestand auch dann, wenn später mehrere Handys ohne Netz buchen, und jede Bewegung ist für Prüfer nachvollziehbar.</p>
 <div class="tab"><table>
 <thead>
@@ -696,6 +710,8 @@
 <p><strong>So wird geprüft:</strong> Bei jeder neuen Version druckt ein automatischer Test die Etiketten als PDF, und ein unabhängiger Barcode-Leser muss jeden Code wieder richtig erkennen – in allen Formaten, mit und ohne Logo (quadratische, breite und hohe Logos) und mit Farbstreifen.</p>
 <h3 id="lager-in-der-handy-app"><span class="nr">9.3</span>Lager in der Handy-App</h3>
 <p>Mit dem Modul Lager hat die Handy-App unten den Reiter <strong>Lager</strong>. Alles funktioniert <strong>ohne Netz</strong>: Die Buchungen warten auf dem Handy („Wartet“) und gehen beim nächsten Abgleich im Firmen-WLAN oder per VPN an den PC („Im Büro“). Jede Buchung trägt eine eigene Nummer und kommt genau einmal an, auch wenn der Abgleich unterbrochen und wiederholt wird.</p>
+<figure class="hb-bild hb-handys"><div><img src="bilder/app-lager.webp" alt="Lager scannen" loading="lazy"></div><figcaption>Das Handy ist der Scanner: Etikett scannen und buchen</figcaption></figure>
+
 <h4>Scannen</h4>
 <ol class="hb-schritte">
 <li><strong>Lager → 📷 Scannen</strong> und die Kamera auf das Etikett halten. Erkannt werden QR-Codes, Strichcodes (Code 128) und Hersteller-Barcodes (EAN-13) – meist in unter einer Sekunde.</li>
@@ -790,6 +806,8 @@
 </table></div>
 <h4>Inventurliste zum Stichtag</h4>
 <p><strong>Lager → Bestand</strong>, ganz unten <strong>Inventurliste zum Stichtag</strong>: Datum wählen (im Januar ist der 31.12. des Vorjahres vorgeschlagen), dann <strong>PDF</strong> oder <strong>CSV (Excel)</strong>. Die Liste zeigt den Bestand je Lagerort am Ende des Stichtags mit Einkaufspreis und Wert sowie die <strong>Summe Lagerwert</strong>. Einzelgeräte stehen getrennt darunter, weil sie meist zum Anlagevermögen gehören. Unten ist Platz für Unterschrift und Datum.</p>
+<figure class="hb-bild"><img src="bilder/lager-auswertung.webp" alt="Auswertung: Lagerwert im Verlauf, Ladenhüter und was bald knapp wird" loading="lazy"><figcaption>Auswertung: Lagerwert im Verlauf, Ladenhüter und was bald knapp wird</figcaption></figure>
+
 <p><strong>Stolperstelle:</strong> Artikel ohne Einkaufspreis haben keinen Wert – den Einkaufspreis am Artikel ergänzen. Für eine genaue Liste vorher zählen und per Inventur korrigieren (am PC oder mit dem Handy). Ob und wie der Lagerwert in den Abschluss gehört, klärt die Steuerberatung.</p>
 <h4>Lieferscheine</h4>
 <p>Mit dem Modul Lager gibt es den Belegtyp <strong>Lieferschein</strong> – für Ware, die vor der Rechnung rausgeht.</p>
@@ -885,6 +903,8 @@
 </section>
 <section class="kap" id="verleih-service-modul"><h2><span class="nr">10</span>Verleih &amp; Service (Modul)</h2>
 <p>Mit dem Modul <strong>Verleih &amp; Service</strong> vermieten Sie Geräte und behalten Reparaturen und Prüftermine im Blick. Das Modul läuft auch ohne Pro und ohne Lager – es bringt die Geräteverwaltung mit. Ohne Lizenz trägt die Gruppe in der Seitenleiste die Markierung VERLEIH.</p>
+<figure class="hb-bild"><img src="bilder/verleih.webp" alt="Verleih & Service: Mietgeräte, Ausgaben und Rücknahmen im Überblick" loading="lazy"><figcaption>Verleih & Service: Mietgeräte, Ausgaben und Rücknahmen im Überblick</figcaption></figure>
+
 <h3 id="so-vermieten-sie-ein-geraet"><span class="nr">10.1</span>So vermieten Sie ein Gerät</h3>
 <ol class="hb-schritte">
 <li><strong>Mietgeräte anlegen:</strong> Verleih &amp; Service → <strong>Mietgeräte</strong> → „Neues Mietgerät“ mit Tagespreis, Wochenpreis (freiwillig), Kaution und Prüfintervall – oder ein vorhandenes Gerät aus dem Lager „vermietbar machen“.</li>
@@ -899,6 +919,8 @@
 <p>Die Kaution ist eine Sicherheit, kein Umsatz – sie steht im Mietvertrag, aber nicht auf der Rechnung. In der Vermietung vermerken Sie den Stand: noch nicht erhalten, erhalten, zurückgezahlt oder mit der Rechnung verrechnet.</p>
 <h3 id="uebersicht-und-kalender"><span class="nr">10.3</span>Übersicht und Kalender</h3>
 <p>Die <strong>Übersicht</strong> zeigt, was heute ausgegeben wird, was zurückkommen muss (rot = überfällig), was gerade beim Kunden ist, was noch abzurechnen ist und was demnächst ansteht. Der <strong>Kalender</strong> zeigt die Belegung aller Geräte über vier Wochen (gelb = reserviert, blau = beim Kunden). Ein Klick auf einen Balken öffnet die Vermietung, ein Klick auf ein freies Feld legt eine Reservierung für dieses Gerät und diesen Tag an.</p>
+<figure class="hb-bild"><img src="bilder/verleih-kalender.webp" alt="Der Kalender über vier Wochen – Doppelbuchungen sind ausgeschlossen" loading="lazy"><figcaption>Der Kalender über vier Wochen – Doppelbuchungen sind ausgeschlossen</figcaption></figure>
+
 <h3 id="service-pruefungen"><span class="nr">10.4</span>Service &amp; Prüfungen</h3>
 <p>Unter <strong>Service &amp; Prüfungen</strong> stehen alle Geräte, deren Prüfung (z. B. DGUV V3) fällig ist oder in den nächsten 30 Tagen fällig wird, und alle offenen Aufträge. Die Zahl am Reiter zeigt, wie viel ansteht.</p>
 <ul>
@@ -907,6 +929,8 @@
 </ul>
 <h3 id="ausgeben-und-zuruecknehmen-mit-dem-handy"><span class="nr">10.5</span>Ausgeben und zurücknehmen mit dem Handy</h3>
 <p>Draußen auf dem Hof geht es mit der Handy-App – auch ohne Netz. Unter <strong>🔧 Verleih</strong> auf <strong>„📷 Gerät scannen“</strong> tippen und den Code am Gerät scannen: Die passende Vermietung öffnet sich.</p>
+<figure class="hb-bild hb-handys"><div><img src="bilder/app-verleih.webp" alt="Mietgerät ausgeben" loading="lazy"></div><figcaption>Mietgerät scannen, ausgeben und zurücknehmen – auch offline</figcaption></figure>
+
 <ul>
 <li><strong>Ausgeben:</strong> Zustand je Gerät eintragen (z. B. „neuwertig, 2 Akkus“), Kaution abhaken, <strong>„📤 Ausgeben“</strong>.</li>
 <li><strong>Zurücknehmen:</strong> Zustand eintragen, bei einem Schaden kurz beschreiben – auf Wunsch wird gleich ein Reparatur-Auftrag angelegt und das Gerät gesperrt. <strong>„📥 Zurücknehmen“</strong>.</li>

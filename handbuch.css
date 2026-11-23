@@ -114,3 +114,11 @@ details.verlauf li{margin:8px 0}
 
 .austausch{background:#fbf3e2;border:1px solid #e6cf9f;border-radius:14px;padding:14px 18px;margin:0 0 22px}
 @media print{.austausch{display:none}}
+
+/* Bildschirmfotos */
+.hb-bild{margin:22px 0 26px;padding:0;text-align:center;break-inside:avoid;page-break-inside:avoid}
+.hb-bild img{width:100%;height:auto;border-radius:12px;border:1px solid #dcdad2;box-shadow:0 8px 24px rgba(15,26,51,.12);background:#fff}
+.hb-bild figcaption{margin-top:8px;font-size:14px;color:#5b5b55;font-style:italic}
+.hb-handys>div{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.hb-handys img{width:200px;max-width:44%;border-radius:22px}
+@media print{.hb-bild img{max-height:120mm;width:auto;max-width:100%;box-shadow:none}.hb-handys img{width:52mm;max-width:none}}

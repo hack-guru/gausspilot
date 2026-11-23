@@ -18,7 +18,7 @@ nav a:hover{color:var(--gruen)}
 /* ---------- Feste Bühne im Hintergrund ---------- */
 .buehne{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse at 50% 40%,#f6f5f0 0%,var(--hell) 70%);transition:background .6s}
 .buehne .muster{position:absolute;inset:0;color:var(--gruen);opacity:.075}
-.buehne.bild-an{background:radial-gradient(ellipse at 50% 45%,#e6eaf2 0%,#d8dde8 75%)}
+.buehne.bild-an{background:radial-gradient(ellipse at 50% 45%,#f4efe3 0%,#e9e0cc 75%)}
 .blick{position:absolute;inset:64px 0 0 0;display:grid;place-items:center}
 .blick img{grid-area:1/1;width:auto;max-width:min(1100px,90vw);max-height:calc(100vh - 170px);border-radius:14px;
   box-shadow:0 40px 80px -30px #0f1a3380,0 0 0 1px #00000014;opacity:0;transform:scale(.92) translateY(28px);

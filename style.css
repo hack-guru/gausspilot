@@ -190,3 +190,8 @@ footer .wrap > span:last-child a{margin-left:0}
 .frist-karte a{display:inline-block;margin-top:4px;font-size:13.5px}
 @media (max-width:640px){.frist{right:10px;bottom:12px}.frist-siegel{width:72px;height:72px}.frist-titel{font-size:8.5px}.frist-daten{font-size:10.5px}.frist-stern{font-size:11px}.frist-karte{bottom:84px}}
 @media print{.frist{display:none}}
+
+.liste.eins{columns:1;margin-top:18px}
+/* Sprungziele: Kopfzeile berücksichtigen */
+section[id],[id].fenster{scroll-margin-top:80px}
+@media (max-width:640px){section[id]{scroll-margin-top:70px}}

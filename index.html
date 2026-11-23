@@ -49,6 +49,8 @@
     <img data-bild="uebersicht" src="bilder/uebersicht.webp" width="1600" height="1000" alt="">
     <img data-bild="rechnung" src="bilder/rechnung.webp" width="720" height="744" alt="" class="hoch">
     <img data-bild="festgeschrieben" src="bilder/rechnung-festgeschrieben.webp" width="1600" height="1000" alt="">
+    <img data-bild="kassenbuch" src="bilder/kassenbuch.webp" width="1600" height="1000" alt="">
+    <img data-bild="kassenbericht" src="bilder/kassenbericht.webp" width="1600" height="1000" alt="">
     <img data-bild="lager" src="bilder/lager.webp" width="1600" height="1000" alt="">
     <img data-bild="lager-auswertung" src="bilder/lager-auswertung.webp" width="1600" height="1000" alt="">
     <img data-bild="verleih" src="bilder/verleih-kalender.webp" width="1600" height="1000" alt="">
@@ -58,7 +60,7 @@
 
 <header class="top"><div class="wrap">
   <a class="marke" href="./"><span class="zeichen"><svg viewBox="0 0 100 100" width="34" height="34" aria-hidden="true"><rect width="100" height="100" rx="24" fill="#1d3461"/><g transform="translate(14.0 14.0) scale(0.72)"><path d="M80 28 A34 34 0 1 0 84 56 L60 56" fill="none" stroke="#e9edf6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 H46 M8 58 H40" stroke="#d4a24c" stroke-width="6" stroke-linecap="round"/></g></svg></span><span>Gauss<span class="pilot">Pilot</span></span></a>
-  <nav><a class="opt" href="#familie">Module</a><a class="opt" href="#rechnung">Rechnung</a><a class="opt" href="#app">Handy-App</a><a class="opt" href="#lager">Lager</a><a class="opt" href="#verleih">Verleih</a><a href="handbuch.html">Handbuch</a><a href="#kontakt">Kontakt</a></nav>
+  <nav><a class="opt" href="#familie">Module</a><a class="opt" href="#rechnung">Rechnung</a><a class="opt" href="#kasse">Kasse</a><a class="opt" href="#app">Handy-App</a><a class="opt" href="#lager">Lager</a><a class="opt" href="#verleih">Verleih</a><a href="handbuch.html">Handbuch</a><a href="#kontakt">Kontakt</a></nav>
 </div></header>
 
 <main>
@@ -66,7 +68,7 @@
 <section class="karte-gross held">
   <div class="wrap">
     <img class="held-bild" src="bilder/uebersicht.webp" width="1600" height="1000" alt="GaussPilot-Übersicht mit Umsatz, offenen Rechnungen und Verleih" fetchpriority="high">
-    <span class="status">Version 0.24 · Testversion verfügbar</span>
+    <span class="status">Version 0.25 · Testversion verfügbar</span>
     <h1>Rechnung, Lager und Verleih – ein Programm für Ihren Betrieb.</h1>
     <p class="gross">GaussPilot ist die Bürosoftware für das Handwerk und kleine und mittlere Betriebe. Die geprüfte E&#8209;Rechnung ist kostenlos – dazu nehmen Sie nur die Module, die Ihr Betrieb braucht. Alles läuft auf Ihrem eigenen PC, ohne Abo-Cloud.</p>
     <div class="chips" aria-label="Module">
@@ -86,7 +88,8 @@
     <div class="module">
       <article class="modul m-start">
         <span class="tag">START</span><h3>E-Rechnung</h3><p class="preis">kostenlos</p>
-        <ul><li>Angebote und Rechnungen im eigenen Design</li><li>ZUGFeRD und XRechnung, geprüft nach EN 16931</li><li>Versand per E-Mail aus dem Programm</li><li>Kunden, Artikel, Ausgaben, Sicherung per Klick auf dem PC</li></ul>
+        <ul><li>Angebote und Rechnungen im eigenen Design</li><li>ZUGFeRD und XRechnung, geprüft nach EN 16931</li><li>Versand per E-Mail aus dem Programm</li><li>Kassenbuch für Bargeld – abends zählen, abschließen</li>
+          <li>Kunden, Artikel, Ausgaben, Sicherung per Klick auf dem PC</li></ul>
       </article>
       <article class="modul m-pro">
         <span class="tag">PRO</span><h3>Finanzen</h3><p class="preis">die komplette Rechnungssoftware</p>
@@ -132,6 +135,33 @@
 <div class="fenster" data-zeige="rechnung"><span class="schild">So kommt sie beim Kunden an: Ihre Rechnung mit QR-Code zum Bezahlen</span></div>
 
 <div class="fenster" data-zeige="festgeschrieben"><span class="schild">Geprüft und festgeschrieben: ZUGFeRD, XML und XRechnung, archiviert mit Prüfsumme</span></div>
+
+<section id="kasse" class="karte-gross">
+  <div class="wrap zwei-spalten">
+    <div>
+      <span class="tag-klein c-start">START · KOSTENLOS</span>
+      <h2>Kassenbuch für Bargeld – abends zählen, fertig</h2>
+      <p class="lead">Für Friseur, Bäckerei, Hofladen, Imbiss oder Werkstatt mit Barkasse: Sie tragen einmal am Tag ein, was in der Kasse passiert ist. GaussPilot rechnet die Bareinnahme aus und bereitet alles für Finanzamt und Steuerberatung auf.</p>
+      <ul class="liste eins">
+        <li><b>Offene Ladenkasse oder Registrierkasse</b> – Bestand zählen oder die Werte vom Z-Bon übernehmen, Kassendifferenz inklusive</li>
+        <li><b>Bar bezahlte Rechnung?</b> Im Kassenbericht auswählen – sie wird beim Abschluss automatisch als bezahlt gebucht</li>
+        <li><b>Nachweise anhängen:</b> Foto vom Z-Bon, Kartenabschluss, Kassenzettel – auch nach dem Abschluss</li>
+        <li><b>Kassenbericht und Kassenbuch als PDF und CSV</b>, automatisch im Steuerordner – mit Pro auch in Auswertung, Steuer-Abschluss und DATEV</li>
+      </ul>
+    </div>
+    <ol class="schritte">
+      <li><b>Ausgaben &amp; Entnahmen</b><span>Was bar rausging oder reinkam: Einkauf, Porto, Privatentnahme, Einzahlung auf die Bank, Wechselgeld.</span></li>
+      <li><b>Kartenumsatz</b><span>Kartenzahlungen laut Terminal eintragen – bei einer Registrierkasse die Werte vom Z-Bon.</span></li>
+      <li><b>Kasse zählen</b><span>Stückzahl je Schein und Münze oder nur die Summe. GaussPilot rechnet die Bareinnahme zurück.</span></li>
+      <li><b>Tag abschließen</b><span>Fortlaufende Nummer, danach unveränderbar mit Prüfsumme – der Kassenbericht ist fertig.</span></li>
+    </ol>
+  </div>
+  <div class="wrap"><p class="hinweis">GaussPilot ist keine Registrierkasse: kein Verkauf, kein Bon, keine TSE. Das Kassenbuch ist Teil Ihrer Buchhaltung. Wer eine elektronische Kasse nutzt, braucht dafür weiterhin eine zertifizierte Kasse – GaussPilot übernimmt deren Tageswerte.</p></div>
+</section>
+
+<div class="fenster" data-zeige="kassenbuch"><span class="schild">Das Kassenbuch: Bestand, Monatsumsatz und jeder Tag mit fortlaufender Nummer</span></div>
+
+<div class="fenster" data-zeige="kassenbericht"><span class="schild">Der Kassenbericht: zählen, abschließen – Bareinnahme und Endbestand rechnet GaussPilot</span></div>
 
 <section id="app" class="karte-gross">
   <div class="wrap">
@@ -238,7 +268,7 @@
       <div class="beispiel"><h3>🎨 Malerbetrieb, 4 Leute</h3><p>Angebote und Rechnungen, Stundenzettel und Material per Handy, Mahnwesen und DATEV für die Steuerberatung.</p><div class="mini"><span class="c-start">Start</span><span class="c-pro">Pro</span><span class="c-team">Team</span></div></div>
       <div class="beispiel"><h3>⚡ Elektro mit Transportern</h3><p>Material im Lager und in den Fahrzeugen, Entnahme per Scan auf der Baustelle, direkt in die Rechnung.</p><div class="mini"><span class="c-start">Start</span><span class="c-pro">Pro</span><span class="c-team">Team</span><span class="c-lager">Lager</span></div></div>
       <div class="beispiel"><h3>🔧 Werkzeug- und Geräteverleih</h3><p>Kalender, Ausgabe und Rücknahme, Kaution, Prüftermine – und die Mietrechnung als E-Rechnung.</p><div class="mini"><span class="c-start">Start</span><span class="c-verleih">Verleih &amp; Service</span></div></div>
-      <div class="beispiel"><h3>🧾 Kleinunternehmer</h3><p>Rechnungen nach § 19 UStG ohne Umsatzsteuer, sauber geprüft und per E-Mail verschickt.</p><div class="mini"><span class="c-start">Start</span></div></div>
+      <div class="beispiel"><h3>✂️ Friseursalon mit Barkasse</h3><p>Kassenbuch jeden Abend, Rechnungen für Firmenkunden – auch als Kleinunternehmer nach § 19 UStG. Alles in der kostenlosen Version.</p><div class="mini"><span class="c-start">Start</span></div></div>
     </div>
     <p class="weiter">Unsicher? Im <a href="https://github.com/hack-guru/gausspilot/discussions">Erfahrungsaustausch</a> erzählen Betriebe, wie sie GaussPilot einsetzen – oder schreiben Sie uns.</p>
   </div>
@@ -253,6 +283,7 @@
     <div class="klapp">
       <details open><summary>🏠 Ihre Daten bleiben bei Ihnen</summary><p>GaussPilot läuft auf Ihrem eigenen PC unter Windows oder Linux – ohne Abo-Cloud und ohne Internetzwang. Anmeldung mit 2-Faktor, verschlüsselte Zugangsdaten, Sicherung per Klick – mit Pro automatisch.</p></details>
       <details><summary>📱 Eine Handy-App, die ohne Netz funktioniert</summary><p>Erfassen, scannen, Angebote schreiben – komplett offline. Abgeglichen wird verschlüsselt im Firmen-WLAN oder per VPN über die FRITZ!Box, ganz ohne Portfreigabe.</p></details>
+      <details><summary>💶 Kassenbuch schon in der kostenlosen Version</summary><p>Offene Ladenkasse oder Registrierkasse: Abends zählen, Tag abschließen – fortlaufend nummeriert und unveränderbar, mit Kassenbericht als PDF und Zählprotokoll. Bar bezahlte Rechnungen werden automatisch als bezahlt gebucht.</p></details>
       <details><summary>📷 Das Handy ist der Barcode-Scanner</summary><p>QR-Codes, Code 128 und EAN-13 liest die Handy-App mit der Kamera – auch offline. Die passenden Etiketten erstellt GaussPilot selbst, gedruckt wird auf A4-Bögen oder dem Etikettendrucker. Teure Scanner-Hardware brauchen Sie nicht; ein vorhandener Handscanner funktioniert am PC trotzdem.</p></details>
       <details><summary>🛡️ Fehlerhafte E-Rechnungen können gar nicht erst raus</summary><p>Geprüft wird gegen das XML-Schema, die offiziellen EN-16931-Regeln (CEN), die XRechnung-Regeln (KoSIT) und die Pflichtangaben nach § 14 UStG. Eingehende E-Rechnungen prüft und zeigt GaussPilot ebenfalls lesbar an.</p></details>
       <details><summary>🔄 Wechsel von einem anderen Programm – auch mitten im Jahr</summary><p>Kunden und Artikel aus CSV oder Excel übernehmen, zum Beispiel aus lexoffice, sevdesk, WISO MeinBüro oder DATEV. Rechnungs- und Kundennummern zählen nahtlos weiter.</p></details>

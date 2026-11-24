@@ -197,3 +197,41 @@ footer .wrap > span:last-child a{margin-left:0}
 /* Sprungziele: Kopfzeile berücksichtigen */
 section[id],[id].fenster{scroll-margin-top:80px}
 @media (max-width:640px){section[id]{scroll-margin-top:70px}}
+
+/* Testphase: Knopf und Fenster */
+.status-knopf{cursor:pointer;font:inherit;font-size:14px;transition:background .2s,border-color .2s}
+.status-knopf:hover,.status-knopf:focus-visible{background:#ffffff33;border-color:var(--gold)}
+.status-knopf span{color:var(--gold);margin-left:4px}
+.testinfo{border:0;border-radius:18px;padding:30px 30px 24px;max-width:560px;width:calc(100% - 32px);max-height:calc(100vh - 48px);overflow:auto;background:#fff;color:var(--text);box-shadow:0 24px 60px rgba(15,26,51,.35);border-top:4px solid var(--gold)}
+.testinfo::backdrop{background:rgba(15,26,51,.55);backdrop-filter:blur(2px)}
+.testinfo h3{margin:6px 0 10px;font-size:24px;color:var(--gruen)}
+.testinfo h4{margin:22px 0 10px;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#7a766b}
+.testinfo p{line-height:1.55;margin:0 0 12px}
+.ti-marke{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#b5862f;font-weight:700}
+.ti-zu{position:absolute;top:12px;right:14px;border:0;background:none;font-size:28px;line-height:1;color:#8a867b;cursor:pointer;padding:4px 8px;border-radius:8px}
+.ti-zu:hover{background:var(--hell);color:var(--gruen)}
+.ti-dank{background:linear-gradient(135deg,var(--gruen),var(--dunkel));color:#f1efe9;border-radius:14px;padding:18px 20px;margin:16px 0}
+.ti-dank b{color:#f0c878}
+.ti-dank>b{display:block;font-size:17px;margin-bottom:6px}
+.ti-dank p{color:#e6dcc6;font-size:15px}
+.ti-dank .knopf,.ti-dank a.knopf{display:inline-block;margin-top:4px}
+.ti-hinweis{font-size:14px;color:#5b5b55;background:var(--hell);border-radius:10px;padding:10px 12px}
+.ti-verlauf{list-style:none;margin:0;padding:0;border-left:2px solid var(--linie)}
+.ti-verlauf li{display:flex;gap:12px;padding:0 0 12px 14px;position:relative;font-size:14.5px;line-height:1.45}
+.ti-verlauf li::before{content:"";position:absolute;left:-6px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--hell);border:2px solid var(--gruen)}
+.ti-verlauf li:first-child::before{background:var(--gold);border-color:var(--gold)}
+.ti-verlauf span{flex:0 0 84px;white-space:nowrap;font-weight:700;color:var(--gruen);font-variant-numeric:tabular-nums}
+@media (max-width:560px){.testinfo{padding:24px 18px 18px}.ti-verlauf span{flex-basis:72px;font-size:13px}}
+
+/* Lizenz mit Laufzeit */
+.laufzeit{list-style:none;counter-reset:lz;display:grid;align-items:start;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:26px 0 18px;padding:0}
+.laufzeit li{counter-increment:lz;background:#fff;border:1px solid var(--linie);border-radius:14px;padding:18px 16px 16px;position:relative;border-top:3px solid var(--gruen)}
+.laufzeit li:nth-child(3){border-top-color:var(--gold)}
+.laufzeit li:last-child{border-top-color:#8a867b}
+.laufzeit li::before{content:counter(lz);position:absolute;top:-14px;left:14px;width:26px;height:26px;border-radius:50%;background:var(--gruen);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.laufzeit li:nth-child(3)::before{background:var(--gold)}
+.laufzeit b{display:block;color:var(--gruen);margin-bottom:6px}
+.laufzeit span{font-size:15px;line-height:1.5;color:#45443f}
+.link-knopf{background:none;border:0;padding:0;font:inherit;color:var(--gruen);text-decoration:underline;cursor:pointer}
+@media (max-width:900px){.laufzeit{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:24px}}
+@media (max-width:560px){.laufzeit{grid-template-columns:minmax(0,1fr)}}

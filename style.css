@@ -250,3 +250,15 @@ section[id],[id].fenster{scroll-margin-top:80px}
 .fenster .schild{position:sticky;top:72vh}
 @media (max-width:760px){.karte-gross+.karte-gross{margin-top:28px}.fenster{height:calc(100vh + 180px);padding-top:70vh}.fenster .schild{top:70vh}}
 @media (prefers-reduced-motion:reduce){.modul:hover{transform:none}}
+
+/* Lizenz-Seite */
+.lz-tabelle{width:100%;border-collapse:collapse;margin:8px 0 14px;font-size:15px}
+.lz-tabelle th,.lz-tabelle td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--linie);vertical-align:top}
+.lz-tabelle th{background:var(--hell);color:var(--gruen);font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+.lz-tabelle td:nth-child(2){white-space:nowrap;color:#7a5a1e}
+.text .laufzeit{margin-top:30px;grid-template-columns:repeat(2,minmax(0,1fr));row-gap:28px}
+@media (max-width:640px){.lz-tabelle{font-size:14px}.lz-tabelle td:nth-child(2){white-space:normal}}
+/* Bild-Beschriftung: deutlich hervorgehoben, steht am unteren Bildrand, 600 px Scrollweg */
+.fenster{height:calc(100vh + 566px);min-height:900px;padding:calc(100vh - 82px) 0 0}
+.fenster .schild{position:sticky;top:calc(100vh - 82px);background:var(--gruen);color:#f1efe9;border:1px solid var(--gold);border-left:5px solid var(--gold);font-weight:600;font-size:15px;padding:10px 20px;box-shadow:0 14px 34px -8px rgba(15,26,51,.55),0 0 0 4px rgba(241,239,233,.75)}
+@media (max-width:760px){.fenster{height:calc(100vh + 566px);padding-top:calc(100vh - 96px)}.fenster .schild{top:calc(100vh - 96px);font-size:14px;padding:9px 14px;max-width:calc(100vw - 104px);border-radius:16px;text-align:left}.fenster{justify-content:flex-start;padding-left:12px}}

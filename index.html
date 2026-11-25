@@ -73,7 +73,7 @@
       <button type="button" class="ti-zu" id="test-zu" aria-label="Schließen">×</button>
       <span class="ti-marke">✦ Testphase</span>
       <h3 id="testinfo-titel">Die Testphase hat begonnen</h3>
-      <p>Mit <b>Version 0.25.0</b> startet die Testphase von GaussPilot. Aktuell ist <b>0.26.2</b>. Wir suchen Betriebe, die GaussPilot im Alltag ausprobieren und uns sagen, was gut läuft und was fehlt.</p>
+      <p>Mit <b>Version 0.25.0</b> startet die Testphase von GaussPilot. Aktuell ist <b>0.26.4</b>. Wir suchen Betriebe, die GaussPilot im Alltag ausprobieren und uns sagen, was gut läuft und was fehlt.</p>
       <div class="ti-dank">
         <b>Ihr Dankeschön: 3 Jahre Komplettpaket kostenlos</b>
         <p>Die <b>ersten 20 Betriebe</b>, die GaussPilot 2–4 Wochen testen und uns eine Rückmeldung geben, erhalten <b>Pro und alle Module</b> (Team, Lager, Verleih &amp; Service) für 3 Jahre kostenlos.</p>
@@ -83,7 +83,7 @@
       <p class="ti-hinweis">Testversion heißt: Es kann noch Fehler geben. Sichern Sie Ihre Daten regelmäßig. Fehler und Wünsche gern per E-Mail oder im <a href="https://github.com/hack-guru/gausspilot/discussions">Erfahrungsaustausch</a>.</p>
       <h4>Bisheriger Verlauf</h4>
       <ol class="ti-verlauf">
-        <li><span>0.26</span><div>Lizenz mit Laufzeit – Pro und Module bequem verlängern</div></li>
+        <li><span>0.26</span><div>Lizenz mit Laufzeit, Technik-Sets und Teilrückgabe im Verleih, Sicherung zur Probe öffnen, Handy-App in der Testumgebung</div></li>
         <li><span>0.25</span><div><b>Testphase beginnt</b> · Kassenbuch für Bargeld, Suche in langen Listen, Jahresinventur, Wiederherstellen unter Windows verbessert</div></li>
         <li><span>0.24</span><div>Verleih in der Handy-App, eigene Bestellmengen, Datensicherung per Klick</div></li>
         <li><span>0.23</span><div>Modul Verleih &amp; Service: Kalender, Mietvertrag, Kaution, Prüftermine</div></li>
@@ -130,7 +130,7 @@
       </article>
       <article class="modul m-verleih">
         <span class="tag">VERLEIH</span><h3>Verleih &amp; Service</h3><p class="preis">Geräte vermieten und warten</p>
-        <ul><li>Kalender ohne Doppelbuchungen</li><li>Ausgabe und Rücknahme per Scan – am PC oder mit dem Handy</li><li>Mietvertrag, Kaution, Mietrechnung</li><li>Reparaturen und Prüftermine (z.&nbsp;B. DGUV V3)</li></ul>
+        <ul><li>Kalender ohne Doppelbuchungen</li><li>Ausgabe und Rücknahme per Scan – am PC oder mit dem Handy</li><li>Technik-Sets mit Zubehör und Packliste</li><li>Mietvertrag, Kaution, Mietrechnung</li><li>Reparaturen und Prüftermine (z.&nbsp;B. DGUV V3)</li></ul>
       </article>
     </div>
     <div class="hinweis-blau"><b>Nur Lager? Nur Verleih?</b> Geht auch. Unter „Arbeitsbereiche“ blenden Sie aus, was Sie nicht nutzen – ein reiner Lager- oder Verleihbetrieb sieht nur sein Modul. Ausgeblendetes wird nicht gelöscht.</div>
@@ -206,7 +206,7 @@
       <li>Am PC mit einem Klick in Rechnung oder Angebot übernehmen</li>
       <li>Zugriffsstufen: Admin, Geselle, Mitarbeiter, Lager, Azubi – Rechte auch einzeln</li>
       <li><b>Eingebauter QR- und Barcode-Scanner:</b> Lager buchen und Mietgeräte ausgeben mit der Handy-Kamera – kein Scanner-Gerät nötig (mit den Modulen Lager und Verleih)</li>
-      <li>Läuft auf Android und iPhone, aktualisiert sich selbst</li>
+      <li>Getestet auf Android (Xiaomi 14T Pro, Xiaomi 15T, Huawei P20 Pro) – der iPhone-Test folgt. Die App aktualisiert sich selbst.</li>
     </ul>
   </div>
 </section>
@@ -253,12 +253,13 @@
       <span class="tag-klein c-verleih">VERLEIH</span>
       <h2>Geräte vermieten – und im Blick behalten</h2>
       <p class="lead">Für Werkzeugverleih, Gerüstbau, Event- und Maschinenvermietung: vom Kalender bis zur Mietrechnung in einem Ablauf. Reparaturen, Wartungen und wiederkehrende Prüfungen gleich mit.</p>
+      <p class="lead klein"><b>Technik-Sets:</b> Kamera, Objektiv, 2× Akku und Tasche als ein Set – nur das Set anhaken, alles wird reserviert und auf Verfügbarkeit geprüft, auf Wunsch mit eigenem Set-Preis.</p>
       <p class="lead klein">Läuft auch ohne Lager und ohne Pro – die Geräteverwaltung ist dabei.</p>
     </div>
     <ol class="schritte">
       <li><b>Reservieren</b><span>Im Kalender über vier Wochen – Doppelbuchungen sind ausgeschlossen, defekte Geräte gesperrt.</span></li>
-      <li><b>Ausgeben</b><span>Gerät scannen – am PC oder mit dem Handy im Lager –, Zustand und Kaution festhalten, Mietvertrag mit Übergabeprotokoll als PDF.</span></li>
-      <li><b>Zurücknehmen</b><span>Zustand prüfen, Schäden notieren – auch offline in der Handy-App. Auf Wunsch entsteht gleich ein Reparatur-Auftrag.</span></li>
+      <li><b>Ausgeben</b><span>Gerät oder ganzes Set scannen – am PC oder mit dem Handy –, Zustand und Kaution festhalten. Mietvertrag mit Übergabeprotokoll und Packliste zum Abhaken als PDF.</span></li>
+      <li><b>Zurücknehmen</b><span>Zustand prüfen, Zubehör zählen – fehlende Teile werden angezeigt. Auch Teilrückgaben: Was zurück ist, ist sofort wieder frei. Auf Wunsch entsteht gleich ein Reparatur-Auftrag.</span></li>
       <li><b>Abrechnen</b><span>Der günstigste Preis aus Tagen und Wochen wird automatisch ermittelt, als E-Rechnung wie gewohnt.</span></li>
     </ol>
   </div>
@@ -313,8 +314,8 @@
       <details><summary>📷 Das Handy ist der Barcode-Scanner</summary><p>QR-Codes, Code 128 und EAN-13 liest die Handy-App mit der Kamera – auch offline. Die passenden Etiketten erstellt GaussPilot selbst, gedruckt wird auf A4-Bögen oder dem Etikettendrucker. Teure Scanner-Hardware brauchen Sie nicht; ein vorhandener Handscanner funktioniert am PC trotzdem.</p></details>
       <details><summary>🛡️ Fehlerhafte E-Rechnungen können gar nicht erst raus</summary><p>Geprüft wird gegen das XML-Schema, die offiziellen EN-16931-Regeln (CEN), die XRechnung-Regeln (KoSIT) und die Pflichtangaben nach § 14 UStG. Eingehende E-Rechnungen prüft und zeigt GaussPilot ebenfalls lesbar an.</p></details>
       <details><summary>🔄 Wechsel von einem anderen Programm – auch mitten im Jahr</summary><p>Kunden und Artikel aus CSV oder Excel übernehmen, zum Beispiel aus lexoffice, sevdesk, WISO MeinBüro oder DATEV. Rechnungs- und Kundennummern zählen nahtlos weiter.</p></details>
-      <details><summary>💾 PC kaputt? Daten schnell zurück</summary><p>In der kostenlosen Version sichern Sie per Klick auf Ihrem PC und kopieren die Sicherung selbst auf einen USB-Stick oder eine Festplatte – das Handbuch zeigt, welcher Ordner es ist. Denken Sie daran: Rechnungen müssen 8–10 Jahre aufbewahrt werden. Nur mit Pro sichert GaussPilot automatisch jeden Tag – zusätzlich auf externe Platte, NAS, Server oder in die Cloud, auf Wunsch verschlüsselt. Auf einem neuen PC spielt ein Assistent alles in einem Schritt zurück.</p></details>
-      <details><summary>🧪 Testumgebung zum gefahrlosen Ausprobieren</summary><p>Ein zweites GaussPilot mit Beispieldaten – Rechnungen, Lager und Verleih zum Ausprobieren. Mit einem Klick zurücksetzen, Ihre echten Daten bleiben unberührt.</p></details>
+      <details><summary>💾 PC kaputt? Daten schnell zurück</summary><p>In der kostenlosen Version sichern Sie per Klick auf Ihrem PC und kopieren die Sicherung selbst auf einen USB-Stick oder eine Festplatte – das Handbuch zeigt, welcher Ordner es ist. Denken Sie daran: Rechnungen müssen 8–10 Jahre aufbewahrt werden. Nur mit Pro sichert GaussPilot automatisch jeden Tag – zusätzlich auf externe Platte, NAS, Server oder in die Cloud, auf Wunsch verschlüsselt. Auf einem neuen PC spielt ein Assistent alles in einem Schritt zurück. Und ob Ihre Sicherung im Notfall funktioniert, prüfen Sie mit einem Klick: „Neueste Sicherung jetzt prüfen“ öffnet sie zur Probe, ohne etwas zu ändern – GaussPilot erinnert alle 90 Tage daran.</p></details>
+      <details><summary>🧪 Testumgebung zum gefahrlosen Ausprobieren</summary><p>Ein zweites GaussPilot mit Beispieldaten – alle Module freigeschaltet, auch die Handy-App lässt sich ausprobieren. Mit einem Klick zurücksetzen, Ihre echten Daten bleiben unberührt.</p></details>
       <details><summary>📑 GoBD-Grundlagen eingebaut</summary><p>Lückenlose Nummern erst beim Festschreiben, festgeschriebene Rechnungen gesperrt und mit Prüfsumme archiviert, Storno nur per Gutschrift, jede Aktion im Protokoll – auch Lagerbuchungen werden nur per Gegenbuchung korrigiert.</p></details>
       <details><summary>🤖 KI-Assistent mit der KI Ihrer Wahl</summary><p>Hilfe bei der Bedienung und beim Formulieren – mit Claude, OpenAI, Mistral, Gemini oder lokal mit Ollama. Der Assistent liest nur; welche Daten er sehen darf, schalten Sie einzeln frei.</p></details>
     </div>
@@ -356,7 +357,7 @@
 <section id="kontakt" class="karte-gross dunkel">
   <div class="wrap">
     <h2>Neugierig geworden?</h2>
-    <p class="lead">Sie möchten GaussPilot ausprobieren oder haben Fragen? Schreiben Sie uns – Sie bekommen eine Testversion mit Beispieldaten für Rechnung, Lager und Verleih.</p>
+    <p class="lead">Sie möchten GaussPilot ausprobieren oder haben Fragen? Schreiben Sie uns – Sie bekommen eine Testversion mit Beispieldaten – alle Module und die Handy-App zum Ausprobieren.</p>
     <p class="lead" style="font-size:16px;margin-top:-4px">Läuft unter Windows und Linux · <a href="linux.html" style="color:#d4a24c">So installieren Sie GaussPilot unter Linux</a></p>
     <button type="button" class="knopf mail-zeigen" data-m="ed.tolipssuag@ofni">E-Mail-Adresse anzeigen</button><noscript><p class="lead" style="margin-top:12px">info [at] gausspilot [Punkt] de</p></noscript>
   </div>

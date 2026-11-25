@@ -419,12 +419,12 @@ document.querySelectorAll('.mail-zeigen').forEach(function(b){
   <button class="frist-siegel" type="button" aria-expanded="false" aria-controls="frist-karte" title="E-Rechnungspflicht">
     <span class="frist-stern">✦</span>
     <span class="frist-titel">E-Rechnung</span>
-    <span class="frist-daten">1.1.2027<br>1.1.2028</span>
+    <span class="frist-daten"><span class="frist-zeile" data-ab="2027-01-01"><small>ab</small> 1.1.2027</span><span class="frist-zeile" data-ab="2028-01-01"><small>ab</small> 1.1.2028</span></span>
   </button>
   <div class="frist-karte" id="frist-karte" hidden>
     <b>E-Rechnungspflicht</b>
-    <p><span>1.1.2027</span> bei mehr als 800.000 € Vorjahresumsatz</p>
-    <p><span>1.1.2028</span> für alle Unternehmen (B2B)</p>
+    <p class="frist-zeile" data-ab="2027-01-01"><span><small>Ab</small> 1.1.2027</span> bei mehr als 800.000 € Vorjahresumsatz</p>
+    <p class="frist-zeile" data-ab="2028-01-01"><span><small>Ab</small> 1.1.2028</span> für alle Unternehmen (B2B)</p>
     <a href="#rechnung">GaussPilot ist darauf ausgelegt →</a>
   </div>
 </div>
@@ -434,7 +434,14 @@ function zu(){k.hidden=true;b.setAttribute('aria-expanded','false')}
 b.addEventListener('click',function(e){e.stopPropagation();var o=k.hidden;k.hidden=!o;b.setAttribute('aria-expanded',o?'true':'false')});
 document.addEventListener('click',function(e){if(!f.contains(e.target))zu()});
 k.querySelector('a').addEventListener('click',zu);
-document.addEventListener('keydown',function(e){if(e.key==='Escape')zu()});})();
+document.addEventListener('keydown',function(e){if(e.key==='Escape')zu()});
+/* ab / seit: richtet sich nach dem heutigen Datum in Deutschland */
+try{var heute=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+f.querySelectorAll('.frist-zeile').forEach(function(z){if(heute>=z.dataset.ab){var s=z.querySelector('small');s.textContent=s.textContent==='Ab'?'Seit':'seit';z.classList.add('vorbei')}});}catch(e){}
+/* der Fußzeile ausweichen */
+var fuss=document.querySelector('footer');
+if(fuss&&'IntersectionObserver' in window){new IntersectionObserver(function(e){var r=e[0];f.style.bottom=r.isIntersecting?(Math.max(22,innerHeight-r.boundingClientRect.top+16))+'px':''},{threshold:[0,.25,.5,.75,1]}).observe(fuss);}
+})();
 </script>
 <script>
 (function(){var d=document.getElementById('testinfo'),a=document.getElementById('test-auf'),z=document.getElementById('test-zu');if(!d||!a)return;

@@ -262,3 +262,12 @@ section[id],[id].fenster{scroll-margin-top:80px}
 .fenster{height:calc(100vh + 566px);min-height:900px;padding:calc(100vh - 82px) 0 0}
 .fenster .schild{position:sticky;top:calc(100vh - 82px);background:var(--gruen);color:#f1efe9;border:1px solid var(--gold);border-left:5px solid var(--gold);font-weight:600;font-size:15px;padding:10px 20px;box-shadow:0 14px 34px -8px rgba(15,26,51,.55),0 0 0 4px rgba(241,239,233,.75)}
 @media (max-width:760px){.fenster{height:calc(100vh + 566px);padding-top:calc(100vh - 96px)}.fenster .schild{top:calc(100vh - 96px);font-size:14px;padding:9px 14px;max-width:calc(100vw - 104px);border-radius:16px;text-align:left}.fenster{justify-content:flex-start;padding-left:12px}}
+
+/* Siegel: ab/seit und Ausweichen vor der Fußzeile */
+.frist{transition:bottom .35s ease}
+.frist-zeile{display:block}
+.frist-daten small{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--gold2);margin-right:1px}
+.frist-daten{font-size:11.5px}
+.frist-karte small{font-size:inherit;font-weight:700;color:inherit}
+.frist-karte span{min-width:96px}
+@media (max-width:640px){.frist-daten{font-size:9.5px}.frist-daten small{font-size:7.5px}}

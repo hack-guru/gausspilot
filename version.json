@@ -1,7 +1,7 @@
 {
-  "version": "0.26.0",
-  "datum": "2026-11-24",
+  "version": "0.27.0",
+  "datum": "2026-11-26",
   "download": "https://gausspilot.de/#kontakt",
-  "hinweis": "Testphase: Das Update bekommen Sie per E-Mail von GaussPilot.",
+  "hinweis": "Testphase: Das Update bekommen Sie per E-Mail von GaussPilot. Neu: neue Lizenzschlüssel (werden mit Internet automatisch umgestellt).",
   "gesperrte_lizenzen": []
 }

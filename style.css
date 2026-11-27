@@ -307,3 +307,34 @@ section[id],[id].fenster{scroll-margin-top:80px}
 .support-tester h3{color:#f0c878}.support-tester p{color:#e6dcc6}
 @media (max-width:900px){.support-raster{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.support-raster{grid-template-columns:minmax(0,1fr)}}
+
+/* Bilder groß ansehen */
+.lupe-ziel{cursor:zoom-in}
+.lupe-tipp{display:inline-block;margin-left:.5em;padding:.1em .55em;border-radius:99px;background:rgba(212,162,76,.9);color:#1d3461;font-size:.8em;font-weight:600;white-space:nowrap}
+dialog.lupe{max-width:none;max-height:none;width:100vw;height:100vh;margin:0;padding:3vh 3vw;border:0;background:rgba(10,18,36,.92);display:none;flex-direction:column;align-items:center;justify-content:center;cursor:zoom-out}
+dialog.lupe[open]{display:flex}
+dialog.lupe::backdrop{background:rgba(10,18,36,.6)}
+dialog.lupe img{max-width:94vw;max-height:86vh;width:auto;height:auto;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.5);cursor:default;background:#fff}
+dialog.lupe p{color:#e9edf6;margin:.8em 0 0;text-align:center;font-size:.95rem}
+.lupe-zu{position:fixed;top:14px;right:18px;width:44px;height:44px;border-radius:50%;border:0;background:#d4a24c;color:#1d3461;font-size:28px;line-height:1;cursor:pointer}
+.hinweis-blau.wechsel{margin:24px 0 8px}
+
+/* Kasten „Wofür GaussPilot (noch) nicht gedacht ist“ */
+.nicht-gedacht{margin:24px 0 8px;padding:16px 20px;border:1px dashed #c9b48a;border-radius:12px;background:#fbf7ee}
+.nicht-gedacht h3{margin:0 0 8px;font-size:17px;color:#1d3461}
+.nicht-gedacht ul{margin:0;padding-left:1.2em;columns:2;column-gap:28px}
+.nicht-gedacht li{margin:2px 0;break-inside:avoid}
+@media (max-width:700px){.nicht-gedacht ul{columns:1}}
+/* Anfrage-Formular */
+.anfrage{max-width:620px;margin:18px 0 0;padding:22px 24px;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(212,162,76,.45);color:#e9edf6}
+.anfrage h3{margin:0 0 12px;color:#d4a24c}
+.anfrage label{display:block;margin:10px 0;font-size:15px}
+.anfrage input[name=name],.anfrage textarea{display:block;width:100%;box-sizing:border-box;margin-top:5px;padding:10px 12px;border-radius:10px;border:1px solid rgba(233,237,246,.35);background:rgba(255,255,255,.95);color:#1d3461;font:inherit}
+.anfrage fieldset{border:0;margin:12px 0;padding:0}
+.anfrage legend{font-size:15px;margin-bottom:4px}
+.anfrage .wahl{display:inline-flex;align-items:center;gap:6px;margin:4px 16px 4px 0}
+.anfrage .wahl.tester{display:flex;margin-top:14px;font-weight:600;color:#d4a24c}
+.anfrage input[type=radio],.anfrage input[type=checkbox]{accent-color:#d4a24c;width:17px;height:17px}
+.anfrage .knopf{margin-top:8px;border:0;cursor:pointer}
+.anfrage-info{font-size:13.5px;opacity:.85;margin:12px 0 0}
+.anfrage-info .link-knopf{color:#d4a24c}

@@ -68,21 +68,22 @@
 <section class="karte-gross held">
   <div class="wrap">
     <img class="held-bild" src="bilder/uebersicht.webp" width="1600" height="1000" alt="GaussPilot-Übersicht mit Umsatz, offenen Rechnungen und Verleih" fetchpriority="high">
-    <button type="button" class="status status-knopf" id="test-auf" aria-haspopup="dialog">Version 0.26 · Testphase läuft <span aria-hidden="true">›</span></button>
+    <button type="button" class="status status-knopf" id="test-auf" aria-haspopup="dialog">Version 0.27 · Testphase läuft <span aria-hidden="true">›</span></button>
     <dialog class="testinfo" id="testinfo" aria-labelledby="testinfo-titel">
       <button type="button" class="ti-zu" id="test-zu" aria-label="Schließen">×</button>
       <span class="ti-marke">✦ Testphase</span>
       <h3 id="testinfo-titel">Die Testphase hat begonnen</h3>
-      <p>Mit <b>Version 0.25.0</b> startet die Testphase von GaussPilot. Aktuell ist <b>0.26.4</b>. Wir suchen Betriebe, die GaussPilot im Alltag ausprobieren und uns sagen, was gut läuft und was fehlt.</p>
+      <p>Mit <b>Version 0.25.0</b> startet die Testphase von GaussPilot. Aktuell ist <b>0.27.0</b>. Wir suchen Betriebe, die GaussPilot im Alltag ausprobieren und uns sagen, was gut läuft und was fehlt.</p>
       <div class="ti-dank">
         <b>Ihr Dankeschön: 3 Jahre Komplettpaket kostenlos</b>
         <p>Die <b>ersten 20 Betriebe</b>, die GaussPilot 2–4 Wochen testen und uns eine Rückmeldung geben, erhalten <b>Pro und alle Module</b> (Team, Lager, Verleih &amp; Service) für 3 Jahre kostenlos.</p>
-        <button type="button" class="knopf mail-zeigen" data-m="ed.tolipssuag@ofni">Als Tester melden – E-Mail anzeigen</button>
+        <a class="knopf" href="#kontakt" data-tester>Als Tester melden</a>
         <p class="ti-check"><a href="GaussPilot_Tester-Checkliste.pdf">📋 Die Tester-Checkliste für 2 Wochen (PDF)</a></p>
       </div>
-      <p class="ti-hinweis">Testversion heißt: Es kann noch Fehler geben. Sichern Sie Ihre Daten regelmäßig. Fehler und Wünsche gern per E-Mail oder im <a href="https://github.com/hack-guru/gausspilot/discussions">Erfahrungsaustausch</a>.</p>
+      <p class="ti-hinweis">Zum Ausprobieren gibt es eine eigene Testumgebung mit Beispieldaten – dort kann nichts kaputtgehen. Für den Echtbetrieb gilt in der Testphase: regelmäßig sichern und das alte System 2–3 Wochen mitlaufen lassen. Fehler und Wünsche gern per E-Mail oder im <a href="https://github.com/hack-guru/gausspilot/discussions">Erfahrungsaustausch</a>.</p>
       <h4>Bisheriger Verlauf</h4>
       <ol class="ti-verlauf">
+        <li><span>0.27</span><div>Neue Lizenzschlüssel (stellen sich mit Internet automatisch um), übersichtlichere Seitenleiste, „Artikel wählen“ in der Handy-App, neue PDF-Schrift „Sora“</div></li>
         <li><span>0.26</span><div>Lizenz mit Laufzeit, Technik-Sets und Teilrückgabe im Verleih, Sicherung zur Probe öffnen, Handy-App in der Testumgebung</div></li>
         <li><span>0.25</span><div><b>Testphase beginnt</b> · Kassenbuch für Bargeld, Suche in langen Listen, Jahresinventur, Wiederherstellen unter Windows verbessert</div></li>
         <li><span>0.24</span><div>Verleih in der Handy-App, eigene Bestellmengen, Datensicherung per Klick</div></li>
@@ -137,6 +138,24 @@
   </div>
 </section>
 
+<div class="luecke"></div>
+
+<section id="passt" class="karte-gross">
+  <div class="wrap">
+    <h2>Passt GaussPilot zu mir?</h2>
+    <p class="lead"><b>Gemacht für Handwerk, Service und Verleih.</b> E-Rechnungen schreiben und empfangen kann damit aber jeder Betrieb – auch Online-Händler für ihre Geschäftskunden. Eine Shop-Anbindung gibt es nicht. Ein paar Beispiele, wie Betriebe ihr GaussPilot zusammenstellen können:</p>
+    <div class="beispiele">
+      <div class="beispiel"><h3>🎨 Malerbetrieb, 4 Leute</h3><p>Angebote und Rechnungen, Stundenzettel und Material per Handy, Mahnwesen und DATEV für die Steuerberatung.</p><div class="mini"><span class="c-start">Start</span><span class="c-pro">Pro</span><span class="c-team">Team</span></div></div>
+      <div class="beispiel"><h3>⚡ Elektro mit Transportern</h3><p>Material im Lager und in den Fahrzeugen, Entnahme per Scan auf der Baustelle, direkt in die Rechnung.</p><div class="mini"><span class="c-start">Start</span><span class="c-pro">Pro</span><span class="c-team">Team</span><span class="c-lager">Lager</span></div></div>
+      <div class="beispiel"><h3>🔧 Werkzeug- und Geräteverleih</h3><p>Kalender, Ausgabe und Rücknahme, Kaution, Prüftermine – und die Mietrechnung als E-Rechnung.</p><div class="mini"><span class="c-start">Start</span><span class="c-verleih">Verleih &amp; Service</span></div></div>
+      <div class="beispiel"><h3>✂️ Friseursalon mit Barkasse</h3><p>Kassenbuch jeden Abend, Rechnungen für Firmenkunden – auch als Kleinunternehmer nach § 19 UStG. Alles in der kostenlosen Version.</p><div class="mini"><span class="c-start">Start</span></div></div>
+    </div>
+    <div class="hinweis-blau wechsel"><b>🔄 Sie nutzen schon lexoffice, sevdesk oder WISO MeinBüro?</b> Wechseln geht auch mitten im Jahr: Kunden und Artikel aus CSV oder Excel übernehmen – Rechnungs- und Kundennummern zählen nahtlos weiter.</div>
+    <div class="nicht-gedacht"><h3>Wofür GaussPilot (noch) nicht gedacht ist</h3><ul><li>kein Shop-Betrieb und kein Versand (keine Shop-Anbindung, keine Versandetiketten)</li><li>keine Bilanz</li><li>keine Lohnabrechnung</li><li>keine Registrierkasse mit TSE</li><li>kein Mac</li><li>ein Büro-PC als Zentrale – Mitarbeiter arbeiten über die Handy-App</li></ul></div>
+    <p class="weiter">Unsicher? Im <a href="https://github.com/hack-guru/gausspilot/discussions">Erfahrungsaustausch</a> erzählen Betriebe, wie sie GaussPilot einsetzen – oder schreiben Sie uns. Der Austausch läuft auf GitHub und ist auf Englisch beschriftet; lesen geht ohne Anmeldung.</p>
+  </div>
+</section>
+
 <div class="fenster" data-zeige="uebersicht"><span class="schild">Die Übersicht: Umsatz, offene Rechnungen, Ausgaben und was zu erledigen ist</span></div>
 
 <section id="rechnung" class="karte-gross">
@@ -145,7 +164,7 @@
       <span class="tag-klein c-start">START</span> <span class="tag-klein c-pro">PRO</span>
       <h2>Schreiben, prüfen, versenden – ohne Programmwechsel</h2>
       <p class="lead">Jede Rechnung wird vor dem Festschreiben nach EN 16931 geprüft. Fehler stehen auf Deutsch da, mit „So beheben Sie das“. Was nicht stimmt, geht gar nicht erst raus.</p>
-      <p class="lead klein">Bereit für die E-Rechnungspflicht: ab 2027 für Firmen über 800.000 € Umsatz, ab 2028 für alle Unternehmen untereinander.</p>
+      <p class="lead klein"><b>Empfangen müssen E-Rechnungen schon seit 2025 alle Unternehmen</b> – mit GaussPilot Start können Sie das sofort und kostenlos. Ausstellen: ab 2027 bei mehr als 800.000 € Umsatz, ab 2028 alle.</p>
       <p class="lead klein"><b>Datensicherung:</b> In Start sichern Sie selbst per Klick („Jetzt sichern“) auf Ihrem PC. Nur mit Pro sichert GaussPilot automatisch jeden Tag – auch auf NAS, Server oder in die Cloud.</p>
     </div>
     <ol class="schritte">
@@ -286,22 +305,6 @@
 
 <div class="fenster" data-zeige="steuer"><span class="schild">Der Steuer-Abschluss: Kennzahlen 81, 66, 83 – fertig für Mein ELSTER</span></div>
 
-<section id="passt" class="karte-gross">
-  <div class="wrap">
-    <h2>Passt GaussPilot zu mir?</h2>
-    <p class="lead"><b>GaussPilot ist für Handwerk, Service und Verleih gemacht – nicht für den Onlinehandel.</b> Eine Anbindung an Onlineshops oder Versanddienstleister gibt es bewusst nicht. Ein paar Beispiele, wie Betriebe ihr GaussPilot zusammenstellen können:</p>
-    <div class="beispiele">
-      <div class="beispiel"><h3>🎨 Malerbetrieb, 4 Leute</h3><p>Angebote und Rechnungen, Stundenzettel und Material per Handy, Mahnwesen und DATEV für die Steuerberatung.</p><div class="mini"><span class="c-start">Start</span><span class="c-pro">Pro</span><span class="c-team">Team</span></div></div>
-      <div class="beispiel"><h3>⚡ Elektro mit Transportern</h3><p>Material im Lager und in den Fahrzeugen, Entnahme per Scan auf der Baustelle, direkt in die Rechnung.</p><div class="mini"><span class="c-start">Start</span><span class="c-pro">Pro</span><span class="c-team">Team</span><span class="c-lager">Lager</span></div></div>
-      <div class="beispiel"><h3>🔧 Werkzeug- und Geräteverleih</h3><p>Kalender, Ausgabe und Rücknahme, Kaution, Prüftermine – und die Mietrechnung als E-Rechnung.</p><div class="mini"><span class="c-start">Start</span><span class="c-verleih">Verleih &amp; Service</span></div></div>
-      <div class="beispiel"><h3>✂️ Friseursalon mit Barkasse</h3><p>Kassenbuch jeden Abend, Rechnungen für Firmenkunden – auch als Kleinunternehmer nach § 19 UStG. Alles in der kostenlosen Version.</p><div class="mini"><span class="c-start">Start</span></div></div>
-    </div>
-    <p class="weiter">Unsicher? Im <a href="https://github.com/hack-guru/gausspilot/discussions">Erfahrungsaustausch</a> erzählen Betriebe, wie sie GaussPilot einsetzen – oder schreiben Sie uns.</p>
-  </div>
-</section>
-
-<div class="luecke"></div>
-
 <section id="besonderes" class="karte-gross">
   <div class="wrap">
     <h2>Was GaussPilot besonders macht</h2>
@@ -309,7 +312,7 @@
     <div class="klapp">
       <details open><summary>🏠 Ihre Daten bleiben bei Ihnen</summary><p>GaussPilot läuft auf Ihrem eigenen PC unter Windows oder Linux – ohne Cloud und ohne Internetzwang. Anmeldung mit 2-Faktor, verschlüsselte Zugangsdaten, Sicherung per Klick – mit Pro automatisch.</p></details>
       <details><summary>📱 Eine Handy-App, die ohne Netz funktioniert</summary><p>Erfassen, scannen, Angebote schreiben – komplett offline. Abgeglichen wird verschlüsselt im Firmen-WLAN oder per VPN über die FRITZ!Box, ganz ohne Portfreigabe.</p></details>
-      <details><summary>🖥️ Können mehrere Büro-PCs gleichzeitig arbeiten?</summary><p>Ein PC im Büro ist die Zentrale: Dort laufen GaussPilot und Ihre Daten. Ihre Mitarbeiter arbeiten über die Handy-App – auf der Baustelle, im Lager oder beim Kunden, auch ohne Netz. Mehrere Büro-PCs gleichzeitig am selben Datenbestand gehen derzeit nicht.</p></details>
+      <details><summary>🖥️ Können mehrere Büro-PCs gleichzeitig arbeiten?</summary><p><b>Ideal für Betriebe mit einem Büro-PC als Zentrale und beliebig vielen Mitarbeitern per Handy-App</b> – auf der Baustelle, im Lager oder beim Kunden, auch ohne Netz. Auf dem Büro-PC laufen GaussPilot und Ihre Daten. Mehrere Büro-PCs gleichzeitig am selben Datenbestand gehen derzeit nicht.</p></details>
       <details><summary>🛟 Was passiert, wenn es GaussPilot nicht mehr gibt?</summary><p>Ihre Daten liegen bei Ihnen auf dem PC – nicht bei uns. Das kostenlose Grundprogramm läuft ohne Laufzeit und ohne Internet einfach weiter. Alles, was Sie in Pro und den Modulen erfasst haben, bleibt ansehbar und lässt sich exportieren: DATEV-Export für die Steuerberatung, Listen als CSV, Rechnungen als E-Rechnung (PDF und XML). Ihre festgeschriebenen Rechnungen liegen außerdem jederzeit als PDF und XML in Ihrem Steuerordner. Sie können also jederzeit mit Ihren Daten weiterziehen.</p><p><b>Unser Versprechen:</b> Sollte GaussPilot eingestellt werden, erhalten alle Kunden mit gültiger Lizenz einen Schlüssel ohne Laufzeit – Pro und Module laufen dann dauerhaft weiter.</p></details>
       <details><summary>💶 Kassenbuch schon in der kostenlosen Version</summary><p>Offene Ladenkasse oder Registrierkasse: Abends zählen, Tag abschließen – fortlaufend nummeriert und unveränderbar, mit Kassenbericht als PDF und Zählprotokoll. Bar bezahlte Rechnungen werden automatisch als bezahlt gebucht.</p></details>
       <details><summary>📷 Das Handy ist der Barcode-Scanner</summary><p>QR-Codes, Code 128 und EAN-13 liest die Handy-App mit der Kamera – auch offline. Die passenden Etiketten erstellt GaussPilot selbst, gedruckt wird auf A4-Bögen oder dem Etikettendrucker. Teure Scanner-Hardware brauchen Sie nicht; ein vorhandener Handscanner funktioniert am PC trotzdem.</p></details>
@@ -351,6 +354,7 @@
       <div><h3>✉️ E-Mail-Support</h3><p>Schreiben Sie uns Ihre Frage. Sie bekommen zeitnah eine Antwort – mindestens mit dem nächsten Schritt, wie es weitergeht. Schwerwiegende Probleme haben Vorrang.</p></div>
       <div><h3>🖥️ Hilfe aus der Ferne</h3><p>Bei der Einrichtung oder bei einem Problem schauen wir nach Terminabsprache per <b>RustDesk</b> mit auf Ihren Bildschirm. Sie starten die Sitzung selbst und können sie jederzeit beenden.</p></div>
       <div><h3>📍 Vor Ort in Brandenburg</h3><p>Im Umkreis kommen wir nach Absprache auch persönlich vorbei.</p></div>
+      <div><h3>🤖 KI-Assistent im Programm</h3><p>Fragen zur Bedienung rund um die Uhr: mit Ihrer eigenen KI (z. B. Claude, ChatGPT, Gemini; Kosten beim KI-Anbieter) oder kostenlos und ganz lokal auf Ihrem PC mit Ollama. Der Assistent liest nur mit, ändert nichts, und Sie entscheiden, welche Daten er sehen darf.</p></div>
       <div><h3>📘 Selbst nachlesen</h3><p>Fast alles ist im <a href="handbuch.html">Handbuch</a> Schritt für Schritt erklärt. Fragen und Erfahrungen anderer Betriebe finden Sie im <a href="https://github.com/hack-guru/gausspilot/discussions">Austausch</a>.</p></div>
       <div><h3>🔒 Ihre Sicherheit</h3><p><b>Wir rufen nie unaufgefordert an.</b> Fernhilfe gibt es nur, wenn Sie sich bei uns melden und darum bitten. Geben Sie niemals jemandem Zugriff, der sich ungefragt als „GaussPilot-Support“ meldet.</p></div>
       <div class="support-tester"><h3>✦ Für Tester</h3><p>In der Testphase haben Testbetriebe den direkten Draht: Fragen, Fehler und Wünsche werden bevorzugt bearbeitet.</p></div>
@@ -365,7 +369,7 @@
     <p class="lead">Alles zum Nachlesen – und ein Ort, an dem Betriebe ihre Erfahrungen mit GaussPilot teilen.</p>
     <div class="raster">
       <a class="kachel link" href="handbuch.html"><div class="ic">📘</div><h3>Handbuch &amp; FAQ</h3><p>Installation unter Windows und Linux, Rechnung, Handy-App, Lager und Verleih Schritt für Schritt. Online lesen oder als PDF.</p><p class="mehr">Handbuch öffnen →</p></a>
-      <a class="kachel link" href="https://github.com/hack-guru/gausspilot/discussions"><div class="ic">💬</div><h3>Erfahrungen &amp; Fragen</h3><p>Passt GaussPilot zu meinem Betrieb? Wie läuft es bei anderen? Fragen zur Einrichtung. Lesen geht ohne Anmeldung.</p><p class="mehr">Zum Austausch →</p></a>
+      <a class="kachel link" href="https://github.com/hack-guru/gausspilot/discussions"><div class="ic">💬</div><h3>Erfahrungen &amp; Fragen</h3><p>Passt GaussPilot zu meinem Betrieb? Wie läuft es bei anderen? Fragen zur Einrichtung. Lesen geht ohne Anmeldung – Fragen gern auch einfach per E-Mail.</p><p class="mehr">Zum Austausch →</p></a>
     </div>
   </div>
 </section>
@@ -377,7 +381,17 @@
     <h2>Neugierig geworden?</h2>
     <p class="lead">Sie möchten GaussPilot ausprobieren oder haben Fragen? Schreiben Sie uns – Sie bekommen eine Testversion mit Beispieldaten – alle Module und die Handy-App zum Ausprobieren.</p>
     <p class="lead" style="font-size:16px;margin-top:-4px">Läuft unter Windows und Linux · <a href="linux.html" style="color:#d4a24c">So installieren Sie GaussPilot unter Linux</a></p>
-    <button type="button" class="knopf mail-zeigen" data-m="ed.tolipssuag@ofni">E-Mail-Adresse anzeigen</button><noscript><p class="lead" style="margin-top:12px">info [at] gausspilot [Punkt] de</p></noscript>
+    <form class="anfrage" id="anfrage" data-m="ed.tolipssuag@ofni">
+      <h3>In 2 Minuten zur Testversion</h3>
+      <label>Ihr Name und Betrieb<input name="name" required autocomplete="organization" placeholder="z. B. Malerbetrieb Muster, Anna Muster"></label>
+      <fieldset><legend>Betriebssystem im Büro</legend><label class="wahl"><input type="radio" name="os" value="Windows" checked> Windows</label><label class="wahl"><input type="radio" name="os" value="Linux"> Linux</label></fieldset>
+      <fieldset><legend>Was interessiert Sie besonders?</legend><label class="wahl"><input type="checkbox" name="int" value="E-Rechnung / Kassenbuch"> E-Rechnung / Kassenbuch</label><label class="wahl"><input type="checkbox" name="int" value="Lager & Scannen"> Lager &amp; Scannen</label><label class="wahl"><input type="checkbox" name="int" value="Verleih & Service"> Verleih &amp; Service</label><label class="wahl"><input type="checkbox" name="int" value="Handy-App für Mitarbeiter"> Handy-App für Mitarbeiter</label></fieldset>
+      <label class="wahl tester"><input type="checkbox" name="tester" id="als-tester"> Ich möchte Testbetrieb werden (2–4 Wochen testen und Rückmeldung geben)</label>
+      <label>Ihre Nachricht (freiwillig)<textarea name="text" rows="3" placeholder="z. B. Gewerk, Anzahl Mitarbeiter, Fragen …"></textarea></label>
+      <button type="submit" class="knopf">Testversion per E-Mail anfragen</button>
+      <p class="anfrage-info">Öffnet Ihr E-Mail-Programm mit einer fertigen Nachricht – Sie prüfen sie und senden selbst. Über diese Webseite wird nichts übertragen. Kein E-Mail-Programm? <button type="button" class="link-knopf mail-zeigen" data-m="ed.tolipssuag@ofni">E-Mail-Adresse anzeigen</button></p>
+    </form>
+    <noscript><p class="lead" style="margin-top:12px">info [at] gausspilot [Punkt] de</p></noscript>
   </div>
   <footer><div class="wrap">
     <span>© 2026 Pierre Zwanziger · GaussPilot</span>
@@ -472,6 +486,51 @@ z.addEventListener('click',function(){d.close?d.close():d.removeAttribute('open'
 d.addEventListener('click',function(e){if(e.target===d)d.close()});
 document.querySelectorAll('[data-oeffne=testinfo]').forEach(function(b){b.addEventListener('click',function(){d.showModal?d.showModal():d.setAttribute('open','')})});
 d.querySelectorAll('a[href^="#"]').forEach(function(l){l.addEventListener('click',function(){d.close()})});})();
+</script>
+<script>
+// Bilder groß ansehen: Klick auf ein Bild-Fenster oder ein Bildschirmfoto öffnet es im Vollbild
+(function(){
+  var d = document.createElement('dialog'); d.className = 'lupe'; d.setAttribute('aria-label', 'Bild groß');
+  d.innerHTML = '<button type="button" class="lupe-zu" aria-label="Schließen">×</button><img alt=""><p></p>';
+  document.body.appendChild(d);
+  var bild = d.querySelector('img'), text = d.querySelector('p');
+  function auf(src, alt){ bild.src = src; bild.alt = alt || ''; text.textContent = alt || ''; if (d.showModal) d.showModal(); else d.setAttribute('open', ''); }
+  function zu(){ if (d.close) d.close(); else d.removeAttribute('open'); }
+  d.addEventListener('click', function(e){ if (e.target !== bild) zu(); });
+  document.querySelectorAll('.fenster').forEach(function(f){
+    var b = document.querySelector('.blick img[data-bild="' + f.dataset.zeige + '"]'); if (!b) return;
+    var s = f.querySelector('.schild'); f.classList.add('lupe-ziel'); f.setAttribute('role', 'button'); f.tabIndex = 0;
+    f.title = 'Klicken zum Vergrößern';
+    if (s) s.insertAdjacentHTML('beforeend', ' <span class="lupe-tipp">🔍 groß ansehen</span>');
+    function o(){ auf(b.src, s ? s.firstChild.textContent : ''); }
+    f.addEventListener('click', o);
+    f.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); o(); } });
+  });
+  document.querySelectorAll('.held-bild, main figure img').forEach(function(i){
+    i.classList.add('lupe-ziel'); i.title = 'Klicken zum Vergrößern';
+    i.addEventListener('click', function(){ auf(i.currentSrc || i.src, i.alt); });
+  });
+})();
+</script>
+<script>
+// Anfrage-Formular: baut eine fertige E-Mail im eigenen Mailprogramm (keine Übertragung über die Webseite)
+(function(){
+  var f = document.getElementById('anfrage'); if (!f) return;
+  document.querySelectorAll('[data-tester]').forEach(function(a){ a.addEventListener('click', function(){ var c = document.getElementById('als-tester'); if (c) c.checked = true; setTimeout(function(){ f.querySelector('input[name=name]').focus({preventScroll:true}); }, 400); }); });
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var an = f.dataset.m.split('').reverse().join('');
+    var name = f.name.value.trim(), os = (f.querySelector('input[name=os]:checked') || {}).value || '';
+    var ints = [].map.call(f.querySelectorAll('input[name=int]:checked'), function(c){ return c.value; });
+    var tester = f.tester.checked, text = f.text.value.trim();
+    var betreff = (tester ? 'Testbetrieb werden' : 'Testversion anfragen') + ' – ' + name;
+    var body = 'Hallo,\n\n' + (tester ? 'ich möchte GaussPilot als Testbetrieb 2–4 Wochen im Alltag ausprobieren und Rückmeldung geben.' : 'ich möchte GaussPilot ausprobieren.') +
+      '\n\nName / Betrieb: ' + name + '\nBetriebssystem im Büro: ' + os +
+      (ints.length ? '\nBesonders interessiert an: ' + ints.join(', ') : '') +
+      (text ? '\n\n' + text : '') + '\n\nViele Grüße\n' + name.split(',')[0];
+    location.href = 'mailto:' + an + '?subject=' + encodeURIComponent(betreff) + '&body=' + encodeURIComponent(body);
+  });
+})();
 </script>
 </body>
 </html>

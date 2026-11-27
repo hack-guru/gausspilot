@@ -326,7 +326,7 @@ dialog.lupe p{color:#e9edf6;margin:.8em 0 0;text-align:center;font-size:.95rem}
 .nicht-gedacht li{margin:2px 0;break-inside:avoid}
 @media (max-width:700px){.nicht-gedacht ul{columns:1}}
 /* Anfrage-Formular */
-.anfrage{max-width:620px;margin:18px 0 0;padding:22px 24px;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(212,162,76,.45);color:#e9edf6}
+.anfrage{max-width:620px;margin:22px auto 0;padding:22px 24px;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(212,162,76,.45);color:#e9edf6}
 .anfrage h3{margin:0 0 12px;color:#d4a24c}
 .anfrage label{display:block;margin:10px 0;font-size:15px}
 .anfrage input[name=name],.anfrage textarea{display:block;width:100%;box-sizing:border-box;margin-top:5px;padding:10px 12px;border-radius:10px;border:1px solid rgba(233,237,246,.35);background:rgba(255,255,255,.95);color:#1d3461;font:inherit}
@@ -338,3 +338,20 @@ dialog.lupe p{color:#e9edf6;margin:.8em 0 0;text-align:center;font-size:.95rem}
 .anfrage .knopf{margin-top:8px;border:0;cursor:pointer}
 .anfrage-info{font-size:13.5px;opacity:.85;margin:12px 0 0}
 .anfrage-info .link-knopf{color:#d4a24c}
+
+/* Portrait im Support */
+.support-kopf{display:flex;gap:32px;align-items:center;justify-content:space-between}
+.support-kopf>div{flex:1}
+.portrait{flex:0 0 auto;margin:0;text-align:center;width:170px}
+.portrait img{display:block;width:170px;height:auto;border-radius:18px;box-shadow:0 10px 28px rgba(29,52,97,.22);cursor:default}
+.portrait figcaption{font-size:13.5px;line-height:1.35;color:#5b6475;margin-top:10px}
+.portrait figcaption b{display:block;color:#1d3461;font-size:15px}
+@media (max-width:700px){.support-kopf{flex-direction:column-reverse;align-items:center;text-align:center}.portrait{width:140px}.portrait img{width:140px}}
+
+/* Preistabelle */
+.preise-titel{margin:30px 0 6px;color:#1d3461}
+.lz-tabelle.preise td:nth-child(2){color:#1d3461;font-size:16px}
+.lz-tabelle.preise small{color:#7a5a1e;font-size:12.5px}
+.lz-tabelle.preise tr.komplett td{background:#d4a24c1f}
+.preis-info{font-size:14.5px;color:#5b6475;margin:4px 0 14px}
+.modul .preis b{font-size:1.15em}
